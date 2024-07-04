@@ -1,0 +1,97 @@
+
+<!-- Banner Services -->
+<div id="title-banner_subpage" class="webfont"> <div class=""> <h1>Reviews</h1> </div> </div>
+
+#title-banner_subpage {
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    padding: 60px 20px;
+    h1 { font-size: 2.5rem !important; color: #fff !important; font-family: $webfont2 !important; }
+}
+
+<!-- Image Tag -->
+<img src="/portals/[Portal:PortalID]/skins/master/img/icon02.png" alt="[ND:ClientName]">
+
+<!-- Background Image With Overlay -->
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/portals/139/skins/master/img/home-banner.png") no-repeat top center;
+
+<!-- Background Image Image or Color -->
+background:url("/portals/146/skins/master/img/bgmain.jpg") no-repeat top center #0A0A0A; 
+
+<!-- Background Gradient -->
+background: rgb(3,67,111);
+background: linear-gradient(180deg, rgba(3,67,111,1) 0%, rgba(1,55,92,1) 71%); 
+
+<!-- Grid Template Columns -->
+grid-template-columns: repeat(2, minmax(0, 1fr));
+
+<!-- Button -->
+<a href="/Contact" class="button"><div class="button__text">Schedule Appointment</div></a>
+
+<!-- SEO Tag -->
+Tire Services | [ND:ClientName] | [ND:SEOLocation]
+
+<!-- Social Icons -->
+<a href="[ND:Facebook]" target="_blank" class="fa fa-facebook"></a>
+<a href="[ND:Twitter]" target="_blank" class="fa fa-twitter"></a>
+<a href="[ND:GPlus]" target="_blank" class="fa fa-google"></a>
+<a href="[ND:Instagram]" target="_blank" class="fa fa-instagram"></a>
+<a href="[ND:Yelp]" target="_blank" class="fa fa-yelp"></a>
+<a href="[ND:YouTube]" target="_blank" class="fa fa-youtube"></a>
+
+<!-- Icons -->
+<i class="fa fa-envelope" aria-hidden="true"></i>
+<i class="fa fa-phone" aria-hidden="true"></i>
+<i class="fa fa-map-marker" aria-hidden="true"></i>
+
+
+
+<!-- splidejs -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+
+<!-- Logo Footer -->
+<div class="footer__logo"> <img src="/portals/[Portal:PortalID]/logo.png" alt="[ND:ClientName]" /> </div>
+
+<!-- Change background different of the home -->
+<script>
+    document.getElementById("contentheader").style.background =
+      'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/portals/140/skins/master/img/foxbg2.jpg") no-repeat center center';
+    document.getElementById("contentheader").style.backgroundSize = "cover";
+    document.getElementById("contentheader").style.backgroundAttachment =
+      "fixed";
+    document.getElementById("title-banner_subpage").style.background =
+      'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/portals/140/skins/master/img/foxbg2.jpg") no-repeat center center';
+    document.getElementById("title-banner_subpage").style.backgroundSize = "cover";
+    document.getElementById("title-banner_subpage").style.backgroundAttachment = "fixed";
+</script>
+
+<!-- maintext -->
+#maintext {
+	h1,h2,h3,h4,h5,h6 { 
+		font-family: $webfont2 !important;
+		margin-bottom: 1.5rem;
+		font-weight: 400;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	p,ul,li,a {
+		font-family: $webfont !important;
+		font-size: 1rem;
+	}
+	a { 
+		text-decoration: none;
+		color: $primary-color;
+		transition: all 0.3s;
+		&:hover {
+			color: black;
+		}
+	}
+	p,li {
+		margin-bottom: 1rem;
+	}
+}

@@ -1,0 +1,85 @@
+<div class="logos__slider">
+  <!-- style="display: flex; justify-content: center; align-items: center;" -->
+  <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://a.nd-cdn.us/logos/napa-autocare.png" alt="NAPA Auto Care Center" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_ase.png" alt="ASE" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://c1.nd-cdn.us/PDFs/16681iatn_aff1.jpg" alt="IATN" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_bbb.png" alt="BBB" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://c1.nd-cdn.us/PDFs/50293nfib-logo.png" alt="NFIB" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://c1.nd-cdn.us/PDFs/11365element-logo.png" alt="Element Fleet" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://c1.nd-cdn.us/PDFs/20326hankook-logo.png" alt="Hankook" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://c1.nd-cdn.us/PDFs/84651gecapital-logo.png" alt="GE Capital" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://c1.nd-cdn.us/PDFs/64196ari-logo.png" alt="ARI" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://c1.nd-cdn.us/PDFs/13189gwc-logo.png" alt="GWC" />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    const logos = new Splide("#slider_logos", {
+      type: "loop",
+      perPage: 5,
+      focus: 1,
+      gap: "1rem",
+      trimSpace: false,
+      arrows: false,
+      breakpoints: {
+        1024: { perPage: 3 },
+        767: { perPage: 2 },
+        640: { perPage: 1 },
+      },
+      pagination: false,
+    });
+    logos.mount();
+  </script>
+</div>

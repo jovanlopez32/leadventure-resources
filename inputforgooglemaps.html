@@ -1,0 +1,47 @@
+<div
+  id="hometext"
+  class="main__container"
+  style="
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url('/portals/140/skins/master/img/aboutbg.webp') no-repeat top center;
+    background-size: cover;
+  "
+>
+  <div class="main__content">
+    <div class="map__container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5941.558193509921!2d-87.699508!3d41.876099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e33660960d795%3A0xd16148ca1a778651!2sDavid's%20Auto!5e0!3m2!1sen!2sus!4v1718905576901!5m2!1sen!2sus"
+        style="border: 0; max-width: 500px; width: 100%; height: 450px"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="form__container">
+      <div>
+        <h2>DRIVING DIRECTIONS</h2>
+        <p>Where are you coming from?</p>
+        <p>Please enter Street Address, City, and ZIP Code</p>
+        <br />
+        <p>Enter your location</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form__container__form">
+    <input type="text" id="address__input" />
+    <button>GET DIRECTIONS</button>
+  </div>
+<script>
+  document.querySelector("button").addEventListener("click", function (event) {
+    event.preventDefault();
+    var inputValue = document.querySelector("#address__input").value;
+    var encodedInputValue = encodeURIComponent(inputValue).replace(/%20/g, "+");
+    var url =
+      "https://www.google.com/maps?saddr=" +
+      encodedInputValue +
+      "&daddr=2924+West+Van+Buren+St+Chicago,+IL+60612";
+    window.open(url, "_blank");
+  });
+</script>

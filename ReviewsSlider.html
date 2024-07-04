@@ -1,0 +1,184 @@
+<div id="maintext" class="reviews__section">
+  <div class="reviews__section__title">
+    <h2>What Our Customers Say</h2>
+    <p>
+      Hear from the happy clients who support Republic Battery Co as a staple of
+      the Houston, TX community.
+    </p>
+  </div>
+
+  <!-- Slider -->
+
+  <section id="slider1" class="splide reviews__section__slider" aria-label="">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <!-- item -->
+        <li class="splide__slide" class="reviews__section__slider__item">
+          <div class="item__slider">
+            <!-- Comment Icon Section -->
+            <div class="icon-svg">
+              <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+            </div>
+            <!-- User Name -->
+            <p class="user__name">Fullline Xu</p>
+            <!-- Stars -->
+            <div class="stars">
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <!-- Text -->
+            <p class="user__text">
+              Hands down! I highly recommand this Battery company not only
+              because how professional they are, also they are super friendly
+              folks that seems love what they do. had our...
+            </p>
+          </div>
+        </li>
+
+        <!-- item -->
+        <li class="splide__slide" class="reviews__section__slider__item">
+          <div class="item__slider">
+            <!-- Comment Icon Section -->
+            <div class="icon-svg">
+              <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+            </div>
+            <!-- User Name -->
+            <p class="user__name">Nina Gentry</p>
+            <!-- Stars -->
+            <div class="stars">
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <!-- Text -->
+            <p class="user__text">
+              Hands down, the BEST! His battery pricing for a new battery, and
+              even his used ones, were DEFINITELY cheaper than anything else I
+              had found. And Fonzo...hope I didn't...
+            </p>
+          </div>
+        </li>
+
+        <!-- item -->
+        <li class="splide__slide" class="reviews__section__slider__item">
+          <div class="item__slider">
+            <!-- Comment Icon Section -->
+            <div class="icon-svg">
+              <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+            </div>
+            <!-- User Name -->
+            <p class="user__name">bryaneford1</p>
+            <!-- Stars -->
+            <div class="stars">
+              <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <!-- Text -->
+            <p class="user__text">
+              Always cool and courteous. Great family owned business. Always in
+              stock always the right price. Knowledgeable and spot on. I’ll go
+              nowhere else!!!
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    const reviews__slider = new Splide("#slider1", {
+      type: "loop",
+      perPage: 3,
+      gap: "80px",
+      height: "350px",
+      breakpoints: {
+        1024: { perPage: 2 },
+        767: { perPage: 2 },
+        640: { perPage: 1 },
+      },
+      autoplay: true,
+      focus: 1,
+      arrows: false,
+      pagination: false,
+    });
+    reviews__slider.mount();
+  </script>
+
+  <!-- -------------------------------------------- -->
+
+  <div class="reviews__section__btn">
+    <a href="/Testimonials" class="button">
+      <div class="button__text">READ ALL REVIEWS</div>
+    </a>
+  </div>
+</div>
+
+<style>
+  .reviews__section {
+    padding: 60px 0px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    color: #000;
+
+    .reviews__section__title {
+      text-align: center;
+      color: #fff;
+      margin: 10px auto 80px auto;
+
+      h2 {
+        font-size: 2.5rem !important;
+      }
+    }
+
+    .reviews__section__btn {
+      margin: 0 auto;
+      width: fit-content;
+    }
+
+    .splide__track {
+      padding: 60px 0;
+
+      li {
+        margin: 0;
+      }
+
+      .item__slider {
+        padding: 60px 30px 40px 30px;
+        background: $white-color;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+        height: 100%;
+        box-sizing: border-box;
+
+        .icon-svg {
+          position: absolute;
+          top: -40px;
+          width: fit-content;
+
+          img {
+            width: 80px;
+            object-fit: contain;
+          }
+        }
+
+        .user__name {
+          font-size: 1.1rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .stars {
+          color: #ffc300 !important;
+          display: flex;
+          gap: 5px;
+        }
+      }
+    }
+  }
+</style>

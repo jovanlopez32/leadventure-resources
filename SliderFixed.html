@@ -1,0 +1,61 @@
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+<section id="slider1" class="splide" aria-label="">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <!-- item -->
+            <li class="splide__slide">
+                <div class="slider-item">
+                    <!-- Box container Start -->
+                    <div class="_service-item">
+                        <h2>Fleet Service</h2>
+                        <p>No matter the type of vehicle or the size of your fleet, the experts at DL Automotive can provide service to most fleet vehicles.</p>
+                        <div class="homepage-options">
+                            <a href="/Services/Fleets" title="More Details">More Details</a>
+                        </div>
+                    </div>
+                    <!-- Box container End -->
+                </div>
+            </li>
+
+
+            <!-- item -->
+            <li class="splide__slide">
+                <div class="slider-item">
+                    <!-- Box container Start -->
+                    <div class="_service-item">
+                        <h2>Emissions</h2>
+                        <p>Come by our friendly shop today, and we can ensure your vehicle will not only be safe to drive but more environmentally friendly.</p>
+                        <div class="homepage-options">
+                            <a href="/Services/Emissions" title="More Details">More Details</a>
+                        </div>
+                    </div>
+                    <!-- Box container End -->
+                </div>
+            </li>
+
+
+
+            <!-- item -->
+            <li class="splide__slide">
+                <div class="slider-item">
+                    <!-- Box container Start -->
+                    <div class="_service-item">
+                        <h2>Oil Change</h2>
+                        <p>Oil changes are imperative to engine health and longevity. Our team will not only change your oil, but we will check for any potential problems in your vehicle.</p>
+                        <div class="homepage-options">
+                            <a href="/Services/Oil-Change" title="More Details">More Details</a>
+                        </div>
+                    </div>
+                    <!-- Box container End -->
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</section>
+
+<script>
+    new Splide('#slider1', {type   : 'loop', autoplay: true, focus: 0, pagination: false, breakpoints: { 1024: { perPage: 2, }, 767: { perPage: 2, }, 640: { perPage: 1, }, },}).mount();
+</script>
