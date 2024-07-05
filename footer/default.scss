@@ -1,0 +1,63 @@
+#bgbottom {
+	background: $black-color;
+	#netdriven {
+		max-width: 1280px;
+		width: 100%;
+		overflow: visible;
+		box-sizing: border-box;
+		padding: 50px 20px;
+		#BottomFooter {
+			font-size: 1rem;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			display: grid;
+			align-items: center;
+			column-gap: 1rem;
+			row-gap: 4rem;
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			@media(min-width: 768px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+			@media(min-width: 1024px) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+			#FooterPane1Container, #FooterPane2Container, #FooterPane3Container, #FooterPane4Container {
+				min-height: 100%;
+				margin: 0;
+				padding: 0;
+				h2 { font-family: $webfont2 !important; color: $primary-color; font-size: 1.5rem; margin-bottom: 1rem; }
+				display: grid;
+				justify-content: center;
+				align-content: center;
+				text-align: center;
+				@media(min-width: 1024px) { align-content: start; text-align: start;}
+			}
+			ul {
+				display: grid;
+				gap: 1rem;
+				font-family: $webfont;
+				li { margin: 0 !important; a { text-transform: uppercase; color: $white-color; transition: all 0.3s; &:hover { color: $primary-color; } } }
+			}
+			#FooterPane1Container {
+				.footer__logo { display: grid; place-items: center; img { max-width: 200px; width: 100%; object-fit: contain; } }
+			}
+			#FooterPane4Container {
+				.footer__contactinfo {
+					display: grid;
+					gap: 1rem;
+					justify-items: center;
+					@media(min-width: 1024px) { justify-items: start; }
+					a, p {
+						font-size: 0.95rem;
+						display: flex;
+						align-items: center;
+						gap: 0.5rem;
+						i { color: $primary-color; }
+						color: $white-color;
+						&:hover { color: $primary-color; }
+						.fa-facebook-official { font-size: 2.5rem; transition: all 0.3s; &:hover { color: #fff; } }
+					}
+					p { &:hover { color: #fff; } }
+				}
+			}
+			
+		}
+	}
+} 
