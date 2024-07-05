@@ -95,3 +95,31 @@ Tire Services | [ND:ClientName] | [ND:SEOLocation]
 		margin-bottom: 1rem;
 	}
 }
+
+
+<!-- Arrow to up -->
+<div class="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
+</div>
+<script>
+const arrow = document.querySelector('.arrow');
+function toggleArrowVisibility() {
+    if (window.scrollY > 100) {
+        arrow.style.opacity = '1';
+        arrow.style.visibility = 'visible';
+    } else {
+        arrow.style.opacity = '0';
+        arrow.style.visibility = 'hidden';
+    }
+}
+arrow.addEventListener('click', function() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
+window.addEventListener('scroll', toggleArrowVisibility);
+toggleArrowVisibility();
+
+</script>
