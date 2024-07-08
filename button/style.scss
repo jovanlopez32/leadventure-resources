@@ -8,11 +8,6 @@
 	width: fit-content;
 	padding: 15px 25px;
 	transition: all 0.3s;
-	.button__text {
-		color: #fff;
-		font-weight: 700;
-	}
-	&:hover {
-		background-color: $secondary-color;
-	}
+	.button__text { color: $white-color; font-weight: 700; }
+	&:hover { background-color: $white-color; .button__text { color: $black-color; }}
 }
