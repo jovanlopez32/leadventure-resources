@@ -1,0 +1,82 @@
+<div
+  id="maintext"
+  class="second-box__section"
+  style="
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('/portals/[Portal:PortalID]/skins/master/img/fbsbg.jpg') no-repeat top
+        center;
+    background-size: cover;
+  "
+>
+  <div class="second-box__section__content">
+    <img
+      src="/portals/[Portal:PortalID]/skins/master/img/fox__separator.png"
+      alt=""
+    />
+    <h2>WE ALSO CARRY VARIOUS TIRE BRANDS.</h2>
+    <p>Here are some of the tire brands that we carry:</p>
+    <div class="logos__slider">
+      <!-- style="display: flex; justify-content: center; align-items: center;" -->
+      <div
+        id="slider_logos"
+        class="splide"
+        role="group"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="https://a.nd-cdn.us/tire_brands/logos/png/logo_bridgestone_r.png"
+                  alt="Bridgestone"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  alt="Cooper Tires"
+                  src="//a.nd-cdn.us/tire_brands/logos/png/logo_cooper.png"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  alt="Goodyear Tires"
+                  src="//a.nd-cdn.us/tire_brands/logos/png/logo_goodyear.png"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="https://a.nd-cdn.us/tire_brands/logos/png/logo_bfgoodrich.png"
+                  alt="BFGoodrich® Tires"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        const logos = new Splide("#slider_logos", {
+          type: "loop",
+          perPage: 5,
+          focus: 1,
+          gap: "1rem",
+          trimSpace: false,
+          arrows: false,
+          breakpoints: {
+            1024: { perPage: 3 },
+            767: { perPage: 2 },
+            640: { perPage: 1 },
+          },
+          pagination: false,
+        });
+        logos.mount();
+      </script>
+    </div>
+  </div>
+</div>
