@@ -1,0 +1,66 @@
+<div id="maintext" class="second-box__section">
+    <div class="second-box__title">
+        <h2>AUTOMOTIVE SERVICES WE <span>OFFER</span></h2>
+        <p>Cars are complicated machines and it takes care to keep them running well. That is why manufacturers have maintenance schedules that explain how to keep your vehicle performing efficiently and prevent costly break downs.</p>
+    </div>
+    <div class="second-box__content">
+        <button id="WheelsTires" class="second-box__item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/s1.png" alt="[ND:ClientName]">
+            <div><h3>WHEELS & TIRES</h3><p>Improve your vehicle's handling, increase tire life and drive with safety by checking your tires every month.</p></div>
+            <a href="/Services/Wheels-Tires" class="button"><div class="button__text"><i class="fa fa-arrow-right" aria-hidden="true"></i></div></a>
+        </button>
+
+        <button id="Alignments" class="second-box__item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/s2.png" alt="[ND:ClientName]">
+            <div><h3>ALIGNMENTS</h3><p>Follow the vehicle manufacturer's recommendation noted in your owner's manual.</p></div>
+            <a href="/Services/Alignments" class="button"><div class="button__text"><i class="fa fa-arrow-right" aria-hidden="true"></i></div></a>
+        </button>
+
+        <button id="Brakes" class="second-box__item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/s3.png" alt="[ND:ClientName]">
+            <div><h3>BRAKES</h3><p>Inspecting your brakes twice a year for wear and damage can protect you and your passengers.</p></div>
+            <a href="/Services/Brakes" class="button"><div class="button__text"><i class="fa fa-arrow-right" aria-hidden="true"></i></div></a>
+        </button>
+
+        <button id="Diagnostics" class="second-box__item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/s4.png" alt="[ND:ClientName]">
+            <div><h3>DIAGNOSTICS</h3><p>To help identify specific problems that our customers experience, we offer diagnostics services.</p></div>
+            <a href="/Services/Diagnostics" class="button"><div class="button__text"><i class="fa fa-arrow-right" aria-hidden="true"></i></div></a>
+        </button>
+
+        <button id="EngineRepair" class="second-box__item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/s5.png" alt="[ND:ClientName]">
+            <div><h3>ENGINE REPAIR</h3><p>To keep your car running at its best, it is important to keep the engine in optimal condition.</p></div>
+            <a href="/Services/Engine-Repair" class="button"><div class="button__text"><i class="fa fa-arrow-right" aria-hidden="true"></i></div></a>
+        </button>
+
+        <button id="GeneralMaintenance" class="second-box__item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/s6.png" alt="[ND:ClientName]">
+            <div><h3>GENERAL MAINTENANCE</h3><p>To prevent costly problems to your vehicle is to keep up with its preventative maintenance schedule.</p></div>
+            <a href="/Services/General-Maintenance" class="button"><div class="button__text"><i class="fa fa-arrow-right" aria-hidden="true"></i></div></a>
+        </button>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const services = [
+        { id: 'WheelsTires', url: '/Services/Wheels-Tires' },
+        { id: 'Alignments', url: '/Services/Alignments' },
+        { id: 'Brakes', url: '/Services/Brakes' },
+        { id: 'Diagnostics', url: '/Services/Diagnostics' },
+        { id: 'EngineRepair', url: '/Services/Engine-Repair' },
+        { id: 'GeneralMaintenance', url: '/Services/General-Maintenance' }
+    ];
+
+    services.forEach(service => {
+        const button = document.getElementById(service.id);
+        if (button) {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.location.href = service.url;
+            });
+        }
+    });
+});
+</script>

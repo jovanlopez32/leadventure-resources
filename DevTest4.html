@@ -1,0 +1,106 @@
+<div id="maintext" class="reviews__section">
+    <div class="reviews__section__title">
+      <h2>WHAT OUR <span> CUSTOMERS</span> SAY</h2>
+    </div>
+  
+    <!-- Slider -->
+  
+    <section id="slider1" class="splide reviews__section__slider" aria-label="">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- item -->
+          <li class="splide__slide" class="reviews__section__slider__item">
+            <div class="item__slider">
+              <!-- Comment Icon Section -->
+              <div class="icon-svg">
+                <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+              </div>
+              <!-- Text -->
+              <p class="user__text">
+                Customer Service was 10/10. Clean and inviting waiting room with full vending machine.  Staff was very knowledgeable and explained everything in detailed. Left 100% Satisfied. I will be a repeat customer.
+              </p>
+              <!-- User Name -->
+              <p class="user__name">Troy B. Rice</p>
+              <!-- Stars -->
+              <div class="stars">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              
+            </div>
+          </li>
+  
+          <!-- item -->
+          <li class="splide__slide" class="reviews__section__slider__item">
+            <div class="item__slider">
+              <!-- Comment Icon Section -->
+              <div class="icon-svg">
+                <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+              </div>
+              <!-- Text -->
+              <p class="user__text">
+                Hey my Facebook fans/family. I just enjoyed myself at this new location. They took very good care of me. They even ate some Spanish food there. Come on by you will not be disappointed.  Thanks again for your Service.
+              </p>
+              <!-- User Name -->
+              <p class="user__name">Sharon Traore</p>
+              <!-- Stars -->
+              <div class="stars">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              
+            </div>
+          </li>
+  
+          <!-- item -->
+          <li class="splide__slide" class="reviews__section__slider__item">
+            <div class="item__slider">
+              <!-- Comment Icon Section -->
+              <div class="icon-svg">
+                <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+              </div>
+              <!-- Text -->
+              <p class="user__text">
+                Fast service for our family vehicle! We got a flat and they pointed out the 2 rear tires were gouged, so we ordered 2 new ones through them for a good price and got them installed the next day!
+              </p>
+              <!-- User Name -->
+              <p class="user__name">Martin Arabi</p>
+              <!-- Stars -->
+              <div class="stars">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+    <script>
+      const reviews__slider = new Splide("#slider1", {
+        type: "loop",
+        perPage: 3,
+        gap: "80px",
+        height: "100%",
+        breakpoints: {
+          1024: { perPage: 2 },
+          767: { perPage: 2 },
+          640: { perPage: 1 },
+        },
+        autoplay: true,
+        focus: 1,
+        arrows: false,
+        pagination: false,
+      });
+      reviews__slider.mount();
+    </script>
+  
+    <!-- -------------------------------------------- -->
+  
+    <div class="reviews__section__btn">
+      <a href="/Reviews" class="button">
+        <div class="button__text">Read More Reviews</div>
+      </a>
+    </div>
+  </div>
