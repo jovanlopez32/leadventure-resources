@@ -1,68 +1,17 @@
-<div class="logos__slider">
-    <!-- style="display: flex; justify-content: center; align-items: center;" -->
-    <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/logos/napa-autocare.png" alt="NAPA Auto Care Center" />
-            </div>
-          </li>
-  
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_ase.png" alt="ASE" />
-            </div>
-          </li>
-  
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_michelin.png" alt="Michelin" />
-            </div>
-          </li>
-  
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_bfgoodrich.png" alt="BFGoodrich" />
-            </div>
-          </li>
-  
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_ironman.png" alt="NFIB" />
-            </div>
-          </li>
-  
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_general.png" alt="General Tires" />
-            </div>
-          </li>
-  
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_hercules.png" alt="Hercules" />
-            </div>
-          </li>
-  
-        </ul>
-      </div>
-    </div>
-    <script>
-      const logos = new Splide("#slider_logos", {
-        type: "loop",
-        perPage: 4,
-        focus: 1,
-        gap: "1rem",
-        trimSpace: false,
-        arrows: false,
-        breakpoints: {
-          1024: { perPage: 3 },
-          767: { perPage: 2 },
-          640: { perPage: 1 },
-        },
-        pagination: false,
-      });
-      logos.mount();
-    </script>
+<div class="footer__logo">
+  <img
+    src="/portals/[Portal:PortalID]/skins/master/img/footer-logo.png"
+    alt="[ND:ClientName]"
+  />
+  <div class="footer__social">
+    <a href="[ND:Facebook]" target="_blank"
+      ><i class="fa fa-facebook" aria-hidden="true"></i
+    ></a>
+    <a href="[ND:Twitter]" target="_blank"
+      ><i class="fa fa-twitter" aria-hidden="true"></i
+    ></a>
+    <a href="[ND:Yelp]" target="_blank"
+      ><i class="fa fa-yelp" aria-hidden="true"></i
+    ></a>
   </div>
+</div>
