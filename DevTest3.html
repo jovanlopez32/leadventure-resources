@@ -1,62 +1,7 @@
-<div id="maintext" class="test__section">
-    <div class="test__img">
-        <img src="/portals/[Portal:PortalID]/skins/master/img/peopletest.png" alt="[ND:ClientName]" />
-    </div>
-    <div class="test__content">
-        <div class="test__title">
-            <div class="title__text">
-                <h3>TESTIMONIALS</h3>
-                <h2>WHAT OUR CLIENTS SAY</h2>
-            </div>
-            <div class="test__button">
-                <a href="/Reviews" class="button">
-                    <div class="button__text">READ ALL REVIEWS</div>
-                </a>
-            </div>
-        </div>
-        <div class="test__slider">
-            <div id="slider_reviews" class="splide" role="group" aria-label="Splide Basic HTML Example">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <div class="slider-item">
-                                <img src="/portals/[Portal:PortalID]/skins/master/img/quote.svg" alt="[ND:ClientName]" />
-                                <p>Todd a Very great mechanic. Always does the job right the first time and is very helpful. Would recommend!</p>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </div>
-                                <p class="author">Rick Nice</p>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="slider-item">
-                                <img src="/portals/[Portal:PortalID]/skins/master/img/quote.svg" alt="[ND:ClientName]" />
-                                <p>Got my car in quickly, did a thorough check of everything, and got  the problem resolved for a fair price.</p>
-                                <div class="stars">
-                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                </div>
-                                <p class="author">Kurt Hohmann</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<div id="maintext" class="info__section" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/portals/[Portal:PortalID]/skins/master/img/home-banner.png') no-repeat center center;">
+    <div class="info__text">
+        <h3>OUR COMMITMENT</h3>
+        <h2>TO CUSTOMER SATISFACTION</h2>
+        <p>At Kitts Auto Service Inc, client happiness is our top priority. Every day, we work to deliver high-quality repairs and excellent customer service. We take great pride in our reputation as one of the most reliable auto repair companies in Hastings, thanks to our innumerable loyal customers.</p>
     </div>
 </div>
-<script>
-    const reviews__slider = new Splide("#slider_reviews", {
-      type: "loop",
-      perPage: 2,
-      gap: "2.5rem",
-      breakpoints: {
-        1024: { perPage: 1 },
-      },
-      autoplay: true,
-      focus: 1,
-      arrows: false,
-      pagination: false,
-    });
-    reviews__slider.mount();
-  </script>

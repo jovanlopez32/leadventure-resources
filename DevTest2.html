@@ -1,49 +1,68 @@
-<div id="maintext" class="services__section">
-    <div class="services__title">
-        <h3>SERVICES</h3>
-        <h2>OUR TOP AUTO REPAIR SERVICES</h2>
+<div id="maintext" class="second-box__section">
+    <div class="second-box__content">
+        <h3>THE IMPORTANCE OF</h3>
+        <h2>REGULAR OIL CHANGES</h2>
+        <p>At Kitts Auto Service Inc., we understand the <a href="https://www.progressive.com/lifelanes/on-the-road/importance-of-oil-changes/">significance of regular oil changes in maintaining the health and longevity of your vehicle’s engine</a>. Our company is dedicated to providing you with comprehensive oil change services that go beyond just changing the oil.</p>
+        <p>Let’s explore the key benefits of staying on top of your oil change schedule:</p>
     </div>
-
-    <div class="services__content">
-        <div class="services__item">
-            <a href="/Services/Oil-Changes">
-                <h2>OIL CHANGES</h2>
-            </a>
-        </div>
-        <div class="services__item">
-            <a href="/Services/Brakes">
-                <h2>BRAKES</h2>
-            </a>
-        </div>
-        <div class="services__item">
-            <a href="/Services/Tires">
-                <h2>TIRES</h2>
-            </a>
-        </div>
-        <div class="services__item">
-            <a href="/Services/Exhaust">
-                <h2>EXHAUST</h2>
-            </a>
-        </div>
-        <div class="services__item">
-            <a href="/Services/Air-Conditioning-And-Heating">
-                <h2>AC & HEATING</h2>
-            </a>
-        </div>
-        <div class="services__item">
-            <a href="/Services/New-York-State-Inspections">
-                <h2>NEW YORK STATE INSPECTIONS</h2>
-            </a>
-        </div>
-        <div class="services__item">
-            <a href="/Services/Alignments">
-                <h2>ALIGNMENTS</h2>
-            </a>
-        </div>
-        <div class="services__item">
-            <a href="/Services/General-Maintenance">
-                <h2>GENERAL MAINTENANCE</h2>
-            </a>
+    <div class="second-box__slider">
+        <div id="mainslider" class="splide" role="group" aria-label="Splide Basic HTML Example" style="position: relative">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev" type="button" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" >
+                        <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next" type="button" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" >
+                        <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <h3>Longevity</h3>
+                        <p>
+                            Taking care of your engine through regular oil changes can significantly extend its lifespan. At Kitts Auto Service Inc., we believe in the power of preventive maintenance. By entrusting your vehicle to our experienced technicians for regular oil changes, you are investing in the longevity of your engine.
+                        </p>
+                    </li>
+                    <li class="splide__slide">
+                        <h3>Improved Engine Protection</h3>
+                        <p>
+                            Oil acts as a lubricant, reducing friction between the moving parts within your engine. However, over time, oil can break down and become less effective, leading to increased wear and tear on your engine. By opting for regular oil changes at Kitts Auto Service Inc, you ensure that your engine stays properly lubricated — safeguarding it from damage and extending its overall lifespan.
+                        </p>
+                    </li>
+                    <li class="splide__slide">
+                        <h3>Enhanced Performance</h3>
+                        <p>
+                            When it comes to performance, Kitts Auto Service Inc has got you covered. Clean and fresh oil is vital for optimal engine operation, fuel efficiency, and overall performance. By adhering to a regular oil change schedule, you can experience smoother acceleration, improved power delivery, and better fuel economy.
+                        </p>
+                    </li>
+                    <li class="splide__slide">
+                        <h3>Fuel Efficiency</h3>
+                        <p>
+                            Kitts Auto Service Inc wants you to get the most out of every drop of fuel. By ensuring that your engine runs smoothly with regular oil changes, it requires less energy to operate, resulting in better mileage. Our dedication to providing efficient oil change services helps you enjoy savings at the pump and reduce your carbon footprint.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    const mainslider = new Splide("#mainslider", {
+        type: "loop",
+        perPage: 1,
+        height: "max-content",
+        autoplay: true,
+        focus: 0,
+        arrows: true,
+        pagination: false,
+        gap: "2rem",
+    });
+    mainslider.mount();
+</script>
