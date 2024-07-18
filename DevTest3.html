@@ -1,7 +1,106 @@
-<div id="maintext" class="info__section" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/portals/[Portal:PortalID]/skins/master/img/home-banner.png') no-repeat center center;">
-    <div class="info__text">
-        <h3>OUR COMMITMENT</h3>
-        <h2>TO CUSTOMER SATISFACTION</h2>
-        <p>At Kitts Auto Service Inc, client happiness is our top priority. Every day, we work to deliver high-quality repairs and excellent customer service. We take great pride in our reputation as one of the most reliable auto repair companies in Hastings, thanks to our innumerable loyal customers.</p>
+<div id="maintext" class="service__section" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/portals/[Portal:PortalID]/skins/master/img/bgp.jpg') no-repeat center center;">
+    <div class="service__title">
+        <h3>SIGNS THAT IT’S TIME TO SCHEDULE A</h3>
+        <h2>TIRE SERVICE WITH KITTS AUTO SERVICE INC</h2>
+        <p>As a responsible vehicle owner, it’s crucial to stay vigilant for signs that indicate your tires require professional servicing. Regularly monitoring the condition of your tires can help you maintain optimal performance, maximize their lifespan, and ensure your safety on the road.</p>
+        <p>Kitts Auto Service Inc recommends paying attention to the following signs that may indicate the need for tire service:</p>
     </div>
+    <div class="service__content">
+        <div id="secondslider" class="splide" role="group" aria-label="Splide Basic HTML Example" style="position: relative">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev" type="button" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" >
+                        <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                        </path>
+                    </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next" type="button" disabled>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" >
+                        <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="service__item">
+                            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+                            <h3>Prolonged Loss of Tire Pressure:</h3>
+                            <p>Consistent loss of tire pressure indicates a slow leak or puncture.</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="service__item">
+                            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+                            <h3>Excessive Road Noise: </h3>
+                            <p>Unusual road noise can signify tire wear, improper inflation, or damage.</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="service__item">
+                            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+                            <h3>Uneven Tread Wear: </h3>
+                            <p>Check for uneven tread wear, which may indicate misalignment or improper inflation.</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="service__item">
+                            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+                            <h3>Bulges or Blisters: </h3>
+                            <p>Bulges or blisters on tire sidewalls signal internal damage and weakened integrity.</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="service__item">
+                            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+                            <h3>Low Tread Depth: </h3>
+                            <p>Worn-out tread poses a safety hazard, especially in wet conditions.</p>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="service__item">
+                            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+                            <h3>Vibration or Pulling: </h3>
+                            <p>Steering wheel vibrations or vehicle pulling may indicate tire balance, alignment, or suspension issues.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        const secondslider = new Splide("#secondslider", {
+            type: "loop",
+            perPage: 3,
+            height: "fit-content",
+            autoplay: true,
+            focus: 2,
+            breakpoints: { 1024: { perPage: 2, }, 767: { perPage: 2, }, 640: { perPage: 1, }, },
+            arrows: true,
+            pagination: false,
+            gap: "2rem",
+        });
+        secondslider.mount();
+    </script>
+    <!-- <div class="service__content__3elements">
+        <div class="service__item">
+            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+            <h3>EXPERIENCED TECHNICIANS:</h3>
+            <p>Our team consists of highly skilled and experienced technicians who are well-versed in the intricacies of brake systems.</p>
+        </div>
+
+        <div class="service__item">
+            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+            <h3>CUSTOMER SATISFACTION:</h3>
+            <p>At Kitts Auto Service Inc., we strive to provide transparent communication, fair pricing, and prompt service to ensure a positive experience for every customer.</p>
+        </div>
+
+        <div class="service__item">
+            <div class="icon__check"><i aria-hidden="true" class="fas fa-check"></i></div>
+            <h3>QUALITY PARTS AND EQUIPMENT:</h3>
+            <p>We use only top-quality brake components and cutting-edge equipment to deliver exceptional results.</p>
+        </div>
+
+    </div>   -->
 </div>
