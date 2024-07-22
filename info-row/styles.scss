@@ -1,0 +1,15 @@
+.info__section {
+    background-size: cover !important;
+    width: 100%;
+    padding: 60px 20px;
+    .info__content {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: $white-color;
+        h2 { color: $white-color; }
+        hr { border: 2px solid $primary-color; max-width: 100px; width: 100%; margin: 15px auto; }
+        img { max-width: 60px; width: 100%; margin: 0 auto; margin-bottom: 35px; object-fit: contain; }
+    }
+}
