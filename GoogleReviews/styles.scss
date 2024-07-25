@@ -1,0 +1,27 @@
+#rate-our-serv-pg {
+	box-sizing: border-box;
+	padding: 40px 30px !important;
+}
+
+.subpage-buttons {
+	margin-top: 35px;
+	display: block;
+	text-decoration: none !important;
+	background-color: $primary-color;
+	color: $white-color;
+	width: fit-content;
+	padding: 15px 25px;
+	transition: all 0.3s;
+	font-size: $webfont;
+	cursor: pointer;
+	a {
+		text-decoration: none !important;
+		color: $white-color !important;
+	}
+	font-weight: 700;
+	
+	&:hover {
+		background-color: $black-color;
+		a {color: $white-color !important;}
+	}
+}

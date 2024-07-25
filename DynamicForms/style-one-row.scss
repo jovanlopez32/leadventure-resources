@@ -33,6 +33,11 @@
 						}
 					}
 				}
+				.image__form {
+					display: grid;
+					place-items: center;
+					img { max-width: 450px; width: 100%; object-fit: contain; }
+				}
 			}
 	
 			#dnn_HomeContentPane {
