@@ -1,0 +1,31 @@
+/* ---------- dropdown box ---------- */
+.dropdown-box__content {
+    width: 100%;
+    .dropdown-box__item {
+        div {
+            width: 100%;
+            .accordion {
+                background-color: #C91919;
+                width: 100%;
+                border: none;
+                text-align: start;
+                cursor: pointer;
+                p.title { font-size: 1.5rem; margin: 0; max-height: initial; }
+            }
+            p {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                
+            }
+        }
+
+        div.active {
+            p {
+                max-height: 1000px;
+                height: 100%;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,95 @@
+<div id="maintext" class="info-box__section" style="
+    background: linear-gradient(
+        90deg,
+        rgba(25, 25, 25, 0) 68%,
+        rgba(18, 18, 18, 0.8) 48%
+      ),
+      url('/portals/[Portal:PortalID]/skins/master/img/IMG_6728.jpg') no-repeat
+        center center;
+  ">
+    <div class="info-box__content">
+        <div class="info-box__fb"></div>
+        <div class="info-box__sb">
+            <h2>How important is wheel alignment?​</h2>
+            <p>
+                Think of it this way: Research indicates that the average vehicle is
+                driven about 12,000 miles per year. A car with a toe angle misadjustment
+                of 0.34 degrees (only 0.17 inches) out of specification will drag the
+                tires sideways for more than 68 miles by the end of the year!
+            </p>
+            <!-- Dropdown -->
+            <div class="dropdown-box__content">
+                <!-- Item -->
+                <div class="dropdown-box__item">
+                    <div>
+                        <button class="accordion" type="button">
+                            <p class="title">
+                                What are the symptoms of a vehicle with incorrect alignment?
+                            </p>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                        
+                        <ul>
+                            <li>Excessive or uneven tire wear</li>
+                            <li>The vehicle pulls to the left or right</li>
+                            <li>Feeling of looseness or wandering</li>
+                            <li>Steering wheel vibration or shimmy</li>
+                            <li>
+                                Steering wheel is not centered when the vehicle is moving
+                                straight ahead
+                            </li>
+                        </ul>
+                           
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="dropdown-box__item">
+                    <div>
+                        <button class="accordion" type="button">
+                            <p class="title">How often should I have my vehicle aligned?</p>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <p>
+                            Follow the vehicle manufacturer’s recommendation noted in your
+                            owner’s manual. As a general rule, have your wheel alignment
+                            checked every 10,000 miles or at least once a year.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var accordions = document.getElementsByClassName("accordion");
+
+        for (var i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function () {
+                var icon = this.querySelector("i");
+
+                /* Si el botón clicado ya tiene la clase "active" */
+                if (this.classList.contains("active")) {
+                    /* Le quitamos la clase "active" y cerramos su panel */
+                    this.classList.remove("active");
+                    this.nextElementSibling.style.maxHeight = null;
+                    /* Cambiamos el icono a plus */
+                    icon.className = "fa fa-plus";
+                } else {
+                    for (var j = 0; j < accordions.length; j++) {
+                        accordions[j].classList.remove("active");
+                        accordions[j].nextElementSibling.style.maxHeight = null;
+                        /* Cambiamos todos los iconos a plus */
+                        accordions[j].querySelector("i").className = "fa fa-plus";
+                    }
+                    /* Abrimos el panel clicado */
+                    this.classList.add("active");
+                    var panel = this.nextElementSibling;
+                    panel.style.maxHeight = panel.scrollHeight * 2 + "px";
+                    /* Cambiamos el icono a minus */
+                    icon.className = "fa fa-minus";
+                }
+            });
+        }
+    });
+</script>

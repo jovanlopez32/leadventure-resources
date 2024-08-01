@@ -1,0 +1,50 @@
+.pill-component__section {
+    box-sizing: border-box;
+    margin: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 768px) { flex-direction: row; }
+    border: 4px solid $black-color;
+    .pill-component__fb, .pill-component__sb {
+        display: grid;
+	    align-items: center;
+        padding: 40px;
+        ul { list-style-position: inside; 	list-style-image: url('https://img.icons8.com/?size=20&id=83145&format=png&color=F5420F'); }
+        ul,li { line-height: 1.5; }
+    }
+    .pill-component__fb {
+        h1,h2,h3,h4,h5,h6 { color: $black-color; line-height: normal; }
+        p,ul,li { color: $black-color; }
+        max-width: 100%;
+        @media(min-width: 768px) { max-width: 100%; }
+        background-color: transparent;
+    }
+
+    .pill-component__sb {
+        h1,h2,h3,h4,h5,h6 { color: $white-color; line-height: normal; }
+        p,ul,li { color: $white-color; }
+        h4 { font-size: 1.25rem; }
+        max-width: 100%;
+        @media(min-width: 768px) { max-width: 400px; }
+        background-color: $black-color;
+    }
+
+}
+
+.pill-component__section.reverse {
+    .pill-component__fb {
+        h1,h2,h3,h4,h5,h6 { color: $white-color; line-height: normal; }
+        p,ul,li { color: $white-color; }
+        background-color: $black-color;
+        max-width: 100%;
+        @media(min-width: 768px) { max-width: 400px; }
+    }
+
+    .pill-component__sb {
+        h1,h2,h3,h4,h5,h6 { color: $black-color; line-height: normal; }
+        p,ul,li { color: $black-color; }
+        max-width: 100%;
+        @media(min-width: 768px) { max-width: 100%; }
+        background-color: $white-color;
+    }
+}
