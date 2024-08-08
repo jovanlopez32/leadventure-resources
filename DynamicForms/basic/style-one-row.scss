@@ -14,40 +14,23 @@
 			@media(min-width: 768px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 			#dnn_HomeSidePane {
 				display: block !important;
-				width: 100%;
-				.get__section {
-					.get__section__title {
-						h2 { font-size: 2rem; color: $black-color; }
-						hr { border: 2px solid $primary-color;  width: 100px; margin: 0;}
-					}
-					.get__section__content {
-						margin-top: 40px;
-						display: grid;
-						grid-template-columns: repeat(1, minmax(0, 1fr));
-						gap: 1.5rem;
-						.get__section__content__item {
-							p { color: $primary-color; font-weight: 700; font-size: 1.2rem; margin-bottom: 10px; }
-							a { color: #000; text-decoration: none; transition: all 0.3s; &:hover { color: $primary-color; } }
-							.fa { color: $primary-color; }
-							.fb { font-size: 3.5rem; color: $primary-color; transition: all 0.3s; &:hover { color: $secondary-color;} }
-						}
-					}
-				}
-				.image__form {
+				.form__image {
+                
+					width: 100%;
 					display: grid;
 					place-items: center;
-					img { max-width: 450px; width: 100%; object-fit: contain; }
+					img { max-width: 500px; width: 100%; object-fit: contain; box-shadow: 0px 10px 7px -4px rgba(0, 0, 0, 0.5); }
+					
 				}
 			}
 	
 			#dnn_HomeContentPane {
 				width: 100%;
-				.get__section {
-					margin: 30px 0;
-					.get__section__title {
-						h2 { font-size: 2rem; color: $black-color; }
-						hr { border: 2px solid $primary-color;  width: 100px; margin: 0;}
-					}
+				display: block;
+				.form__title {
+					padding: 0 20px;
+					padding-top: 60px;
+					span { color: $secondary-color; }
 				}
 				.DynamicForms_MainPanel {
 					display: grid;

@@ -14,7 +14,7 @@
 <img src="/portals/[Portal:PortalID]/skins/master/img/icon02.png" alt="[ND:ClientName]">
 
 <!-- Background Image With Overlay -->
-background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/portals/139/skins/master/img/home-banner.png") no-repeat center center;
+background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/portals/139/skins/master/img/home-banner.png") no-repeat center center; background-size: cover;
 
 <!-- Background Image Image or Color -->
 background:url("/portals/146/skins/master/img/bgmain.jpg") no-repeat top center #0A0A0A; 
@@ -78,9 +78,7 @@ Wheels And Tires (No Alignments) | [ND:ClientName] | [ND:SEOLocation]
         text-wrap: pretty;
 	}
 
-	h2 {
-		font-size: 2rem;
-	}
+	h2 {font-size: 2rem; @media(min-width: 768px) { font-size: 2.5rem; } }
 
 	p,ul,li,a {
 		font-family: $webfont !important;
@@ -91,13 +89,9 @@ Wheels And Tires (No Alignments) | [ND:ClientName] | [ND:SEOLocation]
 		text-decoration: none;
 		color: $primary-color;
 		transition: all 0.3s;
-		&:hover {
-			color: black;
-		}
+		&:hover { color: black;}
 	}
-	p,li {
-		margin-bottom: 1rem;
-	}
+	p,li { margin-bottom: 1rem; }
 }
 
 
@@ -171,3 +165,27 @@ Subpages - 12hrss
 		}
 	}
 }
+
+
+<!-- Position attachment fixed but static -->
+<script>
+    function updateBannerPosition() {
+        const contentheader = document.getElementById("contentheader");
+        const bannerPane = document.getElementById("dnn_BannerPane");
+        if (contentheader && bannerPane) {
+            const headerHeight = contentheader.offsetHeight;
+            bannerPane.style.backgroundPosition = `center -${headerHeight}px`;
+        }
+    }
+    window.addEventListener("load", updateBannerPosition);
+    window.addEventListener("resize", updateBannerPosition);
+</script>
+<!-- Change background different of the home attachment fixed but static -->
+<script>
+    document.getElementById("contentheader").style.background =
+      ' url("/portals/164/skins/master/img/Internal-Hero.jpg") ';
+   
+    document.getElementById("dnn_BannerPane").style.background =
+      ' url("/portals/164/skins/master/img/Internal-Hero.jpg") ';
+    
+</script>
