@@ -1,0 +1,10 @@
+.gallery-box__section {
+    width: 100%;
+    padding: 60px 0px; 
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0rem;
+    @media (min-width: 768px) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    a img { max-width: 100%; width: 100%; object-fit: contain; filter: brightness(.5); transition: all .3s ease-in-out; &:hover { filter: brightness(1.1); } } 
+}
