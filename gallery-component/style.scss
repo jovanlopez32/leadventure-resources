@@ -3,8 +3,13 @@
     padding: 60px 0px; 
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 0rem;
+    @media (min-width: 640px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     @media (min-width: 768px) { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    a img { max-width: 100%; width: 100%; object-fit: contain; filter: brightness(.5); transition: all .3s ease-in-out; &:hover { filter: brightness(1.1); } } 
+    a  {
+        width: 100%;
+        max-height: 250px;
+        img { max-width: 100%; width: 100%; height: 100%; object-fit: cover; filter: brightness(.5); transition: all .3s ease-in-out; &:hover { filter: brightness(1.1); } } 
+    }
 }
