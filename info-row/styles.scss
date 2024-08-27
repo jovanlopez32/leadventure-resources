@@ -3,6 +3,9 @@
     width: 100%;
     padding: 60px 20px;
     box-sizing: border-box;
+    min-height: 400px;
+    display: grid;
+	place-items: center;
     .info__content {
         max-width: 768px;
         width: 100%;
