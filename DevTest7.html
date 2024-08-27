@@ -1,0 +1,32 @@
+<div id="maintext" class="hero__section">
+    <div class="hero__content">
+        <div>
+            <h1>Our number-one goal is customer satisfaction</h1>
+            <p>
+                We are a family-owned and operated business delivering honest and
+                professional auto repair and auto maintenance services.
+            </p>
+            <a href="/Contact" class="button">
+                <div class="button__text">CONTACT US TODAY!</div>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    const contentheader = document.getElementById("contentheader");
+    const bannerPane = document.getElementById("dnn_BannerPane");
+    contentheader.style.backgroundPosition = `center 0px`;
+
+    contentheader.style.backgroundSize = "auto";
+    bannerPane.style.backgroundSize = "auto";
+    function updateBannerPosition() {
+        
+        if (contentheader && bannerPane) {
+            const headerHeight = contentheader.offsetHeight;
+            bannerPane.style.backgroundPosition = `center -${headerHeight}px`;
+        }
+    }
+    window.addEventListener("load", updateBannerPosition);
+    window.addEventListener("resize", updateBannerPosition);
+    window.addEventListener("DOMContentLoaded", updateBannerPosition);
+</script>
