@@ -1,0 +1,55 @@
+<div class="logos__slider">
+  <div id="slider_logos" class="splide" role="group" aria-label="Logos">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_ase.png" alt="[ND:ClientName]" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://a2.nd-cdn.us/modules/custom-pages/jasper/logo-jasper-600x177.png" alt="[ND:ClientName]" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/certified_auto_repairx180.jpg"
+              alt="[ND:ClientName]" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/repair_pal_certified_trans.png"
+              alt="[ND:ClientName]" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/logo-carAware.gif" alt="[ND:ClientName]" />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  const logos = new Splide("#slider_logos", {
+    type: "loop",
+    perPage: 5,
+    focus: 1,
+    gap: "4rem",
+    trimSpace: false,
+    arrows: false,
+    breakpoints: {
+      1024: { perPage: 3 },
+      767: { perPage: 2 },
+      640: { perPage: 1 },
+    },
+    pagination: false,
+  });
+  logos.mount();
+</script>
