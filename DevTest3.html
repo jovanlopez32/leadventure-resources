@@ -1,0 +1,115 @@
+<div id="maintext" class="reviews__section">
+    <div class="reviews__section__title">
+      <h2>What Our Customers Say</h2>
+      <p>
+        Hear from the happy clients who support Republic Battery Co as a staple of
+        the Houston, TX community.
+      </p>
+    </div>
+  
+    <!-- Slider -->
+  
+    <section id="slider1" class="splide reviews__section__slider" aria-label="">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- item -->
+          <li class="splide__slide" class="reviews__section__slider__item">
+            <div class="item__slider">
+              <!-- Comment Icon Section -->
+              <div class="icon-svg">
+                <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+              </div>
+              <!-- User Name -->
+              <p class="user__name">Fullline Xu</p>
+              <!-- Stars -->
+              <div class="stars">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- Text -->
+              <p class="user__text">
+                Hands down! I highly recommand this Battery company not only
+                because how professional they are, also they are super friendly
+                folks that seems love what they do. had our...
+              </p>
+            </div>
+          </li>
+  
+          <!-- item -->
+          <li class="splide__slide" class="reviews__section__slider__item">
+            <div class="item__slider">
+              <!-- Comment Icon Section -->
+              <div class="icon-svg">
+                <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+              </div>
+              <!-- User Name -->
+              <p class="user__name">Nina Gentry</p>
+              <!-- Stars -->
+              <div class="stars">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- Text -->
+              <p class="user__text">
+                Hands down, the BEST! His battery pricing for a new battery, and
+                even his used ones, were DEFINITELY cheaper than anything else I
+                had found. And Fonzo...hope I didn't...
+              </p>
+            </div>
+          </li>
+  
+          <!-- item -->
+          <li class="splide__slide" class="reviews__section__slider__item">
+            <div class="item__slider">
+              <!-- Comment Icon Section -->
+              <div class="icon-svg">
+                <img src="/portals/[Portal:PortalID]/skins/master/img/quotation-mark.png" alt="Comment" />
+              </div>
+              <!-- User Name -->
+              <p class="user__name">bryaneford1</p>
+              <!-- Stars -->
+              <div class="stars">
+                <i class="fa fa-star"></i> <i class="fa fa-star"></i><i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <!-- Text -->
+              <p class="user__text">
+                Always cool and courteous. Great family owned business. Always in
+                stock always the right price. Knowledgeable and spot on. I’ll go
+                nowhere else!!!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  
+    
+  
+    <!-- -------------------------------------------- -->
+  
+    <div class="reviews__section__btn">
+      <a href="/Testimonials" class="button">
+        <div class="button__text">READ ALL REVIEWS</div>
+      </a>
+    </div>
+  </div>
+  
+  <script>
+      const reviews__slider = new Splide("#slider1", {
+        type: "loop",
+        perPage: 3,
+        gap: "80px",
+        height: "350px",
+        breakpoints: {
+          1024: { perPage: 2 },
+          767: { perPage: 2 },
+          640: { perPage: 1 },
+        },
+        autoplay: true,
+        focus: 1,
+        arrows: false,
+        pagination: false,
+      });
+      reviews__slider.mount();
+    </script>
