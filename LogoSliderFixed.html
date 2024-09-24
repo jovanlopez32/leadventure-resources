@@ -64,24 +64,26 @@
       </ul>
     </div>
   </div>
-  <script>
-    const logos = new Splide("#slider_logos", {
-      type: "loop",
-      perPage: 5,
-      focus: 1,
-      gap: "1rem",
-      trimSpace: false,
-      arrows: false,
-      breakpoints: {
-        1024: { perPage: 3 },
-        767: { perPage: 2 },
-        640: { perPage: 1 },
-      },
-      pagination: false,
-    });
-    logos.mount();
-  </script>
+  
 </div>
+
+<script>
+  const logos = new Splide("#slider_logos", {
+    type: "loop",
+    perPage: 5,
+    focus: 1,
+    gap: "1rem",
+    trimSpace: false,
+    arrows: false,
+    breakpoints: {
+      1024: { perPage: 3 },
+      767: { perPage: 2 },
+      640: { perPage: 1 },
+    },
+    pagination: false,
+  });
+  logos.mount();
+</script>
 
 <!-- Agregar lo siguiente para que tenga un espacio definido
 
