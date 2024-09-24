@@ -1,0 +1,594 @@
+<module type="DynamicForms" version="08.00.01"><contentKey /><moduleID>5987</moduleID><alignment /><alltabs>false</alltabs><border /><cachemethod /><cachetime>0</cachetime><color /><containersrc /><displayprint>false</displayprint><displaysyndicate>false</displaysyndicate><displaytitle>true</displaytitle><enddate>0001-01-01T00:00:00</enddate><footer /><header /><iconfile /><inheritviewpermissions>true</inheritviewpermissions><modulepermissions><permission><permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode><permissionkey>EDIT</permissionkey><allowaccess>true</allowaccess><rolename>Administrators</rolename></permission></modulepermissions><title>Dynamic Forms</title><startdate>0001-01-01T00:00:00</startdate><uniqueId>7d707971-d545-47c6-9617-1e016f434938</uniqueId><visibility>Maximized</visibility><cultureCode /><content type="DynamicForms" version="08.00.01"><![CDATA[&lt;dynamicforms&gt;&lt;modulesettings&gt;&lt;EnablePaymentGateway&gt;&lt;![CDATA[No]]&gt;&lt;/EnablePaymentGateway&gt;&lt;DisableDragDrop&gt;&lt;![CDATA[False]]&gt;&lt;/DisableDragDrop&gt;&lt;SetDefaults&gt;&lt;![CDATA[True]]&gt;&lt;/SetDefaults&gt;&lt;DisableEdit&gt;&lt;![CDATA[False]]&gt;&lt;/DisableEdit&gt;&lt;VAlignFields&gt;&lt;![CDATA[Top]]&gt;&lt;/VAlignFields&gt;&lt;DefaultLong&gt;&lt;![CDATA[400]]&gt;&lt;/DefaultLong&gt;&lt;AllowNonAdminToManageTemplate&gt;&lt;![CDATA[False]]&gt;&lt;/AllowNonAdminToManageTemplate&gt;&lt;DisableEditor&gt;&lt;![CDATA[False]]&gt;&lt;/DisableEditor&gt;&lt;CheckBlackList&gt;&lt;![CDATA[True]]&gt;&lt;/CheckBlackList&gt;&lt;UseErrorCSS&gt;&lt;![CDATA[False]]&gt;&lt;/UseErrorCSS&gt;&lt;BlackListItemText&gt;&lt;![CDATA[Site Administrator: Set this message up under Layout Settings.]]&gt;&lt;/BlackListItemText&gt;&lt;FieldSuffix&gt;&lt;![CDATA[:]]&gt;&lt;/FieldSuffix&gt;&lt;PayPalPaymentType&gt;&lt;![CDATA[Purchase]]&gt;&lt;/PayPalPaymentType&gt;&lt;EnableValMessage&gt;&lt;![CDATA[False]]&gt;&lt;/EnableValMessage&gt;&lt;HideModalImage&gt;&lt;![CDATA[False]]&gt;&lt;/HideModalImage&gt;&lt;DBType&gt;&lt;![CDATA[SQL]]&gt;&lt;/DBType&gt;&lt;PanelType&gt;&lt;![CDATA[Disabled]]&gt;&lt;/PanelType&gt;&lt;DisableQuickEdit&gt;&lt;![CDATA[False]]&gt;&lt;/DisableQuickEdit&gt;&lt;ClearType&gt;&lt;![CDATA[ImageButton]]&gt;&lt;/ClearType&gt;&lt;SameLine&gt;&lt;![CDATA[False]]&gt;&lt;/SameLine&gt;&lt;FocusFirstField&gt;&lt;![CDATA[False]]&gt;&lt;/FocusFirstField&gt;&lt;ExportType&gt;&lt;![CDATA[Excel]]&gt;&lt;/ExportType&gt;&lt;SaveText&gt;&lt;![CDATA[Submit]]&gt;&lt;/SaveText&gt;&lt;HideModal&gt;&lt;![CDATA[False]]&gt;&lt;/HideModal&gt;&lt;DisableConfigAJAX&gt;&lt;![CDATA[False]]&gt;&lt;/DisableConfigAJAX&gt;&lt;ValScroll&gt;&lt;![CDATA[None]]&gt;&lt;/ValScroll&gt;&lt;RegisterURL&gt;&lt;![CDATA[40]]&gt;&lt;/RegisterURL&gt;&lt;EnterKeySave&gt;&lt;![CDATA[False]]&gt;&lt;/EnterKeySave&gt;&lt;AllowNonAdminToDelete&gt;&lt;![CDATA[False]]&gt;&lt;/AllowNonAdminToDelete&gt;&lt;PassCompletionID&gt;&lt;![CDATA[False]]&gt;&lt;/PassCompletionID&gt;&lt;DefaultShort&gt;&lt;![CDATA[200]]&gt;&lt;/DefaultShort&gt;&lt;PayPalStatusField&gt;&lt;![CDATA[- Select Dynamic Field -]]&gt;&lt;/PayPalStatusField&gt;&lt;VAlignLabels&gt;&lt;![CDATA[Top]]&gt;&lt;/VAlignLabels&gt;&lt;DisplayAfterMessageLiteral&gt;&lt;![CDATA[Site Administrator: Set this message up under Layout Settings.]]&gt;&lt;/DisplayAfterMessageLiteral&gt;&lt;EnableWordWrap&gt;&lt;![CDATA[True]]&gt;&lt;/EnableWordWrap&gt;&lt;TestMode&gt;&lt;![CDATA[False]]&gt;&lt;/TestMode&gt;&lt;HideValidationSummary&gt;&lt;![CDATA[False]]&gt;&lt;/HideValidationSummary&gt;&lt;ValLocation&gt;&lt;![CDATA[Top]]&gt;&lt;/ValLocation&gt;&lt;ClearButtonURL&gt;&lt;![CDATA[content.DynamicForms.ContactFormCaptcha.xml]]&gt;&lt;/ClearButtonURL&gt;&lt;AllowNonAdminToExport&gt;&lt;![CDATA[False]]&gt;&lt;/AllowNonAdminToExport&gt;&lt;EnablejQuery&gt;&lt;![CDATA[0]]&gt;&lt;/EnablejQuery&gt;&lt;DisplayResultsOnUserFacingModule&gt;&lt;![CDATA[None]]&gt;&lt;/DisplayResultsOnUserFacingModule&gt;&lt;InitialHideSubmit&gt;&lt;![CDATA[False]]&gt;&lt;/InitialHideSubmit&gt;&lt;ServerValidation&gt;&lt;![CDATA[True]]&gt;&lt;/ServerValidation&gt;&lt;LabelCellWidth&gt;&lt;![CDATA[200]]&gt;&lt;/LabelCellWidth&gt;&lt;ClientValidation&gt;&lt;![CDATA[True]]&gt;&lt;/ClientValidation&gt;&lt;USEDWIZARD&gt;&lt;![CDATA[TRUE]]&gt;&lt;/USEDWIZARD&gt;&lt;AlignButtons&gt;&lt;![CDATA[Left]]&gt;&lt;/AlignButtons&gt;&lt;ViewResultsSecurityRole&gt;&lt;![CDATA[Disabled]]&gt;&lt;/ViewResultsSecurityRole&gt;&lt;EnableSQLValidation&gt;&lt;![CDATA[False]]&gt;&lt;/EnableSQLValidation&gt;&lt;PayFlowProGateway&gt;&lt;![CDATA[https://pilot-payflowpro.verisign.com/transaction]]&gt;&lt;/PayFlowProGateway&gt;&lt;ImageButtonURL&gt;&lt;![CDATA[content.DynamicForms.ContactFormCaptcha.xml]]&gt;&lt;/ImageButtonURL&gt;&lt;PaymentGateway&gt;&lt;![CDATA[Authorizenet]]&gt;&lt;/PaymentGateway&gt;&lt;AlignLabels&gt;&lt;![CDATA[Left]]&gt;&lt;/AlignLabels&gt;&lt;DisableFormAJAX&gt;&lt;![CDATA[True]]&gt;&lt;/DisableFormAJAX&gt;&lt;DynamicInitialUpgrade&gt;&lt;![CDATA[Yes]]&gt;&lt;/DynamicInitialUpgrade&gt;&lt;DisableQuickStats&gt;&lt;![CDATA[False]]&gt;&lt;/DisableQuickStats&gt;&lt;ValErrorMessageLocation&gt;&lt;![CDATA[Right]]&gt;&lt;/ValErrorMessageLocation&gt;&lt;DisableHelpMenu&gt;&lt;![CDATA[False]]&gt;&lt;/DisableHelpMenu&gt;&lt;enablesaveforlaterbutton&gt;&lt;![CDATA[False]]&gt;&lt;/enablesaveforlaterbutton&gt;&lt;SetDefaults2&gt;&lt;![CDATA[True]]&gt;&lt;/SetDefaults2&gt;&lt;DisplayAfterMessageContinue&gt;&lt;![CDATA[Continue...]]&gt;&lt;/DisplayAfterMessageContinue&gt;&lt;PayPalGateway&gt;&lt;![CDATA[https://www.paypal.com/cgi-bin/webscr]]&gt;&lt;/PayPalGateway&gt;&lt;ClearFunctionality&gt;&lt;![CDATA[PageRefresh]]&gt;&lt;/ClearFunctionality&gt;&lt;ExportShortFieldName&gt;&lt;![CDATA[False]]&gt;&lt;/ExportShortFieldName&gt;&lt;HideHelp&gt;&lt;![CDATA[True]]&gt;&lt;/HideHelp&gt;&lt;SetCheckIn&gt;&lt;![CDATA[True]]&gt;&lt;/SetCheckIn&gt;&lt;DisplayAfterMessage&gt;&lt;![CDATA[False]]&gt;&lt;/DisplayAfterMessage&gt;&lt;PaymentTestMode&gt;&lt;![CDATA[False]]&gt;&lt;/PaymentTestMode&gt;&lt;AuthGateway&gt;&lt;![CDATA[https://secure.authorize.net/gateway/transact.dll]]&gt;&lt;/AuthGateway&gt;&lt;EnablejQueryHighlights&gt;&lt;![CDATA[False]]&gt;&lt;/EnablejQueryHighlights&gt;&lt;SaveType&gt;&lt;![CDATA[HTMLInputButton]]&gt;&lt;/SaveType&gt;&lt;ShowAsterik&gt;&lt;![CDATA[False]]&gt;&lt;/ShowAsterik&gt;&lt;OnlyAllowOnce&gt;&lt;![CDATA[False]]&gt;&lt;/OnlyAllowOnce&gt;&lt;imageforlater&gt;&lt;![CDATA[content.DNNHTML.ContinentalTires.xml]]&gt;&lt;/imageforlater&gt;&lt;InitialSQLBindEnabled&gt;&lt;![CDATA[False]]&gt;&lt;/InitialSQLBindEnabled&gt;&lt;logdetailsofallevents&gt;&lt;![CDATA[False]]&gt;&lt;/logdetailsofallevents&gt;&lt;SummaryField&gt;&lt;![CDATA[-1]]&gt;&lt;/SummaryField&gt;&lt;wrapallfieldswithindiv&gt;&lt;![CDATA[False]]&gt;&lt;/wrapallfieldswithindiv&gt;&lt;EnablejQueryEZCheckbox&gt;&lt;![CDATA[False]]&gt;&lt;/EnablejQueryEZCheckbox&gt;&lt;donotsaveresultsglobal&gt;&lt;![CDATA[False]]&gt;&lt;/donotsaveresultsglobal&gt;&lt;SubmitRight&gt;&lt;![CDATA[False]]&gt;&lt;/SubmitRight&gt;&lt;EnableClearButton&gt;&lt;![CDATA[False]]&gt;&lt;/EnableClearButton&gt;&lt;SetFocusAfterVal&gt;&lt;![CDATA[False]]&gt;&lt;/SetFocusAfterVal&gt;&lt;/modulesettings&gt;&lt;extendedmodulesettings&gt;&lt;formheader&gt;&lt;![CDATA[]]&gt;&lt;/formheader&gt;&lt;formfooter&gt;&lt;![CDATA[]]&gt;&lt;/formfooter&gt;&lt;initialjavascript&gt;&lt;![CDATA[]]&gt;&lt;/initialjavascript&gt;&lt;formdisplayafter&gt;&lt;![CDATA[Site Administrator: Set this message up under Layout Settings.]]&gt;&lt;/formdisplayafter&gt;&lt;formdisplayaftersaveforlater&gt;&lt;![CDATA[]]&gt;&lt;/formdisplayaftersaveforlater&gt;&lt;formcssfile&gt;&lt;![CDATA[/* DATA SPRINGS Inc. - DYNAMIC FORMS STYLE SHEET */
+
+
+
+
+.DynamicForms_Maintable {
+
+      width: 100%;
+      padding: 2px;
+}
+
+.DynamicForms_TableRow td:hover {
+ 
+}
+
+
+
+.DynamicForms_RequiredFieldAsterik
+{
+     font-size: 6.5pt;
+     color: #CC0202;
+}
+
+
+.DynamicForms_AJAXModalMessage
+{
+     font-size: 15.5pt;
+     color: #08498C;
+}
+
+
+.DynamicForms_GridColumn{ background-color: #6DBCDD;  }
+.DynamicForms_GridHeaderColumn{ background-color: #FBF1A5;  }
+.DynamicForms_GridItem{ background-color: #F1BC48;  }
+.DynamicForms_GridColumn{ background-color: #6DBCDD;  }
+.DynamicForms_GridView{ background-color: white; }
+
+.Dynamicforms_DataGridEdit{ background-color: #6DBCDD;  }
+.DynamicForms_DataGridHeader{ background-color: #FBF1A5;  }
+.DynamicForms_DataGridFooter{ background-color: #F1BC48;  }
+.DynamicForms_DataGridItem{ background-color: #6DBCDD;  }
+.DynamicForms_DataGrid{background-color: #6DBCDD;  }
+
+
+
+.DynamicForms_Label
+{
+    font-weight: Normal;
+    font-size: 10.5pt;
+    color: #000000;
+    font-family: Tahoma, Arial, Helvetica;
+    text-decoration: none;
+}
+
+
+
+/* Dynamic Forms jQuery Ratings Control */ 
+div.rating-cancel,div.star-rating{float:left;width:17px;height:15px;text-indent:-999em;cursor:pointer;display:block;background:transparent;overflow:hidden}
+div.rating-cancel,div.rating-cancel a{background:url(/desktopmodules/Dynamic%20Forms/images/delete.gif) no-repeat 0 -16px}
+div.star-rating,div.star-rating a{background:url(/desktopmodules/Dynamic%20Forms/images/star.gif) no-repeat 0 0px}
+div.rating-cancel a,div.star-rating a{display:block;width:16px;height:100%;background-position:0 0px;border:0}
+div.star-rating-on a{background-position:0 -16px!important}
+div.star-rating-hover a{background-position:0 -32px}
+/* Read Only CSS */
+div.star-rating-readonly a{cursor:default !important}
+/* Partial Star CSS */
+div.star-rating{background:transparent!important;overflow:hidden!important}
+/* END Dynamic Forms jQuery Ratings CSS */
+
+
+
+.DynamicForms_Link
+{
+
+}
+
+
+.DynamicForms_RequiredField
+{
+
+}
+
+.DynamicForms_Compare
+{
+
+}
+
+.DynamicForms_RegularExpression
+{
+
+}
+
+
+.DynamicForms_Textbox
+{
+
+}
+
+.DynamicForms_NormalTextbox
+{
+
+}
+
+.DynamicForms_ComboBox
+{
+
+}
+
+
+.DynamicForms_Dropdownlist
+{
+
+}
+
+.DynamicForms_Captcha
+{
+
+}
+
+
+.DynamicForms_RadioButton
+{
+
+}
+
+.DynamicForms_Listbox
+{
+
+}
+
+.DynamicForms_RichText{
+
+}
+
+
+
+.DynamicForms_Checkbox
+{
+
+}
+
+.DynamicForms_Country
+{
+
+}
+
+
+
+.DynamicForms_CheckBoxList
+{
+   
+
+}
+
+.DynamicForms_DisabledCheckBoxList
+{
+
+     background-color: #efefef;
+
+
+  }
+
+.DynamicForms_DisabledTextBox
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledListBox
+{
+     background-color: #efefef;
+
+}
+
+
+
+.DynamicForms_DisabledRadioButton
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledCountry
+{
+
+     background-color: #efefef;
+}
+
+
+.DynamicForms_DisabledRichTextbox
+{
+
+     background-color: #efefef;
+}
+
+.DynamicForms_FieldError
+{
+
+     background-color: red;
+}
+
+
+#hintbox{ /*CSS for pop up hint box */
+position:absolute;
+top: 0;
+background-color: lightyellow;
+width: 150px; /*Default width of hint.*/ 
+padding: 3px;
+border:1px solid black;
+font:normal 11px Verdana;
+line-height:18px;
+z-index:100;
+border-right: 3px solid black;
+border-bottom: 3px solid black;
+visibility: hidden;
+}
+
+.hintanchor{ /*CSS for link that shows hint onmouseover*/
+font-weight: bold;
+color: navy;
+margin: 3px 8px;
+}
+
+
+
+
+
+/******** FOR THE AUTOSUGGEST BOX *******/
+.NodeDefault {font-size:12px;cursor:hand;text-decoration:none;color:#555;}
+.NodeIconDefault {cursor:hand;}
+.ChildNodeDefault, .SpecialNode {font-size:12px;cursor:hand;text-decoration:none;color:#555;
+.SpecialNodeHover{background-color:green;color:#fff;}
+.DisabledNode {color:Gray;}
+.SelClass {background-color:#fc2f00;color:White;}
+.HoverClass {background-color:#fc2f00;color:#fff;}
+.MenuBarClass {border-right:1px outset;border-top:1px outset;border-left:1px outset;width:140px;border-bottom: 1px outset;background-color:#ededed;}
+.MenuClass {background-color: silver;border: outset 1px;}
+.SpecialNode {color: Yellow;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]&gt;&lt;/formcssfile&gt;&lt;formjsfile&gt;&lt;![CDATA[/***********************************************
+* Data Springs Custom Javascript File
+* Insert any custom client side javascript to be rendered for Dynamic Forms
+* for demonstrations of Dynamic Forms please visit: http://www.datasprings.com/Products/DNNModules/DynamicForms/DynamicFormsDemonstration1/tabid/754/Default.aspx
+***********************************************/
+
+
+/***********************************************
+* This function call is used to add validate that a field is an integer. 
+* Example use: validateNumber($(DynamicForms_ShortFieldName))
+***********************************************/
+
+
+function validateNumber(fieldvalue){
+if (!isNaN(fieldvalue) &amp;&amp; (fieldvalue&gt;0))
+alert(&#39;This is a number greater than 0&#39;);
+else
+alert(&#39;This is not a number greater than 0&#39;);
+}
+
+/***********************************************
+* This function call is used to add two decimal places to a field. For example 50.4 would be returned as 50.40 
+* Example use: toTwoDecimals($(DynamicForms_ShortFieldName))
+***********************************************/
+
+function toTwoDecimals(n) {
+  var s = &quot;&quot; + Math.round(n * 100) / 100
+  var i = s.indexOf(&#39;.&#39;)
+  if (i &lt; 0) return s + &quot;.00&quot;
+  var t = s.substring(0, i + 1) + s.substring(i + 1, i + 3)
+  if (i + 2 == s.length) t += &quot;0&quot;
+  return t
+}
+
+
+/***********************************************
+* This function call is used to add commas to a number. For example 100000 would be returned as 100,000 
+* Example use: addCommas($(DynamicForms_ShortFieldName))
+***********************************************/
+
+function addCommas(nStr)
+{
+	nStr += &#39;&#39;;
+	x = nStr.split(&#39;.&#39;);
+	x1 = x[0];
+	x2 = x.length &gt; 1 ? &#39;.&#39; + x[1] : &#39;&#39;;
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, &#39;$1&#39; + &#39;,&#39; + &#39;$2&#39;);
+	}
+	return x1 + x2;
+}
+
+
+/***********************************************
+* This function call is used to return the value of a radio button. This function can be called for using calculations with radio buttons
+* Example use: funcRadioCalc($(ShortFieldName_FieldID))
+***********************************************/
+
+
+function  funcRadioCalc(RadioName)
+
+ {
+var chkList1= document.getElementById (RadioName);
+var arrayOfCheckBoxes= chkList1.getElementsByTagName(&quot;input&quot;);
+for(var i=0;i&lt;arrayOfCheckBoxes.length;i++)
+{
+
+if (arrayOfCheckBoxes[i].checked) {
+return arrayOfCheckBoxes[i].value;
+}
+  }
+}
+
+
+
+ /***********************************************
+* This is a client side event function call is used to verify the email address via a client side event 
+* Example use: verifyEmail($(ShortFieldName))
+***********************************************/
+
+function verifyEmail(emaddress){
+var status = false;    
+var emailRegEx = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+     if (emaddress.search(emailRegEx) == -1) {
+          alert(&quot;Please enter a valid email address.&quot;);
+     }
+     return status;
+}
+
+
+
+ /***********************************************
+* This is a client side event function call is used to verify the a required field via a client side event 
+* Example use: Verifyrequired($(ShortFieldName), &#39;Your alert message here&#39;))
+***********************************************/
+
+
+function Verifyrequired(reqfield,alerttxt){
+var status = false;
+ if (reqfield.value==null||reqfield.value==&quot;&quot;){
+ alert(alerttxt);
+ }
+ return status;
+}
+
+
+
+/***********************************************
+* This function call is used to calculate the total number of characters and notify the user that they exceeded their limitations. For more details
+*please  visit this URL: http://www.datasprings.com/Products/DNNModules/DynamicForms/DynamicFormsDemonstration6/tabid/842/Default.aspx
+***********************************************/
+
+
+ function countChars(dId,txtVal,limit)
+  {
+      var totalLen = txtVal.length + 1;
+ 
+      if (totalLen &lt; limit)
+      {
+          document.getElementById(dId).innerHTML = &quot;&lt;font color=&#39;red&#39;&gt;You have used &quot; + totalLen + &quot; of &quot; + limit + &quot; characters available.&lt;br&gt;You have &quot; + (limit - totalLen) + &quot; characters remaining.&lt;/font&gt;&quot;; 
+      }
+      else
+      {
+          document.getElementById(dId).innerHTML = &quot;&lt;font color=&#39;red&#39;&gt;You have exceeded the character limit for this field.&lt;/font&gt;&quot;;
+      }
+  }
+
+
+
+
+/***********************************************
+* This function call will format the number into a currency format
+***********************************************/
+
+
+
+function formatCurrency(num) {
+num = num.toString().replace(/\$|\,/g,&#39;&#39;);
+if(isNaN(num))
+num = &quot;0&quot;;
+sign = (num == (num = Math.abs(num)));
+num = Math.floor(num*100+0.50000000001);
+cents = num%100;
+num = Math.floor(num/100).toString();
+if(cents&lt;10)
+cents = &quot;0&quot; + cents;
+for (var i = 0; i &lt; Math.floor((num.length-(1+i))/3); i++)
+num = num.substring(0,num.length-(4*i+3))+&#39;,&#39;+
+num.substring(num.length-(4*i+3));
+return (((sign)?&#39;&#39;:&#39;-&#39;) + &#39;$&#39; + num + &#39;.&#39; + cents);
+}
+
+
+
+function validate_required(field,alerttxt)
+{
+with (field)
+{
+if (value==null||value==&quot;&quot;)
+{
+alert(alerttxt);return false;
+}
+else
+{
+return true;
+}
+}
+} 
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf(&quot;@&quot;);
+dotpos=value.lastIndexOf(&quot;.&quot;);
+if (apos&lt;1||dotpos-apos&lt;2) 
+{alert(alerttxt);return false;}
+else {return true;}
+}
+}
+
+function CalculateCheckBoxList(CheckBoxList) {
+var objChkBoxLst = document.getElementById(CheckBoxList);
+if(objChkBoxLst) {
+var objChkBoxes = objChkBoxLst.getElementsByTagName(&#39;input&#39;);
+var objChkLabels = objChkBoxLst.getElementsByTagName(&#39;label&#39;);
+var i; var numSum = 0;            
+for(i=0;i&lt;objChkBoxes.length;i++) {                    
+if(objChkBoxes[i].checked) {                    
+numSum += GetLabelValue(objChkLabels, objChkBoxes[i].id);
+}
+}
+}
+numSum = Math.round(numSum * 100)/100;                
+return (numSum);
+}
+function GetLabelValue(objLabelList, strForValue) {
+if(objLabelList) {
+var i; var numActualVal; var strElemForValue;
+for(i=0;i&lt;objLabelList.length;i++) {
+if(objLabelList[i].htmlFor)
+strElemForValue = objLabelList[i].htmlFor;
+else
+strElemForValue = objLabelList[i].getAttribute(&#39;for&#39;);
+if(strElemForValue==strForValue) {                        
+numActualVal = objLabelList[i].innerHTML;
+if(numActualVal.indexOf(&#39;$&#39;)!=-1); {
+numActualVal = numActualVal.substring(numActualVal.indexOf(&#39;$&#39;)+1, numActualVal.length);
+} 
+return(numActualVal*1);
+}
+}
+}
+return(0);
+}
+function CalculateCheckBoxListValues(CheckBoxList, CheckBoxValField) {
+var objChkBoxLst = document.getElementById(CheckBoxList);
+var objChkBoxVals = document.getElementById(CheckBoxValField);
+var arrChkBoxVals = &#39;&#39;;
+if(objChkBoxVals)
+arrChkBoxVals = objChkBoxVals.value.split(&#39;|&#39;);
+if(objChkBoxLst) {
+var objChkBoxes = objChkBoxLst.getElementsByTagName(&#39;input&#39;);                
+var i; var numSum = 0;            
+for(i=0;i&lt;objChkBoxes.length;i++) {                    
+if(objChkBoxes[i].checked) {                    
+numSum += GetCBValue(i, arrChkBoxVals);
+}
+}
+}
+numSum = Math.round(numSum * 100)/100;                
+return (numSum);
+}
+function GetCBValue(intIndex, arrChkValues) {            
+if(arrChkValues) {
+var i;
+var arrTempVals;
+var numRetVal = 0;
+for(i=0;i&lt;arrChkValues.length;i++) {
+arrTempVals = arrChkValues[i].split(&#39;:&#39;);
+if(arrTempVals) {
+if(arrTempVals[0]==intIndex) {
+numRetVal = arrTempVals[1];
+if(numRetVal.indexOf(&#39;$&#39;)!=-1); {
+numRetVal = numRetVal.substring(numRetVal.indexOf(&#39;$&#39;)+1, numRetVal.length);
+} 
+return(numRetVal*1);
+}                        
+}
+}
+}
+return(0);
+}      
+/***********************************************
+* Show Hint script- � Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+		
+var horizontal_offset=&quot;9px&quot; //horizontal offset of hint box from anchor link
+
+/////No further editting needed
+
+var vertical_offset=&quot;0&quot; //horizontal offset of hint box from anchor link. No need to change.
+var ie=document.all
+var ns6=document.getElementById&amp;&amp;!document.all
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype==&quot;left&quot;)? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype==&quot;left&quot;)? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function iecompattest(){
+return (document.compatMode &amp;&amp; document.compatMode!=&quot;BackCompat&quot;)? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=(whichedge==&quot;rightedge&quot;)? parseInt(horizontal_offset)*-1 : parseInt(vertical_offset)*-1
+if (whichedge==&quot;rightedge&quot;){
+var windowedge=ie &amp;&amp; !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-30 : window.pageXOffset+window.innerWidth-40
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x &lt; dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetWidth+parseInt(horizontal_offset)
+}
+else{
+var windowedge=ie &amp;&amp; !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y &lt; dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetHeight
+}
+return edgeoffset
+}
+
+function showhint(menucontents, obj, e, tipwidth){
+if ((ie||ns6) &amp;&amp; document.getElementById(&quot;hintbox&quot;)){
+dropmenuobj=document.getElementById(&quot;hintbox&quot;)
+dropmenuobj.innerHTML=menucontents
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (tipwidth!=&quot;&quot;){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=tipwidth
+}
+dropmenuobj.x=getposOffset(obj, &quot;left&quot;)
+dropmenuobj.y=getposOffset(obj, &quot;top&quot;)
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, &quot;rightedge&quot;)+obj.offsetWidth+&quot;px&quot;
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, &quot;bottomedge&quot;)+&quot;px&quot;
+dropmenuobj.style.visibility=&quot;visible&quot;
+obj.onmouseout=hidetip
+}
+}
+
+function hidetip(e){
+dropmenuobj.style.visibility=&quot;hidden&quot;
+dropmenuobj.style.left=&quot;-500px&quot;
+}
+
+function createhintbox(){
+var divblock=document.createElement(&quot;div&quot;)
+divblock.setAttribute(&quot;id&quot;, &quot;hintbox&quot;)
+document.body.appendChild(divblock)
+}
+
+if (window.addEventListener)
+window.addEventListener(&quot;load&quot;, createhintbox, false)
+else if (window.attachEvent)
+window.attachEvent(&quot;onload&quot;, createhintbox)
+else if (document.getElementById)
+window.onload=createhintbox
+
+
+
+]]&gt;&lt;/formjsfile&gt;&lt;/extendedmodulesettings&gt;&lt;dynamicquestions&gt;&lt;dynamicquestion&gt;&lt;dynamicquestionid&gt;&lt;![CDATA[a2f3c084-2787-4e2f-bdad-882730399ca6]]&gt;&lt;/dynamicquestionid&gt;&lt;question&gt;&lt;![CDATA[First Name*]]&gt;&lt;/question&gt;&lt;shortfieldname&gt;&lt;![CDATA[FirstName]]&gt;&lt;/shortfieldname&gt;&lt;sortorder&gt;&lt;![CDATA[20]]&gt;&lt;/sortorder&gt;&lt;exampletext&gt;&lt;![CDATA[]]&gt;&lt;/exampletext&gt;&lt;defaultvalue&gt;&lt;![CDATA[]]&gt;&lt;/defaultvalue&gt;&lt;helptext&gt;&lt;![CDATA[Please enter your first name]]&gt;&lt;/helptext&gt;&lt;usesql&gt;&lt;![CDATA[0]]&gt;&lt;/usesql&gt;&lt;sqltext&gt;&lt;![CDATA[]]&gt;&lt;/sqltext&gt;&lt;javavalidation&gt;&lt;![CDATA[]]&gt;&lt;/javavalidation&gt;&lt;isreadonly&gt;&lt;![CDATA[0]]&gt;&lt;/isreadonly&gt;&lt;ishidden&gt;&lt;![CDATA[0]]&gt;&lt;/ishidden&gt;&lt;textboxlength&gt;&lt;![CDATA[200]]&gt;&lt;/textboxlength&gt;&lt;pullinquery&gt;&lt;![CDATA[0]]&gt;&lt;/pullinquery&gt;&lt;pushtoquery&gt;&lt;![CDATA[0]]&gt;&lt;/pushtoquery&gt;&lt;pullinsession&gt;&lt;![CDATA[0]]&gt;&lt;/pullinsession&gt;&lt;pushtosession&gt;&lt;![CDATA[0]]&gt;&lt;/pushtosession&gt;&lt;optiontype&gt;&lt;![CDATA[SingleShort]]&gt;&lt;/optiontype&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[]]&gt;&lt;/requiredfieldtext&gt;&lt;questiontype&gt;&lt;![CDATA[TextBox]]&gt;&lt;/questiontype&gt;&lt;isrequired&gt;&lt;![CDATA[0]]&gt;&lt;/isrequired&gt;&lt;maxlength&gt;&lt;![CDATA[200]]&gt;&lt;/maxlength&gt;&lt;useregularexpression&gt;&lt;![CDATA[0]]&gt;&lt;/useregularexpression&gt;&lt;regularexpressiontext&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressiontext&gt;&lt;regularexpression&gt;&lt;![CDATA[]]&gt;&lt;/regularexpression&gt;&lt;questionheader&gt;&lt;![CDATA[]]&gt;&lt;/questionheader&gt;&lt;questionfooter&gt;&lt;![CDATA[]]&gt;&lt;/questionfooter&gt;&lt;hiddenuntilevent&gt;&lt;![CDATA[0]]&gt;&lt;/hiddenuntilevent&gt;&lt;optiontypetwo&gt;&lt;![CDATA[]]&gt;&lt;/optiontypetwo&gt;&lt;userviewable&gt;&lt;![CDATA[0]]&gt;&lt;/userviewable&gt;&lt;optiontype2&gt;&lt;![CDATA[]]&gt;&lt;/optiontype2&gt;&lt;dnnfield&gt;&lt;![CDATA[0]]&gt;&lt;/dnnfield&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[]]&gt;&lt;/requiredfieldtext&gt;&lt;requiredfielderror&gt;&lt;![CDATA[]]&gt;&lt;/requiredfielderror&gt;&lt;comparevalidatorquestionid&gt;&lt;![CDATA[00000000-0000-0000-0000-000000000000]]&gt;&lt;/comparevalidatorquestionid&gt;&lt;comparevalidatortext&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatortext&gt;&lt;comparevalidatorerror&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatorerror&gt;&lt;issameline&gt;&lt;![CDATA[0]]&gt;&lt;/issameline&gt;&lt;issamecell&gt;&lt;![CDATA[0]]&gt;&lt;/issamecell&gt;&lt;labelclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/labelclass&gt;&lt;fieldclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/fieldclass&gt;&lt;fieldlabelsameline&gt;&lt;![CDATA[-1]]&gt;&lt;/fieldlabelsameline&gt;&lt;hidefieldlabel&gt;&lt;![CDATA[-1]]&gt;&lt;/hidefieldlabel&gt;&lt;colspan&gt;&lt;![CDATA[1]]&gt;&lt;/colspan&gt;&lt;rowspan&gt;&lt;![CDATA[1]]&gt;&lt;/rowspan&gt;&lt;showhelpaspopuptext&gt;&lt;![CDATA[0]]&gt;&lt;/showhelpaspopuptext&gt;&lt;popuptextwidth&gt;&lt;![CDATA[200]]&gt;&lt;/popuptextwidth&gt;&lt;pullincookie&gt;&lt;![CDATA[0]]&gt;&lt;/pullincookie&gt;&lt;pushtocookie&gt;&lt;![CDATA[0]]&gt;&lt;/pushtocookie&gt;&lt;hidefromresults&gt;&lt;![CDATA[0]]&gt;&lt;/hidefromresults&gt;&lt;nosave&gt;&lt;![CDATA[0]]&gt;&lt;/nosave&gt;&lt;optiontype3&gt;&lt;![CDATA[False]]&gt;&lt;/optiontype3&gt;&lt;maskededit&gt;&lt;![CDATA[]]&gt;&lt;/maskededit&gt;&lt;regularexpressionerror&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressionerror&gt;&lt;enablesqlvalidation&gt;&lt;![CDATA[0]]&gt;&lt;/enablesqlvalidation&gt;&lt;sqlvalidation&gt;&lt;![CDATA[]]&gt;&lt;/sqlvalidation&gt;&lt;sqlvalidationerror&gt;&lt;![CDATA[False]]&gt;&lt;/sqlvalidationerror&gt;&lt;questionoptions&gt;&lt;/questionoptions&gt;&lt;/dynamicquestion&gt;&lt;dynamicquestion&gt;&lt;dynamicquestionid&gt;&lt;![CDATA[1d0e66d8-c6d6-47ff-9c7b-8758365b1bb7]]&gt;&lt;/dynamicquestionid&gt;&lt;question&gt;&lt;![CDATA[Last Name*]]&gt;&lt;/question&gt;&lt;shortfieldname&gt;&lt;![CDATA[LastName]]&gt;&lt;/shortfieldname&gt;&lt;sortorder&gt;&lt;![CDATA[30]]&gt;&lt;/sortorder&gt;&lt;exampletext&gt;&lt;![CDATA[]]&gt;&lt;/exampletext&gt;&lt;defaultvalue&gt;&lt;![CDATA[]]&gt;&lt;/defaultvalue&gt;&lt;helptext&gt;&lt;![CDATA[Please enter your last name]]&gt;&lt;/helptext&gt;&lt;usesql&gt;&lt;![CDATA[0]]&gt;&lt;/usesql&gt;&lt;sqltext&gt;&lt;![CDATA[]]&gt;&lt;/sqltext&gt;&lt;javavalidation&gt;&lt;![CDATA[]]&gt;&lt;/javavalidation&gt;&lt;isreadonly&gt;&lt;![CDATA[0]]&gt;&lt;/isreadonly&gt;&lt;ishidden&gt;&lt;![CDATA[0]]&gt;&lt;/ishidden&gt;&lt;textboxlength&gt;&lt;![CDATA[200]]&gt;&lt;/textboxlength&gt;&lt;pullinquery&gt;&lt;![CDATA[0]]&gt;&lt;/pullinquery&gt;&lt;pushtoquery&gt;&lt;![CDATA[0]]&gt;&lt;/pushtoquery&gt;&lt;pullinsession&gt;&lt;![CDATA[0]]&gt;&lt;/pullinsession&gt;&lt;pushtosession&gt;&lt;![CDATA[0]]&gt;&lt;/pushtosession&gt;&lt;optiontype&gt;&lt;![CDATA[SingleShort]]&gt;&lt;/optiontype&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[]]&gt;&lt;/requiredfieldtext&gt;&lt;questiontype&gt;&lt;![CDATA[TextBox]]&gt;&lt;/questiontype&gt;&lt;isrequired&gt;&lt;![CDATA[0]]&gt;&lt;/isrequired&gt;&lt;maxlength&gt;&lt;![CDATA[200]]&gt;&lt;/maxlength&gt;&lt;useregularexpression&gt;&lt;![CDATA[0]]&gt;&lt;/useregularexpression&gt;&lt;regularexpressiontext&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressiontext&gt;&lt;regularexpression&gt;&lt;![CDATA[]]&gt;&lt;/regularexpression&gt;&lt;questionheader&gt;&lt;![CDATA[]]&gt;&lt;/questionheader&gt;&lt;questionfooter&gt;&lt;![CDATA[]]&gt;&lt;/questionfooter&gt;&lt;hiddenuntilevent&gt;&lt;![CDATA[0]]&gt;&lt;/hiddenuntilevent&gt;&lt;optiontypetwo&gt;&lt;![CDATA[]]&gt;&lt;/optiontypetwo&gt;&lt;userviewable&gt;&lt;![CDATA[0]]&gt;&lt;/userviewable&gt;&lt;optiontype2&gt;&lt;![CDATA[]]&gt;&lt;/optiontype2&gt;&lt;dnnfield&gt;&lt;![CDATA[0]]&gt;&lt;/dnnfield&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[]]&gt;&lt;/requiredfieldtext&gt;&lt;requiredfielderror&gt;&lt;![CDATA[]]&gt;&lt;/requiredfielderror&gt;&lt;comparevalidatorquestionid&gt;&lt;![CDATA[00000000-0000-0000-0000-000000000000]]&gt;&lt;/comparevalidatorquestionid&gt;&lt;comparevalidatortext&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatortext&gt;&lt;comparevalidatorerror&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatorerror&gt;&lt;issameline&gt;&lt;![CDATA[-1]]&gt;&lt;/issameline&gt;&lt;issamecell&gt;&lt;![CDATA[0]]&gt;&lt;/issamecell&gt;&lt;labelclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/labelclass&gt;&lt;fieldclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/fieldclass&gt;&lt;fieldlabelsameline&gt;&lt;![CDATA[-1]]&gt;&lt;/fieldlabelsameline&gt;&lt;hidefieldlabel&gt;&lt;![CDATA[-1]]&gt;&lt;/hidefieldlabel&gt;&lt;colspan&gt;&lt;![CDATA[1]]&gt;&lt;/colspan&gt;&lt;rowspan&gt;&lt;![CDATA[1]]&gt;&lt;/rowspan&gt;&lt;showhelpaspopuptext&gt;&lt;![CDATA[0]]&gt;&lt;/showhelpaspopuptext&gt;&lt;popuptextwidth&gt;&lt;![CDATA[200]]&gt;&lt;/popuptextwidth&gt;&lt;pullincookie&gt;&lt;![CDATA[0]]&gt;&lt;/pullincookie&gt;&lt;pushtocookie&gt;&lt;![CDATA[0]]&gt;&lt;/pushtocookie&gt;&lt;hidefromresults&gt;&lt;![CDATA[0]]&gt;&lt;/hidefromresults&gt;&lt;nosave&gt;&lt;![CDATA[0]]&gt;&lt;/nosave&gt;&lt;optiontype3&gt;&lt;![CDATA[False]]&gt;&lt;/optiontype3&gt;&lt;maskededit&gt;&lt;![CDATA[]]&gt;&lt;/maskededit&gt;&lt;regularexpressionerror&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressionerror&gt;&lt;enablesqlvalidation&gt;&lt;![CDATA[0]]&gt;&lt;/enablesqlvalidation&gt;&lt;sqlvalidation&gt;&lt;![CDATA[]]&gt;&lt;/sqlvalidation&gt;&lt;sqlvalidationerror&gt;&lt;![CDATA[False]]&gt;&lt;/sqlvalidationerror&gt;&lt;questionoptions&gt;&lt;/questionoptions&gt;&lt;/dynamicquestion&gt;&lt;dynamicquestion&gt;&lt;dynamicquestionid&gt;&lt;![CDATA[b9ed6574-ed56-489b-9854-e9de8b9e76b1]]&gt;&lt;/dynamicquestionid&gt;&lt;question&gt;&lt;![CDATA[Telephone*]]&gt;&lt;/question&gt;&lt;shortfieldname&gt;&lt;![CDATA[Tele]]&gt;&lt;/shortfieldname&gt;&lt;sortorder&gt;&lt;![CDATA[40]]&gt;&lt;/sortorder&gt;&lt;exampletext&gt;&lt;![CDATA[]]&gt;&lt;/exampletext&gt;&lt;defaultvalue&gt;&lt;![CDATA[]]&gt;&lt;/defaultvalue&gt;&lt;helptext&gt;&lt;![CDATA[Please enter your telephone number]]&gt;&lt;/helptext&gt;&lt;usesql&gt;&lt;![CDATA[0]]&gt;&lt;/usesql&gt;&lt;sqltext&gt;&lt;![CDATA[]]&gt;&lt;/sqltext&gt;&lt;javavalidation&gt;&lt;![CDATA[]]&gt;&lt;/javavalidation&gt;&lt;isreadonly&gt;&lt;![CDATA[0]]&gt;&lt;/isreadonly&gt;&lt;ishidden&gt;&lt;![CDATA[0]]&gt;&lt;/ishidden&gt;&lt;textboxlength&gt;&lt;![CDATA[200]]&gt;&lt;/textboxlength&gt;&lt;pullinquery&gt;&lt;![CDATA[0]]&gt;&lt;/pullinquery&gt;&lt;pushtoquery&gt;&lt;![CDATA[0]]&gt;&lt;/pushtoquery&gt;&lt;pullinsession&gt;&lt;![CDATA[0]]&gt;&lt;/pullinsession&gt;&lt;pushtosession&gt;&lt;![CDATA[0]]&gt;&lt;/pushtosession&gt;&lt;optiontype&gt;&lt;![CDATA[SingleShort]]&gt;&lt;/optiontype&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[]]&gt;&lt;/requiredfieldtext&gt;&lt;questiontype&gt;&lt;![CDATA[TextBox]]&gt;&lt;/questiontype&gt;&lt;isrequired&gt;&lt;![CDATA[0]]&gt;&lt;/isrequired&gt;&lt;maxlength&gt;&lt;![CDATA[200]]&gt;&lt;/maxlength&gt;&lt;useregularexpression&gt;&lt;![CDATA[0]]&gt;&lt;/useregularexpression&gt;&lt;regularexpressiontext&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressiontext&gt;&lt;regularexpression&gt;&lt;![CDATA[]]&gt;&lt;/regularexpression&gt;&lt;questionheader&gt;&lt;![CDATA[]]&gt;&lt;/questionheader&gt;&lt;questionfooter&gt;&lt;![CDATA[]]&gt;&lt;/questionfooter&gt;&lt;hiddenuntilevent&gt;&lt;![CDATA[0]]&gt;&lt;/hiddenuntilevent&gt;&lt;optiontypetwo&gt;&lt;![CDATA[]]&gt;&lt;/optiontypetwo&gt;&lt;userviewable&gt;&lt;![CDATA[0]]&gt;&lt;/userviewable&gt;&lt;optiontype2&gt;&lt;![CDATA[]]&gt;&lt;/optiontype2&gt;&lt;dnnfield&gt;&lt;![CDATA[0]]&gt;&lt;/dnnfield&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[]]&gt;&lt;/requiredfieldtext&gt;&lt;requiredfielderror&gt;&lt;![CDATA[]]&gt;&lt;/requiredfielderror&gt;&lt;comparevalidatorquestionid&gt;&lt;![CDATA[00000000-0000-0000-0000-000000000000]]&gt;&lt;/comparevalidatorquestionid&gt;&lt;comparevalidatortext&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatortext&gt;&lt;comparevalidatorerror&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatorerror&gt;&lt;issameline&gt;&lt;![CDATA[0]]&gt;&lt;/issameline&gt;&lt;issamecell&gt;&lt;![CDATA[0]]&gt;&lt;/issamecell&gt;&lt;labelclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/labelclass&gt;&lt;fieldclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/fieldclass&gt;&lt;fieldlabelsameline&gt;&lt;![CDATA[-1]]&gt;&lt;/fieldlabelsameline&gt;&lt;hidefieldlabel&gt;&lt;![CDATA[-1]]&gt;&lt;/hidefieldlabel&gt;&lt;colspan&gt;&lt;![CDATA[1]]&gt;&lt;/colspan&gt;&lt;rowspan&gt;&lt;![CDATA[1]]&gt;&lt;/rowspan&gt;&lt;showhelpaspopuptext&gt;&lt;![CDATA[0]]&gt;&lt;/showhelpaspopuptext&gt;&lt;popuptextwidth&gt;&lt;![CDATA[200]]&gt;&lt;/popuptextwidth&gt;&lt;pullincookie&gt;&lt;![CDATA[0]]&gt;&lt;/pullincookie&gt;&lt;pushtocookie&gt;&lt;![CDATA[0]]&gt;&lt;/pushtocookie&gt;&lt;hidefromresults&gt;&lt;![CDATA[0]]&gt;&lt;/hidefromresults&gt;&lt;nosave&gt;&lt;![CDATA[0]]&gt;&lt;/nosave&gt;&lt;optiontype3&gt;&lt;![CDATA[False]]&gt;&lt;/optiontype3&gt;&lt;maskededit&gt;&lt;![CDATA[(555) 555-5555]]&gt;&lt;/maskededit&gt;&lt;regularexpressionerror&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressionerror&gt;&lt;enablesqlvalidation&gt;&lt;![CDATA[0]]&gt;&lt;/enablesqlvalidation&gt;&lt;sqlvalidation&gt;&lt;![CDATA[]]&gt;&lt;/sqlvalidation&gt;&lt;sqlvalidationerror&gt;&lt;![CDATA[False]]&gt;&lt;/sqlvalidationerror&gt;&lt;questionoptions&gt;&lt;/questionoptions&gt;&lt;/dynamicquestion&gt;&lt;dynamicquestion&gt;&lt;dynamicquestionid&gt;&lt;![CDATA[8626110e-6934-42a4-8710-55ca02b4e10d]]&gt;&lt;/dynamicquestionid&gt;&lt;question&gt;&lt;![CDATA[Email Address *]]&gt;&lt;/question&gt;&lt;shortfieldname&gt;&lt;![CDATA[Email]]&gt;&lt;/shortfieldname&gt;&lt;sortorder&gt;&lt;![CDATA[50]]&gt;&lt;/sortorder&gt;&lt;exampletext&gt;&lt;![CDATA[]]&gt;&lt;/exampletext&gt;&lt;defaultvalue&gt;&lt;![CDATA[]]&gt;&lt;/defaultvalue&gt;&lt;helptext&gt;&lt;![CDATA[Please enter your email address]]&gt;&lt;/helptext&gt;&lt;usesql&gt;&lt;![CDATA[0]]&gt;&lt;/usesql&gt;&lt;sqltext&gt;&lt;![CDATA[]]&gt;&lt;/sqltext&gt;&lt;javavalidation&gt;&lt;![CDATA[]]&gt;&lt;/javavalidation&gt;&lt;isreadonly&gt;&lt;![CDATA[0]]&gt;&lt;/isreadonly&gt;&lt;ishidden&gt;&lt;![CDATA[0]]&gt;&lt;/ishidden&gt;&lt;textboxlength&gt;&lt;![CDATA[200]]&gt;&lt;/textboxlength&gt;&lt;pullinquery&gt;&lt;![CDATA[0]]&gt;&lt;/pullinquery&gt;&lt;pushtoquery&gt;&lt;![CDATA[0]]&gt;&lt;/pushtoquery&gt;&lt;pullinsession&gt;&lt;![CDATA[0]]&gt;&lt;/pullinsession&gt;&lt;pushtosession&gt;&lt;![CDATA[0]]&gt;&lt;/pushtosession&gt;&lt;optiontype&gt;&lt;![CDATA[SingleShort]]&gt;&lt;/optiontype&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[Please enter your email address]]&gt;&lt;/requiredfieldtext&gt;&lt;questiontype&gt;&lt;![CDATA[TextBox]]&gt;&lt;/questiontype&gt;&lt;isrequired&gt;&lt;![CDATA[-1]]&gt;&lt;/isrequired&gt;&lt;maxlength&gt;&lt;![CDATA[200]]&gt;&lt;/maxlength&gt;&lt;useregularexpression&gt;&lt;![CDATA[-1]]&gt;&lt;/useregularexpression&gt;&lt;regularexpressiontext&gt;&lt;![CDATA[*]]&gt;&lt;/regularexpressiontext&gt;&lt;regularexpression&gt;&lt;![CDATA[[a-zA-Z0-9._%-]{1,}@{1}[a-zA-Z0-9._%-]{1,}.[a-zA-Z]{1,}]]&gt;&lt;/regularexpression&gt;&lt;questionheader&gt;&lt;![CDATA[]]&gt;&lt;/questionheader&gt;&lt;questionfooter&gt;&lt;![CDATA[]]&gt;&lt;/questionfooter&gt;&lt;hiddenuntilevent&gt;&lt;![CDATA[0]]&gt;&lt;/hiddenuntilevent&gt;&lt;optiontypetwo&gt;&lt;![CDATA[]]&gt;&lt;/optiontypetwo&gt;&lt;userviewable&gt;&lt;![CDATA[0]]&gt;&lt;/userviewable&gt;&lt;optiontype2&gt;&lt;![CDATA[]]&gt;&lt;/optiontype2&gt;&lt;dnnfield&gt;&lt;![CDATA[0]]&gt;&lt;/dnnfield&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[Please enter your email address]]&gt;&lt;/requiredfieldtext&gt;&lt;requiredfielderror&gt;&lt;![CDATA[*]]&gt;&lt;/requiredfielderror&gt;&lt;comparevalidatorquestionid&gt;&lt;![CDATA[00000000-0000-0000-0000-000000000000]]&gt;&lt;/comparevalidatorquestionid&gt;&lt;comparevalidatortext&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatortext&gt;&lt;comparevalidatorerror&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatorerror&gt;&lt;issameline&gt;&lt;![CDATA[-1]]&gt;&lt;/issameline&gt;&lt;issamecell&gt;&lt;![CDATA[0]]&gt;&lt;/issamecell&gt;&lt;labelclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/labelclass&gt;&lt;fieldclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/fieldclass&gt;&lt;fieldlabelsameline&gt;&lt;![CDATA[-1]]&gt;&lt;/fieldlabelsameline&gt;&lt;hidefieldlabel&gt;&lt;![CDATA[-1]]&gt;&lt;/hidefieldlabel&gt;&lt;colspan&gt;&lt;![CDATA[1]]&gt;&lt;/colspan&gt;&lt;rowspan&gt;&lt;![CDATA[1]]&gt;&lt;/rowspan&gt;&lt;showhelpaspopuptext&gt;&lt;![CDATA[0]]&gt;&lt;/showhelpaspopuptext&gt;&lt;popuptextwidth&gt;&lt;![CDATA[200]]&gt;&lt;/popuptextwidth&gt;&lt;pullincookie&gt;&lt;![CDATA[0]]&gt;&lt;/pullincookie&gt;&lt;pushtocookie&gt;&lt;![CDATA[0]]&gt;&lt;/pushtocookie&gt;&lt;hidefromresults&gt;&lt;![CDATA[0]]&gt;&lt;/hidefromresults&gt;&lt;nosave&gt;&lt;![CDATA[0]]&gt;&lt;/nosave&gt;&lt;optiontype3&gt;&lt;![CDATA[False]]&gt;&lt;/optiontype3&gt;&lt;maskededit&gt;&lt;![CDATA[]]&gt;&lt;/maskededit&gt;&lt;regularexpressionerror&gt;&lt;![CDATA[Please enter a valid email address]]&gt;&lt;/regularexpressionerror&gt;&lt;enablesqlvalidation&gt;&lt;![CDATA[0]]&gt;&lt;/enablesqlvalidation&gt;&lt;sqlvalidation&gt;&lt;![CDATA[]]&gt;&lt;/sqlvalidation&gt;&lt;sqlvalidationerror&gt;&lt;![CDATA[False]]&gt;&lt;/sqlvalidationerror&gt;&lt;questionoptions&gt;&lt;/questionoptions&gt;&lt;/dynamicquestion&gt;&lt;dynamicquestion&gt;&lt;dynamicquestionid&gt;&lt;![CDATA[bce3ac94-cc81-484d-85cb-e9a157cd469a]]&gt;&lt;/dynamicquestionid&gt;&lt;question&gt;&lt;![CDATA[Questions/Comments]]&gt;&lt;/question&gt;&lt;shortfieldname&gt;&lt;![CDATA[summary]]&gt;&lt;/shortfieldname&gt;&lt;sortorder&gt;&lt;![CDATA[70]]&gt;&lt;/sortorder&gt;&lt;exampletext&gt;&lt;![CDATA[]]&gt;&lt;/exampletext&gt;&lt;defaultvalue&gt;&lt;![CDATA[]]&gt;&lt;/defaultvalue&gt;&lt;helptext&gt;&lt;![CDATA[Please enter a brief description]]&gt;&lt;/helptext&gt;&lt;usesql&gt;&lt;![CDATA[0]]&gt;&lt;/usesql&gt;&lt;sqltext&gt;&lt;![CDATA[]]&gt;&lt;/sqltext&gt;&lt;javavalidation&gt;&lt;![CDATA[]]&gt;&lt;/javavalidation&gt;&lt;isreadonly&gt;&lt;![CDATA[0]]&gt;&lt;/isreadonly&gt;&lt;ishidden&gt;&lt;![CDATA[0]]&gt;&lt;/ishidden&gt;&lt;textboxlength&gt;&lt;![CDATA[500]]&gt;&lt;/textboxlength&gt;&lt;pullinquery&gt;&lt;![CDATA[0]]&gt;&lt;/pullinquery&gt;&lt;pushtoquery&gt;&lt;![CDATA[0]]&gt;&lt;/pushtoquery&gt;&lt;pullinsession&gt;&lt;![CDATA[0]]&gt;&lt;/pullinsession&gt;&lt;pushtosession&gt;&lt;![CDATA[0]]&gt;&lt;/pushtosession&gt;&lt;optiontype&gt;&lt;![CDATA[Multi]]&gt;&lt;/optiontype&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[Please enter your questions/comments.]]&gt;&lt;/requiredfieldtext&gt;&lt;questiontype&gt;&lt;![CDATA[TextBox]]&gt;&lt;/questiontype&gt;&lt;isrequired&gt;&lt;![CDATA[-1]]&gt;&lt;/isrequired&gt;&lt;maxlength&gt;&lt;![CDATA[200]]&gt;&lt;/maxlength&gt;&lt;useregularexpression&gt;&lt;![CDATA[0]]&gt;&lt;/useregularexpression&gt;&lt;regularexpressiontext&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressiontext&gt;&lt;regularexpression&gt;&lt;![CDATA[]]&gt;&lt;/regularexpression&gt;&lt;questionheader&gt;&lt;![CDATA[]]&gt;&lt;/questionheader&gt;&lt;questionfooter&gt;&lt;![CDATA[]]&gt;&lt;/questionfooter&gt;&lt;hiddenuntilevent&gt;&lt;![CDATA[0]]&gt;&lt;/hiddenuntilevent&gt;&lt;optiontypetwo&gt;&lt;![CDATA[170]]&gt;&lt;/optiontypetwo&gt;&lt;userviewable&gt;&lt;![CDATA[0]]&gt;&lt;/userviewable&gt;&lt;optiontype2&gt;&lt;![CDATA[170]]&gt;&lt;/optiontype2&gt;&lt;dnnfield&gt;&lt;![CDATA[0]]&gt;&lt;/dnnfield&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[Please enter your questions/comments.]]&gt;&lt;/requiredfieldtext&gt;&lt;requiredfielderror&gt;&lt;![CDATA[*]]&gt;&lt;/requiredfielderror&gt;&lt;comparevalidatorquestionid&gt;&lt;![CDATA[00000000-0000-0000-0000-000000000000]]&gt;&lt;/comparevalidatorquestionid&gt;&lt;comparevalidatortext&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatortext&gt;&lt;comparevalidatorerror&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatorerror&gt;&lt;issameline&gt;&lt;![CDATA[0]]&gt;&lt;/issameline&gt;&lt;issamecell&gt;&lt;![CDATA[0]]&gt;&lt;/issamecell&gt;&lt;labelclass&gt;&lt;![CDATA[mobile-c]]&gt;&lt;/labelclass&gt;&lt;fieldclass&gt;&lt;![CDATA[mobile-c allow-return]]&gt;&lt;/fieldclass&gt;&lt;fieldlabelsameline&gt;&lt;![CDATA[-1]]&gt;&lt;/fieldlabelsameline&gt;&lt;hidefieldlabel&gt;&lt;![CDATA[-1]]&gt;&lt;/hidefieldlabel&gt;&lt;colspan&gt;&lt;![CDATA[5]]&gt;&lt;/colspan&gt;&lt;rowspan&gt;&lt;![CDATA[1]]&gt;&lt;/rowspan&gt;&lt;showhelpaspopuptext&gt;&lt;![CDATA[0]]&gt;&lt;/showhelpaspopuptext&gt;&lt;popuptextwidth&gt;&lt;![CDATA[200]]&gt;&lt;/popuptextwidth&gt;&lt;pullincookie&gt;&lt;![CDATA[0]]&gt;&lt;/pullincookie&gt;&lt;pushtocookie&gt;&lt;![CDATA[0]]&gt;&lt;/pushtocookie&gt;&lt;hidefromresults&gt;&lt;![CDATA[0]]&gt;&lt;/hidefromresults&gt;&lt;nosave&gt;&lt;![CDATA[0]]&gt;&lt;/nosave&gt;&lt;optiontype3&gt;&lt;![CDATA[False]]&gt;&lt;/optiontype3&gt;&lt;maskededit&gt;&lt;![CDATA[]]&gt;&lt;/maskededit&gt;&lt;regularexpressionerror&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressionerror&gt;&lt;enablesqlvalidation&gt;&lt;![CDATA[0]]&gt;&lt;/enablesqlvalidation&gt;&lt;sqlvalidation&gt;&lt;![CDATA[]]&gt;&lt;/sqlvalidation&gt;&lt;sqlvalidationerror&gt;&lt;![CDATA[False]]&gt;&lt;/sqlvalidationerror&gt;&lt;questionoptions&gt;&lt;/questionoptions&gt;&lt;/dynamicquestion&gt;&lt;dynamicquestion&gt;&lt;dynamicquestionid&gt;&lt;![CDATA[ad9704fe-399e-4a42-a194-48128fbdc952]]&gt;&lt;/dynamicquestionid&gt;&lt;question&gt;&lt;![CDATA[Security Question]]&gt;&lt;/question&gt;&lt;shortfieldname&gt;&lt;![CDATA[Security]]&gt;&lt;/shortfieldname&gt;&lt;sortorder&gt;&lt;![CDATA[80]]&gt;&lt;/sortorder&gt;&lt;exampletext&gt;&lt;![CDATA[]]&gt;&lt;/exampletext&gt;&lt;defaultvalue&gt;&lt;![CDATA[]]&gt;&lt;/defaultvalue&gt;&lt;helptext&gt;&lt;![CDATA[Please enter the text from the image.]]&gt;&lt;/helptext&gt;&lt;usesql&gt;&lt;![CDATA[-1]]&gt;&lt;/usesql&gt;&lt;sqltext&gt;&lt;![CDATA[]]&gt;&lt;/sqltext&gt;&lt;javavalidation&gt;&lt;![CDATA[]]&gt;&lt;/javavalidation&gt;&lt;isreadonly&gt;&lt;![CDATA[0]]&gt;&lt;/isreadonly&gt;&lt;ishidden&gt;&lt;![CDATA[0]]&gt;&lt;/ishidden&gt;&lt;textboxlength&gt;&lt;![CDATA[200]]&gt;&lt;/textboxlength&gt;&lt;pullinquery&gt;&lt;![CDATA[0]]&gt;&lt;/pullinquery&gt;&lt;pushtoquery&gt;&lt;![CDATA[0]]&gt;&lt;/pushtoquery&gt;&lt;pullinsession&gt;&lt;![CDATA[0]]&gt;&lt;/pullinsession&gt;&lt;pushtosession&gt;&lt;![CDATA[0]]&gt;&lt;/pushtosession&gt;&lt;optiontype&gt;&lt;![CDATA[AncientMosaic]]&gt;&lt;/optiontype&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[Please enter a value.]]&gt;&lt;/requiredfieldtext&gt;&lt;questiontype&gt;&lt;![CDATA[Captcha3]]&gt;&lt;/questiontype&gt;&lt;isrequired&gt;&lt;![CDATA[-1]]&gt;&lt;/isrequired&gt;&lt;maxlength&gt;&lt;![CDATA[200]]&gt;&lt;/maxlength&gt;&lt;useregularexpression&gt;&lt;![CDATA[0]]&gt;&lt;/useregularexpression&gt;&lt;regularexpressiontext&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressiontext&gt;&lt;regularexpression&gt;&lt;![CDATA[]]&gt;&lt;/regularexpression&gt;&lt;questionheader&gt;&lt;![CDATA[]]&gt;&lt;/questionheader&gt;&lt;questionfooter&gt;&lt;![CDATA[]]&gt;&lt;/questionfooter&gt;&lt;hiddenuntilevent&gt;&lt;![CDATA[0]]&gt;&lt;/hiddenuntilevent&gt;&lt;optiontypetwo&gt;&lt;![CDATA[False,True,150,200,6Lfk8QsUAAAAAM1AyHFuhEGnye1usumv5_YfkhyR,6Lfk8QsUAAAAANbhcjZ53PJVERR33u2U943kKZHt]]&gt;&lt;/optiontypetwo&gt;&lt;userviewable&gt;&lt;![CDATA[0]]&gt;&lt;/userviewable&gt;&lt;optiontype2&gt;&lt;![CDATA[False,True,150,200,6Lfk8QsUAAAAAM1AyHFuhEGnye1usumv5_YfkhyR,6Lfk8QsUAAAAANbhcjZ53PJVERR33u2U943kKZHt]]&gt;&lt;/optiontype2&gt;&lt;dnnfield&gt;&lt;![CDATA[0]]&gt;&lt;/dnnfield&gt;&lt;requiredfieldtext&gt;&lt;![CDATA[Please enter a value.]]&gt;&lt;/requiredfieldtext&gt;&lt;requiredfielderror&gt;&lt;![CDATA[*]]&gt;&lt;/requiredfielderror&gt;&lt;comparevalidatorquestionid&gt;&lt;![CDATA[00000000-0000-0000-0000-000000000000]]&gt;&lt;/comparevalidatorquestionid&gt;&lt;comparevalidatortext&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatortext&gt;&lt;comparevalidatorerror&gt;&lt;![CDATA[]]&gt;&lt;/comparevalidatorerror&gt;&lt;issameline&gt;&lt;![CDATA[0]]&gt;&lt;/issameline&gt;&lt;issamecell&gt;&lt;![CDATA[0]]&gt;&lt;/issamecell&gt;&lt;labelclass&gt;&lt;![CDATA[padding]]&gt;&lt;/labelclass&gt;&lt;fieldclass&gt;&lt;![CDATA[padding]]&gt;&lt;/fieldclass&gt;&lt;fieldlabelsameline&gt;&lt;![CDATA[-1]]&gt;&lt;/fieldlabelsameline&gt;&lt;hidefieldlabel&gt;&lt;![CDATA[-1]]&gt;&lt;/hidefieldlabel&gt;&lt;colspan&gt;&lt;![CDATA[1]]&gt;&lt;/colspan&gt;&lt;rowspan&gt;&lt;![CDATA[1]]&gt;&lt;/rowspan&gt;&lt;showhelpaspopuptext&gt;&lt;![CDATA[0]]&gt;&lt;/showhelpaspopuptext&gt;&lt;popuptextwidth&gt;&lt;![CDATA[200]]&gt;&lt;/popuptextwidth&gt;&lt;pullincookie&gt;&lt;![CDATA[0]]&gt;&lt;/pullincookie&gt;&lt;pushtocookie&gt;&lt;![CDATA[0]]&gt;&lt;/pushtocookie&gt;&lt;hidefromresults&gt;&lt;![CDATA[0]]&gt;&lt;/hidefromresults&gt;&lt;nosave&gt;&lt;![CDATA[0]]&gt;&lt;/nosave&gt;&lt;optiontype3&gt;&lt;![CDATA[False]]&gt;&lt;/optiontype3&gt;&lt;maskededit&gt;&lt;![CDATA[]]&gt;&lt;/maskededit&gt;&lt;regularexpressionerror&gt;&lt;![CDATA[]]&gt;&lt;/regularexpressionerror&gt;&lt;enablesqlvalidation&gt;&lt;![CDATA[0]]&gt;&lt;/enablesqlvalidation&gt;&lt;sqlvalidation&gt;&lt;![CDATA[]]&gt;&lt;/sqlvalidation&gt;&lt;sqlvalidationerror&gt;&lt;![CDATA[False]]&gt;&lt;/sqlvalidationerror&gt;&lt;questionoptions&gt;&lt;/questionoptions&gt;&lt;/dynamicquestion&gt;&lt;/dynamicquestions&gt;&lt;dynamicevents&gt;&lt;dynamicevent&gt;&lt;dynamiceventid&gt;&lt;![CDATA[5d5bce59-96ea-4282-b3e2-1bf87a6a3909]]&gt;&lt;/dynamiceventid&gt;&lt;dnnrole&gt;&lt;![CDATA[0]]&gt;&lt;/dnnrole&gt;&lt;dynamicemailfrom&gt;&lt;![CDATA[$(Email)]]&gt;&lt;/dynamicemailfrom&gt;&lt;dynamicemailmessage&gt;&lt;![CDATA[&amp;lt;div style=&amp;quot;font-size: 16px; width: 600px;&amp;quot;&amp;gt; &amp;lt;p&amp;gt;&amp;lt;img alt=&amp;quot;&amp;quot; src=&amp;quot;http://a.ndrv.in/nd-logo-83x50.png&amp;quot; /&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Hello, you have a new contact form submission!&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Here are the details we gathered from the contact form that was submitted on your Net Driven website. If you need any assistance with your website, feel free to submit a support case at &amp;lt;a href=&amp;quot;http://support.netdriven.com&amp;quot;&amp;gt;support.netdriven.com.&amp;lt;/a&amp;gt; Have a great day!&amp;lt;/p&amp;gt; &amp;lt;p style=&amp;quot;font-size: 12px;&amp;quot;&amp;gt;Please do not reply to this email.&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;CONTACT INFORMATION&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;hr style=&amp;quot;border-color: #e9e9e9;&amp;quot; /&amp;gt; &amp;lt;table border=&amp;quot;0&amp;quot; id=&amp;quot;results&amp;quot; style=&amp;quot;width: 600px;&amp;quot;&amp;gt; &amp;lt;colgroup&amp;gt; &amp;lt;/colgroup&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;FIRST NAME:&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;$(FirstName)&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;LAST NAME:&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;$(LastName)&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;EMAIL ADDRESS:&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;$(Email)&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;&amp;lt;strong&amp;gt;PHONE NUMBER:&amp;lt;/strong&amp;gt;&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;$(Tele)&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;QUESTIONS/COMMENTS&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;hr style=&amp;quot;border-color: #e9e9e9;&amp;quot; /&amp;gt; &amp;lt;p&amp;gt;$(summary)&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; ]]&gt;&lt;/dynamicemailmessage&gt;&lt;dynamicemailsubject&gt;&lt;![CDATA[Blair&#39;s Garage - Contact Form Submission]]&gt;&lt;/dynamicemailsubject&gt;&lt;dynamicemailto&gt;&lt;![CDATA[ss.blairsgarage755@gmail.com]]&gt;&lt;/dynamicemailto&gt;&lt;dynamicquestionid&gt;&lt;![CDATA[00000000-0000-0000-0000-000000000000]]&gt;&lt;/dynamicquestionid&gt;&lt;dynamicredirection&gt;&lt;![CDATA[]]&gt;&lt;/dynamicredirection&gt;&lt;dynamicresponse&gt;&lt;![CDATA[]]&gt;&lt;/dynamicresponse&gt;&lt;dynamicsql&gt;&lt;![CDATA[]]&gt;&lt;/dynamicsql&gt;&lt;eventname&gt;&lt;![CDATA[Mail]]&gt;&lt;/eventname&gt;&lt;eventtype&gt;&lt;![CDATA[Email]]&gt;&lt;/eventtype&gt;&lt;fireeventparameter&gt;&lt;![CDATA[1]]&gt;&lt;/fireeventparameter&gt;&lt;sortorder&gt;&lt;![CDATA[0]]&gt;&lt;/sortorder&gt;&lt;dynamicemailpriority&gt;&lt;![CDATA[0]]&gt;&lt;/dynamicemailpriority&gt;&lt;pdfdesc&gt;&lt;![CDATA[]]&gt;&lt;/pdfdesc&gt;&lt;pdftemplate&gt;&lt;![CDATA[]]&gt;&lt;/pdftemplate&gt;&lt;pdfheader&gt;&lt;![CDATA[]]&gt;&lt;/pdfheader&gt;&lt;pdffooter&gt;&lt;![CDATA[]]&gt;&lt;/pdffooter&gt;&lt;pdfshowpages&gt;&lt;![CDATA[0]]&gt;&lt;/pdfshowpages&gt;&lt;dynamicemailcc&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailcc&gt;&lt;dynamicemailbcc&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailbcc&gt;&lt;dynamicemailfromname&gt;&lt;![CDATA[Blair&#39;s Garage]]&gt;&lt;/dynamicemailfromname&gt;&lt;emailformat&gt;&lt;![CDATA[Blair&#39;s Garage]]&gt;&lt;/emailformat&gt;&lt;optionalconfig1&gt;&lt;![CDATA[]]&gt;&lt;/optionalconfig1&gt;&lt;optionalconfig2&gt;&lt;![CDATA[]]&gt;&lt;/optionalconfig2&gt;&lt;/dynamicevent&gt;&lt;dynamicevent&gt;&lt;dynamiceventid&gt;&lt;![CDATA[c2682100-62cc-451d-9b3b-a528450add0c]]&gt;&lt;/dynamiceventid&gt;&lt;dnnrole&gt;&lt;![CDATA[0]]&gt;&lt;/dnnrole&gt;&lt;dynamicemailfrom&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailfrom&gt;&lt;dynamicemailmessage&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailmessage&gt;&lt;dynamicemailsubject&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailsubject&gt;&lt;dynamicemailto&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailto&gt;&lt;dynamicquestionid&gt;&lt;![CDATA[00000000-0000-0000-0000-000000000000]]&gt;&lt;/dynamicquestionid&gt;&lt;dynamicredirection&gt;&lt;![CDATA[3951]]&gt;&lt;/dynamicredirection&gt;&lt;dynamicresponse&gt;&lt;![CDATA[]]&gt;&lt;/dynamicresponse&gt;&lt;dynamicsql&gt;&lt;![CDATA[]]&gt;&lt;/dynamicsql&gt;&lt;eventname&gt;&lt;![CDATA[Response Redirect]]&gt;&lt;/eventname&gt;&lt;eventtype&gt;&lt;![CDATA[redirect]]&gt;&lt;/eventtype&gt;&lt;fireeventparameter&gt;&lt;![CDATA[1]]&gt;&lt;/fireeventparameter&gt;&lt;sortorder&gt;&lt;![CDATA[1]]&gt;&lt;/sortorder&gt;&lt;dynamicemailpriority&gt;&lt;![CDATA[1]]&gt;&lt;/dynamicemailpriority&gt;&lt;pdfdesc&gt;&lt;![CDATA[]]&gt;&lt;/pdfdesc&gt;&lt;pdftemplate&gt;&lt;![CDATA[]]&gt;&lt;/pdftemplate&gt;&lt;pdfheader&gt;&lt;![CDATA[]]&gt;&lt;/pdfheader&gt;&lt;pdffooter&gt;&lt;![CDATA[]]&gt;&lt;/pdffooter&gt;&lt;pdfshowpages&gt;&lt;![CDATA[0]]&gt;&lt;/pdfshowpages&gt;&lt;dynamicemailcc&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailcc&gt;&lt;dynamicemailbcc&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailbcc&gt;&lt;dynamicemailfromname&gt;&lt;![CDATA[]]&gt;&lt;/dynamicemailfromname&gt;&lt;emailformat&gt;&lt;![CDATA[]]&gt;&lt;/emailformat&gt;&lt;optionalconfig1&gt;&lt;![CDATA[]]&gt;&lt;/optionalconfig1&gt;&lt;optionalconfig2&gt;&lt;![CDATA[]]&gt;&lt;/optionalconfig2&gt;&lt;/dynamicevent&gt;&lt;/dynamicevents&gt;&lt;dynamicquestionevents&gt;&lt;/dynamicquestionevents&gt;&lt;localization&gt;&lt;formslocal&gt;&lt;/formslocal&gt;&lt;questionslocal&gt;&lt;/questionslocal&gt;&lt;/localization&gt;&lt;resultstemplate&gt;&lt;/resultstemplate&gt;&lt;/dynamicforms&gt;]]></content><modulesettings><modulesetting><settingname>EnablePaymentGateway</settingname><settingvalue>No</settingvalue></modulesetting><modulesetting><settingname>DisableDragDrop</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>SetDefaults</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>DisableEdit</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>VAlignFields</settingname><settingvalue>Top</settingvalue></modulesetting><modulesetting><settingname>DefaultLong</settingname><settingvalue>400</settingvalue></modulesetting><modulesetting><settingname>AllowNonAdminToManageTemplate</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>DisableEditor</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>CheckBlackList</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>UseErrorCSS</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>BlackListItemText</settingname><settingvalue>Site Administrator: Set this message up under Layout Settings.</settingvalue></modulesetting><modulesetting><settingname>FieldSuffix</settingname><settingvalue>:</settingvalue></modulesetting><modulesetting><settingname>PayPalPaymentType</settingname><settingvalue>Purchase</settingvalue></modulesetting><modulesetting><settingname>EnableValMessage</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>HideModalImage</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>DBType</settingname><settingvalue>SQL</settingvalue></modulesetting><modulesetting><settingname>PanelType</settingname><settingvalue>Disabled</settingvalue></modulesetting><modulesetting><settingname>DisableQuickEdit</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>ClearType</settingname><settingvalue>ImageButton</settingvalue></modulesetting><modulesetting><settingname>SameLine</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>FocusFirstField</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>ExportType</settingname><settingvalue>Excel</settingvalue></modulesetting><modulesetting><settingname>SaveText</settingname><settingvalue>Submit</settingvalue></modulesetting><modulesetting><settingname>HideModal</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>DisableConfigAJAX</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>ValScroll</settingname><settingvalue>None</settingvalue></modulesetting><modulesetting><settingname>RegisterURL</settingname><settingvalue>40</settingvalue></modulesetting><modulesetting><settingname>EnterKeySave</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>AllowNonAdminToDelete</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>PassCompletionID</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>DefaultShort</settingname><settingvalue>200</settingvalue></modulesetting><modulesetting><settingname>PayPalStatusField</settingname><settingvalue>- Select Dynamic Field -</settingvalue></modulesetting><modulesetting><settingname>VAlignLabels</settingname><settingvalue>Top</settingvalue></modulesetting><modulesetting><settingname>DisplayAfterMessageLiteral</settingname><settingvalue>Site Administrator: Set this message up under Layout Settings.</settingvalue></modulesetting><modulesetting><settingname>EnableWordWrap</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>TestMode</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>HideValidationSummary</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>ValLocation</settingname><settingvalue>Top</settingvalue></modulesetting><modulesetting><settingname>ClearButtonURL</settingname><settingvalue>content.DynamicForms.ContactFormCaptcha.xml</settingvalue></modulesetting><modulesetting><settingname>AllowNonAdminToExport</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>EnablejQuery</settingname><settingvalue>0</settingvalue></modulesetting><modulesetting><settingname>DisplayResultsOnUserFacingModule</settingname><settingvalue>None</settingvalue></modulesetting><modulesetting><settingname>InitialHideSubmit</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>ServerValidation</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>LabelCellWidth</settingname><settingvalue>200</settingvalue></modulesetting><modulesetting><settingname>ClientValidation</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>USEDWIZARD</settingname><settingvalue>TRUE</settingvalue></modulesetting><modulesetting><settingname>AlignButtons</settingname><settingvalue>Left</settingvalue></modulesetting><modulesetting><settingname>ViewResultsSecurityRole</settingname><settingvalue>Disabled</settingvalue></modulesetting><modulesetting><settingname>EnableSQLValidation</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>PayFlowProGateway</settingname><settingvalue>https://pilot-payflowpro.verisign.com/transaction</settingvalue></modulesetting><modulesetting><settingname>ImageButtonURL</settingname><settingvalue>content.DynamicForms.ContactFormCaptcha.xml</settingvalue></modulesetting><modulesetting><settingname>PaymentGateway</settingname><settingvalue>Authorizenet</settingvalue></modulesetting><modulesetting><settingname>AlignLabels</settingname><settingvalue>Left</settingvalue></modulesetting><modulesetting><settingname>DisableFormAJAX</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>DynamicInitialUpgrade</settingname><settingvalue>Yes</settingvalue></modulesetting><modulesetting><settingname>DisableQuickStats</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>ValErrorMessageLocation</settingname><settingvalue>Right</settingvalue></modulesetting><modulesetting><settingname>DisableHelpMenu</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>enablesaveforlaterbutton</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>SetDefaults2</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>DisplayAfterMessageContinue</settingname><settingvalue>Continue...</settingvalue></modulesetting><modulesetting><settingname>PayPalGateway</settingname><settingvalue>https://www.paypal.com/cgi-bin/webscr</settingvalue></modulesetting><modulesetting><settingname>ClearFunctionality</settingname><settingvalue>PageRefresh</settingvalue></modulesetting><modulesetting><settingname>ExportShortFieldName</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>HideHelp</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>SetCheckIn</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>DisplayAfterMessage</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>PaymentTestMode</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>AuthGateway</settingname><settingvalue>https://secure.authorize.net/gateway/transact.dll</settingvalue></modulesetting><modulesetting><settingname>EnablejQueryHighlights</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>InitialJavaScript</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>SaveType</settingname><settingvalue>HTMLInputButton</settingvalue></modulesetting><modulesetting><settingname>InitialStylesheet</settingname><settingvalue>True</settingvalue></modulesetting><modulesetting><settingname>ShowAsterik</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>OnlyAllowOnce</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>imageforlater</settingname><settingvalue>content.DNNHTML.ContinentalTires.xml</settingvalue></modulesetting><modulesetting><settingname>InitialSQLBindEnabled</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>logdetailsofallevents</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>SummaryField</settingname><settingvalue>-1</settingvalue></modulesetting><modulesetting><settingname>wrapallfieldswithindiv</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>EnablejQueryEZCheckbox</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>donotsaveresultsglobal</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>SubmitRight</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>EnableClearButton</settingname><settingvalue>False</settingvalue></modulesetting><modulesetting><settingname>SetFocusAfterVal</settingname><settingvalue>False</settingvalue></modulesetting></modulesettings><tabmodulesettings /><definition>Dynamic Forms</definition><moduledefinition>Dynamic Forms</moduledefinition></module>
