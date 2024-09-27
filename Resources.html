@@ -196,3 +196,16 @@ toggleArrowVisibility();
       ' url("/portals/164/skins/master/img/Internal-Hero.jpg") ';
     
 </script>
+
+<!-- Add target __blank in the option of the menu header -->
+<script>
+    window.addEventListener("load", function() {
+        var menuItems = document.querySelectorAll("#menuItem13724");
+        
+        menuItems.forEach(function(menuItem) {
+            if (menuItem.tagName === 'A') {
+                menuItem.target = "_blank"; 
+            }
+        });
+    });
+</script>
