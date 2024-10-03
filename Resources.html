@@ -209,3 +209,27 @@ toggleArrowVisibility();
         });
     });
 </script>
+
+<!-- Template 12 add a link to the phone (module footer) -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Modificar .locwidget-phone
+        const phoneElement = document.querySelector('.locwidget-phone');
+        const phoneText = phoneElement.textContent;
+        const phoneLink = document.createElement('a');
+        phoneLink.href = 'tel:6085266719';
+        phoneLink.innerHTML = phoneText;
+        phoneElement.innerHTML = '';
+        phoneElement.appendChild(phoneLink);
+
+        // Modificar .locwidget-addr
+        const addrElement = document.querySelector('.locwidget-addr');
+        const addrText = addrElement.innerHTML;
+        const addrLink = document.createElement('a');
+        addrLink.href = '/Contact-Us/Find-Us';
+        addrLink.innerHTML = addrText;
+        addrElement.innerHTML = '';
+        addrElement.appendChild(addrLink);
+    });
+</script>
+
