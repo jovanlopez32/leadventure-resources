@@ -1,8 +1,48 @@
-<img src="/portals/[Portal:PortalID]/skins/master_V1/img/aboutpg.jpg" alt="[ND:ClientName]">
-<h3><strong>About [ND:ClientName]</strong></h3>
-<h3 style="font-style: italic; font-weight: 700;">“If we don’t have it, you don’t need it”</h3>
-
-<p>
-  <strong>Jones Service Station</strong> has been providing quality car care in Olive Branch, Illinois, since 1948. We are a family-owned business and a one-stop-shop delivering honest and professional automotive repair and auto maintenance services to the people of Olive Branch and surrounding areas. The quality ASE (Automotive Service Excellence) certified technicians at <strong>Jones Service Station</strong> employ today’s latest automotive technology and are equipped to handle all major and minor repairs on foreign and domestic vehicles.
-</p>
-
+<!-- More Image options [service-img-alignment.jpg | service-img-brakes.jpg | service-img-car.jpg | service-img-mechanic.jpg | service-img-oil.jpg | service-img-suv.jpg | service-img-wrench.jpg ] -->
+<div class="row-img _services">
+  <div class="img-wrapper">
+    <picture>
+      <source
+        media="(min-width:768px)"
+        srcset="
+          //a2.nd-cdn.us/99temps/template3/service-imgs/service-img-oil.jpg
+        "
+      />
+      <source
+        media="(max-width:767px)"
+        srcset="
+          //a2.nd-cdn.us/99temps/template3/service-imgs/m-service-img-oil.jpg
+        "
+      />
+      <img
+        alt="Service at [ND:ClientName]"
+        src="//a2.nd-cdn.us/99temps/template3/service-imgs/m-service-img-oil.jpg"
+      />
+    </picture>
+  </div>
+</div>
+<script>
+  var $animation_element = $(".row-img._services .img-wrapper");
+  var $window = $(window);
+  function check_if_in_view() {
+    var window_height = $window.height();
+    var window_top_position = $window.scrollTop();
+    var window_bottom_position = window_height + window_top_position;
+    $.each($animation_element, function () {
+      var $element = $(this);
+      var element_height = $element.outerHeight();
+      var element_top_position = $element.offset().top;
+      var element_bottom_position = element_height + element_top_position;
+      if (
+        element_bottom_position >= window_top_position &&
+        element_top_position <= window_bottom_position
+      ) {
+        $element.addClass("in-view");
+      } else {
+        $element.removeClass("in-view");
+      }
+    });
+  }
+  $window.on("scroll resize", check_if_in_view);
+  $window.trigger("scroll");
+</script>
