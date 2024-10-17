@@ -1,48 +1,8 @@
-<!-- More Image options [service-img-alignment.jpg | service-img-brakes.jpg | service-img-car.jpg | service-img-mechanic.jpg | service-img-oil.jpg | service-img-suv.jpg | service-img-wrench.jpg ] -->
-<div class="row-img _services">
-  <div class="img-wrapper">
-    <picture>
-      <source
-        media="(min-width:768px)"
-        srcset="
-          //a2.nd-cdn.us/99temps/template3/service-imgs/service-img-oil.jpg
-        "
-      />
-      <source
-        media="(max-width:767px)"
-        srcset="
-          //a2.nd-cdn.us/99temps/template3/service-imgs/m-service-img-oil.jpg
-        "
-      />
-      <img
-        alt="Service at [ND:ClientName]"
-        src="//a2.nd-cdn.us/99temps/template3/service-imgs/m-service-img-oil.jpg"
-      />
-    </picture>
-  </div>
+<div id="socialfont">
+  <a class="fa fa-facebook" target="_blank" href="[ND:Facebook]"></a>
+  <a class="fa fa-google" target="_blank" href="[ND:GPlus]"></a>
+  <a class="fa fa-yelp" target="_blank" href="[ND:Instagram]"></a>
 </div>
-<script>
-  var $animation_element = $(".row-img._services .img-wrapper");
-  var $window = $(window);
-  function check_if_in_view() {
-    var window_height = $window.height();
-    var window_top_position = $window.scrollTop();
-    var window_bottom_position = window_height + window_top_position;
-    $.each($animation_element, function () {
-      var $element = $(this);
-      var element_height = $element.outerHeight();
-      var element_top_position = $element.offset().top;
-      var element_bottom_position = element_height + element_top_position;
-      if (
-        element_bottom_position >= window_top_position &&
-        element_top_position <= window_bottom_position
-      ) {
-        $element.addClass("in-view");
-      } else {
-        $element.removeClass("in-view");
-      }
-    });
-  }
-  $window.on("scroll resize", check_if_in_view);
-  $window.trigger("scroll");
-</script>
+<div class="homepage-options _footer-btn">
+  <a href="/Contact" title="Contact Us">Contact Us</a>
+</div>

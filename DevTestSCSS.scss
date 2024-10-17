@@ -4,14 +4,25 @@
         min-width: 250px;
     }
 }
-
+.ndcustombutton1, .ndcustombutton2 {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0 !important;
+}
 .ND_Coupons {
     box-sizing: border-box;
     padding: 60px 20px;
 }
+  
+.homepage .ND_Coupons {
+    box-sizing: border-box;
+    padding: 0px 0px !important;
+} 
 
-a:hover {
-    color: unset !important;
+p {
+    a:hover {
+        color: unset !important;
+    }
 }
 #rate-our-serv-pg {
 	box-sizing: border-box;
