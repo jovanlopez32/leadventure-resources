@@ -1,0 +1,985 @@
+/*
+#######################################
+DEV VERSION 4.0 LAST UPDATED 2/21/2019
+#######################################
+*/
+
+$primary-color: #ec1c2d;
+$secondary-color: #272727;
+$white-color: #fff;
+$black-color: #000;
+
+$webfont: "webfont";
+$webfont2: "webfont2";
+
+.webfont, .pc-header .Head, #BottomFooter h2, .vlbCatalogBtn {font-family: $webfont, sans-serif !important;}
+body, .webfont2 {font-family: $webfont2, sans-serif !important;}
+
+.homepage, .subpage {
+	a {
+		transition: 0.2s linear;
+		text-decoration: none;
+	}
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 980px;
+  box-sizing: border-box;
+}
+
+// Imports
+@import "components/media-queries";
+@import "components/master";
+@import "components/animation-effects";
+@import "components/social-icons";
+@import "components/header";
+@import "components/topbar";
+@import "components/navbar";
+@import "components/hometext";
+@import "components/footer";
+@import "components/mobile-buttons";
+@import "components/location-finder";
+// @import 'components/ndsc-widget';
+// @import 'components/photo-gallery';
+// @import 'components/hp-review-widget';
+// @import 'components/wheel-config';
+@import "components/ndsc";
+@import "components/atc";
+@import "components/location-widget";
+@import "components/instant-quote";
+@import "components/coupons";
+@import "components/ma-advisor";
+@import "components/reviews";
+@import "components/aqmodule";
+
+/*=============================================     
+=            Header Styles          =  
+=============================================*/
+
+/*---    Action Bar Styles  ---*/
+
+$topbar-color: #fff;
+$topbar-fontsize: 1.4em;
+$actionbar-width: 980px;
+
+#nd-actionbar{border: none !important; padding: 0; position: relative; z-index: 1;}
+#nd-actionbar .container {max-width: $actionbar-width; padding: 0 !important;}
+#dnn_ActionBarPane .quote-btn { font-size: 1.2em;}
+#dnn_ActionBarPane .quote-btn a { color: $topbar-color; text-decoration: none; margin-right: 20px;}
+#dnn_ActionBarPane .quote-btn a:last-of-type { margin: 0;}
+#dnn_ActionBarPane .quote-btn a:hover { text-decoration: underline;}
+#dnn_ActionBarPane #top-social { display: flex; justify-content: space-between;}
+#dnn_ActionBarPane #top-social a { color: $topbar-color; text-decoration: none; font-size: $topbar-fontsize; margin-right: 20px; padding: 1px 0;}
+#dnn_ActionBarPane #top-social a:last-of-type {margin: 0;}
+
+/*=============================================
+=            Navbar Styles                   =  
+=============================================*/    
+  
+$nav-width: 980px;
+$nav-dropdown-bg: #333;
+$nav-main-color: #fff;
+$nav-sub-color: #fff;
+$nav-hover-color: #C91919; 
+
+
+@include desktop{
+	#contentnav{
+		height: auto; 
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@include tablet-desktop{
+    #nd-menubar{
+		background:transparent; 
+		z-index:15;
+		display: flex;
+		
+		&.scrolled {
+			left: 0;
+			right: 0;
+			width: 100%;
+			z-index: 11;
+			bottom: auto;
+			position: fixed;
+			max-width: 100%;
+			top: 0 !important;
+			background: $white-color !important;
+			transition: all 0.7s;
+			&.wrapper {
+				max-width: 100%; 
+			}
+			#contentnav {
+				border-top: 0px solid #fff !important;
+				padding-top: 0px !important;
+			}
+		}
+
+		#contentnav {
+			@media only screen and (min-width: 768px) and (max-width: 1023px) {
+				background-color: $white-color !important;
+			}
+			#dnnMenu {
+				ul.topLevel {
+					>.item {
+						&.haschild {
+							> a {
+								@media(min-width:1140px) { //Drop down arrows for child pages
+									&::after{
+										top: 50%;
+										z-index: 5;
+										width: auto;
+										height: 100%;
+										display: block;
+										content: "\f078";
+										font-weight: 900;
+										position: absolute;
+										right: calc(20% - 25px);
+										transform: translateY(-50%);
+										font-family: "Font Awesome 5 Free";
+									}
+								}	
+								@media(max-width: 1024px){ 
+									&::after{
+										top: 50%;
+										z-index: 5;
+										width: auto;
+										height: 100%;
+										
+										display: block;
+										content: "\f078";
+										font-weight: 900;
+										position: absolute;
+										right: calc(20% - 25px);
+										transform: translateY(-50%);
+										font-family: "Font Awesome 5 Free";
+									}
+								}
+							}	
+						}
+					}
+				}
+			}
+		}
+	}  
+    
+    #contentnav #dnnMenu a {text-transform:uppercase; color:$black-color; display: block; font-weight:500; font-size:1em; text-decoration:none; transition:background 200ms ease-in-out; -moz-transition:background 200ms ease-in-out; -webkit-transition:background 200ms ease-in-out; }
+	
+    #contentnav #dnnMenu .subLevel.double-column ul {
+		display: grid;
+	}
+
+	// Sub Level Menu Background Color
+	#contentnav #dnnMenu .subLevel ul, #contentnav #dnnMenu .subLevel .subLevelRight ul{ 
+		background-color: $white-color;
+		color: $black-color;
+	}
+	
+	// Default Hover Effects
+	#contentnav #dnnMenu .topLevel li:hover > a {
+		background: transparent;
+		color: $primary-color;
+		transition: all 0.3s;
+	}
+	/* Current Tab */
+	#contentnav #dnnMenu .topLevel li.selected > a {
+		color: $primary-color;
+	} 
+	#contentnav #dnnMenu .subLevel li a:hover {
+		background-color: $primary-color;
+		color: $white-color;
+	} 
+
+	#contentnav #dnnMenu .topLevel li:hover > a {
+		text-decoration: none;
+	}
+
+	// Sub Level Borders
+	#contentnav #dnnMenu .single-column li a{ border: none; }
+	#contentnav #dnnMenu .subLevel.double-column li a{border: none;}
+	#contentnav #dnnMenu .subLevel.triple-column ul { display: grid; }
+	#contentnav #dnnMenu .last .subLevel {
+		width: 100% !important;
+	}
+}
+ 
+    
+
+/*============================================================================================================================*/
+ 
+
+
+/*=============================================
+=            Header Styles                   =
+=============================================*/
+
+#contentheader {
+	background: $white-color;
+	padding: 20px 20px;
+	height:auto; 
+	margin: 0;
+	@media (min-width: 768px) and (max-width: 1023px) { padding-top: 60px; }
+	@media(max-width: 768px) { padding-top: 95px !important; }
+	.container {
+		max-width: 1280px;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		align-items: center;
+		justify-items: center;
+		padding: 0;
+		@media(min-width: 768px) { grid-template-columns: repeat(3, minmax(0, 1fr)); justify-items: unset;}
+		.menu-nav {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+      grid-column: span 2 / span 2;
+		}
+	}
+}
+#dnn_HeaderContactPane {
+	#top-social {
+		display: none;
+	}
+	.GeoPanel {
+		display: none !important;
+	}
+	.header__info {
+		display: none;
+        gap: 2rem; 
+		justify-content: end;
+		align-items: center;
+		flex-wrap: wrap;
+		@media(min-width: 768px) { display: flex; }
+		a {
+			i { color: $primary-color; }
+			color: $black-color;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			margin-bottom: 4px;
+			@media(min-width: 768px) { font-size: 0.9rem; }
+			&:hover { color: $primary-color; .fa-map-marker { color: $primary-color; transition: all 0.3s;} }
+		}
+	}
+	float:right;
+}
+
+#dnn_dnnLogo_hypLogo {
+	margin: 0;
+	#dnn_dnnLogo_imgLogo {
+		max-width: 300px;
+		width: 100%;
+		object-fit: contain;
+		margin: 0;
+	}
+}
+
+#headercontact {text-transform:none; color:#fff; line-height:normal; text-align: right;}
+#headercontact .phone {} 
+#headercontact .address {} 
+#headercontact .slogan {} 
+        
+   
+@include desktop{    
+	#dnn_dnnLogo_imgLogo {margin:2% 0;}     
+	#dnn_HeaderContactPane {margin:2% 0 0;}      
+}   
+
+@include tablet{
+	#dnn_dnnLogo_imgLogo{margin:100px auto 0;}
+}
+       
+@include tablet-phone{     
+    #dnn_dnnLogo_imgLogo{padding:1% 0;}
+	#headercontact{text-align: center;}      
+	#headercontact .phone {float:none; margin:0;} 
+	#headercontact .address {float:none;}  
+}
+/*============================================================================================================================*/
+
+/*=============================================
+=            Mobile Menu Styles              =
+=============================================*/
+$mobile-nav-bg: 1;
+ 
+@include phone{
+	// Mobile Top Bar Background 
+	.mobileBG{background:$primary-color; opacity:$mobile-nav-bg;}
+
+	//Mobile Menu Background
+	.nd-mobile-window{background:$primary-color; left: 0;}
+
+	//Mobile Sub Level Color
+	#contentnav #dnnMenu .subLevel{background:lighten($primary-color,15%) !important;}
+}
+
+/*=============================================
+=            Body Styles            =
+=============================================*/
+
+#nd-background {
+  background: url(img/bg.jpg) no-repeat top center #000;
+  background-attachment: fixed;
+}
+
+.homepage {
+  #nd-middlebar {
+    &::after {
+      float: left;
+      clear: both;
+      content: "";
+    }
+  }
+  #nd-middlebar.first-row {
+    background: transparent;
+    .container {
+      padding: 0;
+    }
+  }
+  #nd-middlebar.second-row {
+    background: #000;
+    .container {
+      padding: 0;
+    }
+  }
+  #nd-middlebar.third-row {
+    background: #070707;
+    .container {
+      padding: 0;
+    }
+  }
+  #nd-middlebar.fourth-row {
+    background: #000;
+    .container {
+      padding: 0;
+    }
+  }
+  #nd-middlebar.fifth-row {
+    background: $primary-color;
+    .container {
+      padding: 0;
+      .wrapper.coupon-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        @media (min-width:1024px) {
+          flex-direction: row;
+          justify-content: space-evenly;
+        }
+        &::after{
+          display: none;
+        }
+        #dnn_HomeSidePane{
+          width: 100%;
+          box-sizing: border-box;
+          @media (min-width:1024px) {
+            max-width: 30%;
+          }
+        }
+        #dnn_HomeContentPane{
+          width: 100%;
+          box-sizing: border-box;
+          @media (min-width:1024px) {
+            max-width: 60%;
+          }
+        }
+      }
+    }
+  }
+  #nd-middlebar.sixth-row {
+    .container {
+      padding: 0;
+    }
+  }
+  #nd-middlebar.seventh-row {
+    .container {
+      padding: 0;
+    }
+  }
+  #nd-middlebar.eighth-row {
+    .container {
+      padding: 0;
+    }
+  }
+}
+
+#main-content {
+  background: #fff;
+}
+#sub-content {
+  padding: 0;
+  background: #fff;
+  .container{
+    padding: 0;
+  }
+}
+  
+@include phone {
+  #dnn_ContentPane,
+  #dnn_HomeSidePane,
+  #dnn_LeftPane,
+  #dnn_RightPane,
+  #dnn_HomeContentPane,
+  #contentnav {
+    width: auto;
+    float: none;
+  }
+}
+
+/*--- Main Call to Action Styles --*/
+#ctabox {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  a{
+    margin: 10px;
+    color: #fff;
+    padding: 10px;
+    flex: 1 0 auto;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: $primary-color;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+  }
+}
+
+/*--- Default Button Styles --*/
+.homepage-options {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  a {
+    width: 100%; 
+    margin: 10px 0; 
+		padding: 20px; 
+		font-size: 1em;
+		max-width: 250px;
+		text-align: center; 
+		color: #fff !important; 
+		text-transform: uppercase; 
+		transition: all ease 0.3s; 
+		-moz-transition: all ease 0.3s; 
+		text-decoration: none !important; 
+		-webkit-transition: all ease 0.3s; 
+		@include button-bg($primary-color); 
+		&:hover{
+			color: #fff !important;
+		}
+  }
+}
+
+/*--- Welcome Services Styles --*/
+//Icons can be found on fontawesome.com v5
+.welcome-serv{
+  display: flex;
+  padding: 20px 0;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  @media(min-width:768px) {
+    justify-content: space-between;
+  }
+  .serv-item{
+    display: flex;
+    padding: 10px;
+    color: $primary-color;
+    align-items: center;
+    justify-content: center;
+    i{
+      font-size: 1.6em;
+      padding-right: 10px;
+    }
+    h4{
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/*--- NDSC Service Widget ---*/
+#ndsc{
+  #services_div {
+    background: $primary-color;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border: 0;
+    margin-bottom: 2%;
+    padding: 2% 1%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    #left_a, #right_a{
+      top: 40%;  
+      display:block; 
+      position:absolute;
+      cursor:pointer;
+      color: #000;
+      font-size: 2.5em;  
+      text-decoration: none !important;
+    }
+    #left_a{
+      left:21px; 
+    }
+    #left_a:before {
+      content:'\f104'; 
+      font-family:'Font Awesome 5 Free'; 
+      font-weight:900;
+    }
+    #right_a{
+      right:5px;
+    }
+    #right_a:before {
+      content:'\f105'; 
+      font-family:'Font Awesome 5 Free'; 
+      font-weight:900;
+    }
+    #slider_div {
+      margin: 0 25px;
+      overflow: hidden;
+      background: #fff;
+      border-radius: 10px;
+      #services_ul {
+        position: relative !important;
+        #services_div #services_ul li {
+          margin: 0;
+        }
+        a.ndscCatImage3 {
+          color:#000 !important; 
+          text-decoration:none !important;
+        }
+      }
+    }
+  }
+}
+
+/*--- VLB Horizontal ---*/
+#find-tire-bar{
+  padding: 0 ;
+  @include phone{
+    padding:2%; 
+    width:auto; 
+    height:auto; 
+  }
+  #TireSizeFinder{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @media(min-width:1024px) {
+      align-items: inherit;
+      justify-content: flex-start;
+    }
+    #sizefinder-inputs{
+      padding: 20px 0; 
+      display: flex; 
+      justify-content: center;
+      @media(max-width:768px) {
+        align-items: center; 
+        flex-direction: column;
+      }
+      @media(max-width:1023px) {
+        width: 100%;
+        margin: 1% auto;
+      }
+      div{
+        width: 100%;
+        position: relative;
+        padding-right: 10px;
+        &:last-of-type{
+          padding-right: 0;
+        }
+        @media(max-width:1023px) {
+          padding-right: 0;
+          margin-bottom: 5px;
+        }
+        &#size{
+          &::before{
+            right: 0 !important;
+          }
+        }
+        &::before{
+          top: 0;
+          right: 10px;
+          content: '';
+          width: 25px;
+          height: 37px;
+          display: block;
+          position: absolute;
+          pointer-events: none;
+          background: rgba(0,0,0,.2);
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+          > &:last-of-type{
+            width: 20px;
+          }
+          @media(max-width:1023px) {
+            right: 0;
+          }	
+        }
+      }
+      select{
+        width:100% !important; 
+        transition: all .15s ease-in-out;
+      }
+      .vlbselect{
+        border: none;
+        padding: 10px;
+        margin-right: 0;
+        border-radius: 5px; 
+        box-shadow: 2px 2px 3px #666;
+      }
+    }
+    #links {
+      margin: 0;
+      width: 100%;
+      display:flex; 
+      align-items: center;
+      justify-content: center; 
+      @media(min-width:1024px){
+        justify-content: left; 
+      }
+      .vlbCatalogBtn{
+        width: 100%;
+        padding: 20px; 
+        color: #fff;
+        font-size: 1em; 
+        display: block;
+        font-weight: 700; 
+        text-align: center; 
+        background: $primary-color; 
+        box-sizing: border-box; 
+        text-transform: uppercase;
+        text-decoration: none !important; 
+        transition: all 0.3s ease-in-out; 
+        -moz-transition: all 0.3s ease-in-out; 
+        -webkit-transition: all 0.3s ease-in-out; 
+        &:hover{
+          background: $secondary-color; 
+        }
+      }
+      // .searchbuttons{
+      //     width: 100%;
+      //     max-width: 200px;
+      //     a{
+      //         width: 100%;
+      //         font-size:1em; 
+      //         display: block;
+      //         font-weight:700; 
+      //         max-width: 200px;
+      //         padding:10px 20px; 
+      //         text-align:center; 
+      //         border-radius: 10px; 
+      //         font-family:$webfont;
+      //         box-sizing:border-box; 
+      //         text-transform:uppercase;
+      //         background:$secondary-color; 
+      //         text-decoration:none !important; 
+      //         transition:all 0.2s ease-in-out; 
+      //         -moz-transition:all 0.2s ease-in-out; 
+      //         -webkit-transition:all 0.2s ease-in-out;
+      //         &:hover{
+      //             background:$primary-color; 
+      //             color:$secondary-color !important; 
+      //         }
+      //     }
+      // }
+    }
+  }
+}
+
+/*--- coupons ---*/
+.coupon-wrap{
+  max-width: 630px;
+  margin: 0 auto !important;
+}
+
+/*--- Brands ---*/
+#brands {
+	display: flex;
+  flex-flow: row wrap; 
+  align-items: center;
+  justify-content: center;
+  @media(min-width:1024px) {
+    justify-content: space-evenly;
+  }
+	a{
+		transition: all .3s ease-in-out;
+		-webkit-transition: all .3s ease-in-out;
+		img{
+			width: 100%;
+			max-width: 180px;
+			transition: all .3s ease-in-out;
+			-webkit-transition: all .3s ease-in-out;
+		}
+		&:hover{
+			img{
+				transform: translateY(-10px);
+			}
+		}
+	}
+}
+
+/*--- Subpages ---*/
+.subpage{
+  
+  #main-content {
+    .container{
+      padding: 20px;
+      @media(min-width:1024px){
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+.subpage-buttons {
+  display: flex; 
+	flex-flow: row wrap;
+	justify-content: left; 
+	a{
+		width: 100%; 
+    margin: 10px 0; 
+		padding: 20px; 
+		font-size: 1em;
+		max-width: 500px;
+		text-align:center; 
+		color:#fff !important; 
+		text-transform:uppercase; 
+		transition: all ease 0.3s; 
+		-moz-transition: all ease 0.3s; 
+		text-decoration:none !important; 
+		-webkit-transition: all ease 0.3s; 
+		@include button-bg($primary-color); 
+		&:hover{
+			color: #fff !important;
+		}
+	}
+}
+
+/*============================================= 
+=            Footer Styles      = 
+=============================================*/
+div#bgbottom {
+	padding: 30px 0;
+  background: #000;
+  @media(min-width: 768px) {
+    padding: 50px 0;
+  }
+  #netdriven {
+    padding: 0 2%;
+    #socialfont {
+			margin-top: 10px;
+      .fa {
+				color: #fff;
+				background: #333;
+				border-radius: 50%;
+				font-size: 14px !important;
+				&:hover{
+					background: $primary-color;
+				}
+      }
+    }
+    #dnn_FooterPane1 {
+      @media (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+      select {
+        color: #000;
+			}
+    }
+    h2{
+      color: $primary-color;
+    }
+    span,
+    .mobile-c,
+    strong {
+			color: #fff;
+			span{
+        padding-right: 5px;
+			}
+    }
+    #LocationWidget{
+      .locwidget-phone, .locwidget-addr{
+        span{
+          z-index: 1;
+          color: $primary-color;
+        }
+				strong{
+					display: none;
+				}
+			}
+		}
+    #FooterPane1Container,
+    #FooterPane2Container,
+    #FooterPane3Container,
+    #FooterPane4Container {
+      padding: 0;
+      min-height: auto;
+    }
+    #BottomFooter {
+      >div {
+        padding: 0;
+      }
+    }
+    #FooterPane4Container {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      @media(min-width: 768px) {
+        width: auto;
+        margin-top: 0;
+      }
+      @media(min-width:1024px) {
+        height: 245px;
+      }
+      div.coupon-wrap {
+        @media(min-width: 1024px) {
+          height: 245px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        div.couponsliderview {
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: 0;
+          bottom: 0;
+          display: flex;
+          position: absolute;
+          align-items: center;
+          justify-content: center;
+          @media(min-width: 1024px) {
+            height: 245px;
+          }
+          >div {
+            width: auto!important;
+          }
+        }
+      }
+    }
+    @media(max-width:408px) {
+      #FooterPane2Container,
+      #FooterPane3Container {
+        width: 47%;
+        margin: 0;
+      }
+    }
+    #BottomFooter #FooterPane2Container {
+			padding-top: 20px;
+			border-top: 2px solid $primary-color;
+      li a {
+        color: #fff;
+        position: relative;
+        &:before {
+          transition: all .3s;
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          right: 0;
+          left: auto;
+          bottom: 0;
+          background-color: #fff;
+        }
+        &:hover {
+          //color:$primary-color; 
+          &:before {
+            left: 0;
+            right: auto;
+            width: 100%;
+          }
+        }
+      }
+		}
+		#BottomFooter #FooterPane3Container {
+			padding-top: 20px;
+			border-top: 2px solid $primary-color;
+		}
+    #login {
+      span {
+        color: #fff;
+      }
+    }
+  }
+  #poweredbynd, .poweredByBadge{
+    width: 165px;
+  }
+  .footer-client-logo{
+    margin: 0 auto;
+    display: block;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+}
+/*=============================================================================================================================*/
+
+/*=============================================
+=               Fixes Styles              =
+=============================================*/
+img[style*="float"]:not(#tirebrands img) {
+  @media(max-width:767px){
+      float: none !important;
+      margin: 10px auto;
+      display: block;
+  }
+  @media(min-width:768px){
+      float: right !important;
+  }
+}
+
+
+#jc #content {box-sizing: border-box;}
+
+#dnn_SidePane, #dnn_CTCFilterPane {z-index: 6 !important;}
+
+form[action*='/login' i]{
+	#dnn_dnnLogo_imgLogo {margin-top:50px;}
+    #nd-middlebar.first-row, #nd-middlebar.second-row, #nd-middlebar.third-row, #nd-middlebar.fourth-row, #nd-middlebar.fifth-row, #nd-middlebar.sixth-row, #nd-middlebar.seventh-row, #nd-middlebar.eighth-row, .homepage #bg1  {height:auto !important; min-height:0 !important; padding:0 !important; margin:0 !important;}
+}
+
+div[id*="DynamicForms_pnlRegistration"].DynamicForms_MainPanel {
+  div[id*="DynamicForms_pnlAJAXFields"] {
+    table[id*="DynamicForms_tblQuestions"] {
+      tbody {
+        tr {
+          @media (max-width: 640px) {
+            display: flex;
+            flex-direction: column;
+          }
+          td {
+            @media (max-width: 640px) {
+              width: 100%;
+            }
+            table {
+              @media (max-width: 640px) {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+form[action*="/accessibility" i] {
+  #bgbottom{
+    display: none !important;
+  }
+}
+
+/*=======================================================================================================================================*/
