@@ -1,80 +1,43 @@
-<img
-  src="/portals/[Portal:PortalID]/skins/master_v1/img/about_img-1.png"
-  alt=""
-/>
-<h3><strong>About [ND:ClientName]</strong></h3>
-<p>
-  <strong>CERTS Automotive</strong> has been providing quality car care in Mifflinburg, Pennsylvania, since 2012. We are a family-owned business delivering honest and professional automotive repair and auto maintenance services to the people of Mifflinburg and surrounding areas. The quality ASE (Automotive Service Excellence) certified technicians at <strong>CERTS Automotive</strong> employ today’s latest automotive technology and are equipped to handle all major and minor repairs on foreign and domestic vehicles.
-</p>
-<p>
-  <strong>CERTS Automotive</strong> is a certified NAPA AutoCare Center; we are able to provide the benefits of an established national entity while maintaining the personal touch of a family-owned business. We understand that your vehicle is a major investment, and that is why we care for each customer’s vehicle as if it were our own.
-</p>
-<p>
-  Please be sure to go to our <a href="/Coupons">Shop Specials</a> section for
-  our current promotions and specials.
-</p>
-<p>Come by and visit our clean and professional shop in Richmond, MN.</p>
-<div>
-  <p><strong>About NAPA AutoCare</strong></p>
-  <img
-    src="https://a.nd-cdn.us/modules/custom-pages/napa/napa-autocare-center-365x133.png"
-    alt="NAPA AutoCare Center"
-  />
-  <p>
-    As a NAPA AutoCare Center, we follow a strict code of ethics so customers
-    will know up-front what to expect. As part of this code, we pledge:
-  </p>
-  <ul>
-    <li>
-      To perform high-quality diagnostic and repair service at a fair price
-      using quality NAPA parts.
-    </li>
-    <li>To employ ASE-certified technicians.</li>
-    <li>To be dedicated to customer satisfaction.</li>
-    <li>
-      To exercise reasonable care for the customer's property while it is in our
-      possession.
-    </li>
-    <li>
-      To obtain prior authorization and provide a price estimate for work
-      performed.
-    </li>
-    <li>
-      To provide a system for fair settlement of customer complaints should they
-      occur.
-    </li>
-    <li>To maintain the highest standards of our profession.</li>
-    <li>
-      To uphold the integrity of all members of the NAPA AutoCare Program.
-    </li>
-  </ul>
- 
-</div>
+<script type="module">
+  import { codeToHtml } from "https://esm.sh/shiki@1.0.0";
 
-<div>
-  <p>We do pretty much anything automotive, and have outside sources for the few services we don’t provide, making us a one stop shop!</p>
-</div>
+  class CodeNetDriven extends HTMLElement {
+    constructor() {
+      super();
+      this.attachShadow({ mode: 'open' });
+      
+      this.shadowRoot.innerHTML = `
+        <style>
+          .code-container {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            margin: 20px 0;
+          }
+        </style>
+        <div class="code-container">
+          <div class="code-content"></div>
+        </div>
+      `;
+    }
 
-<div>
-  <p>Our specialties:</p>
-  <ul>
-      <li>Engine and transmission replacement</li>
-      <li>Manual transmission repair</li>
-      <li>Leaking exhaust manifolds (especially on Fords, or any vehicle with aluminum heads; most shops won’t touch these!)</li>
-      <li>Stripped out spark plugs! (Common on Fords, and again, most shops won’t touch these or fix them correctly.)</li>
-      <li>Brake jobs, brake lines</li>
-      <li>ECM flashing/reprogramming</li>
-      <li>Tire sales</li>
-      <li>We are a Jasper engine and transmission dealer.</li>
-      <li>We are a NAPA AutoCare Center.</li>
-      <li>We are ASE certified.</li>
-      <li>Air conditioning</li>
-      <li>Some diesel work</li>
-      <li>Some body and frame repair but we are not a collection or body shop</li>
-  </ul>
-</div>
+    async connectedCallback() {
+      const code = this.innerHTML.trim();
+      const language = this.getAttribute('codeFormat') || 'html';
+      
+      try {
+        const highlightedCode = await codeToHtml(code, {
+          lang: language,
+          theme: 'min-dark'
+        });
+        
+        this.shadowRoot.querySelector('.code-content').innerHTML = highlightedCode;
+      } catch (error) {
+        console.error('Error al resaltar el código:', error);
+      }
+    }
+  }
 
-<div>
-  <h3>Our National NAPA AutoCare Warranty</h3>
-  <p>We currently offer the NAPA AutoCare Peace of Mind Warranty, which provides our customers with 24 months/24,000 miles of worry-free protection on qualifying parts and labor. Wherever you may travel, our warranty is honored at more than 14,000 NAPA AutoCare locations across the country.</p>
-</div>
+  customElements.define('code-net-driven', CodeNetDriven);
+</script>
