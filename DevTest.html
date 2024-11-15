@@ -1,10 +1,18 @@
-<div id="maintext" class="header__info">
-  <a href="tel:4194953009"><i class="fa fa-phone" aria-hidden="true"></i>419.495.3009</a>
-  <a href="/Contact/Find-Us"><i class="fa fa-map-marker" aria-hidden="true"></i> 1610 Industrial Dr, Celina, OH 45822</a>
-  <hr>
-  <div class="header__text">
-    <p>Can’t find what you’re looking for? </p>
-    <p><span>We will find it for you</span></p>
-  </div>
-  <div class="homepage-options"> <a href="/Contact" >Contact Us</a> </div>
-</div>
+import { Label } from "@/components/ui/label";
+import { SelectNative } from "@/components/ui/select-native";
+
+export default function Select02() {
+  return (
+    <div className="space-y-2">
+      <Label htmlFor="select-02">Select with placeholder (native)</Label>
+      <SelectNative id="select-02" defaultValue="">
+        <option value="" disabled>
+          Please select a value
+        </option>
+        <option value="s1">1 to 5</option>
+        <option value="s2">5 to 10</option>
+        <option value="s3">More than 10</option>
+      </SelectNative>
+    </div>
+  );
+}
