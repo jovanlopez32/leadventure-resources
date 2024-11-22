@@ -1,4 +1,3 @@
-<script type="module">
   // Importamos la función para resaltar código desde una librería externa
   import { codeToHtml } from "https://esm.sh/shiki@1.0.0";
   
@@ -78,4 +77,3 @@
 
   // Registramos el Web Component con su nombre
   customElements.define('code-net-driven', CodeNetDriven);
-</script>

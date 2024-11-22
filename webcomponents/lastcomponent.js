@@ -1,28 +1,25 @@
-<script type="module">
- import { codeToHtml } from "https://esm.sh/shiki@1.0.0";
+import { codeToHtml } from "https://esm.sh/shiki@1.0.0"
 
 class CodeNetDriven extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        this.shadowRoot.innerHTML = `
+  constructor() {
+    super()
+    this.attachShadow({ mode: "open" })
+    this.shadowRoot.innerHTML = `
             <style>
                 .wrapper {
                     position: relative;
                     margin: 20px 0;
                     overflow: hidden;
-                     border-radius: 8px;
+                    border-radius: 10px;
                 }
                 
                 .code-container {
                     padding: 20px;
-                    padding-top: 50px;  /* Espacio para el botón */
-                   
+                    padding-top: 50px; 
                     background-color: #1e1e1e;
                     border: 1px solid #333;
                     overflow: auto;
                     max-height: 200px;
-                    
                 }
                 
                 .button-wrapper {
@@ -37,7 +34,7 @@ class CodeNetDriven extends HTMLElement {
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
-                    padding-right: 10px;
+                    padding-right: 25px;
                     border-bottom: 1px solid #333;
                 }
 
@@ -55,10 +52,6 @@ class CodeNetDriven extends HTMLElement {
                 .copy-button:hover {
                     background-color: rgba(255, 255, 255, 0.1);
                     border-color: #888;
-                }
-
-                .code-content {
-                    font-family: monospace;
                 }
 
                 /* Estilos para la barra de scroll */
@@ -88,47 +81,51 @@ class CodeNetDriven extends HTMLElement {
                     <div class="code-content"></div>
                 </div>
             </div>
-        `;
+        `
+  }
+
+  async connectedCallback() {
+    const rawCode = this.innerHTML.trim()
+    const code = this.innerHTML.trim()
+    const language = this.getAttribute("codeFormat") || "html"
+
+    let formattedCode = rawCode
+    try {
+      if (language === "html") {
+        formattedCode = html_beautify(rawCode, { indent_size: 2 })
+      } else if (language === "scss") {
+        formattedCode = css_beautify(rawCode, { indent_size: 2 })
+      } else if (language === "javascript") {
+        formattedCode = js_beautify(rawCode, { indent_size: 2 })
+      }
+    } catch (error) {
+      console.warn("Error al formatear el código:", error)
     }
 
-    async connectedCallback() {
-        const rawCode = this.innerHTML.trim();
-        const language = this.getAttribute('codeFormat') || 'html';
-
-        let formattedCode = rawCode;
-        try {
-            if (language === 'html') {
-                formattedCode = html_beautify(rawCode, { indent_size: 2 });
-            } else if (language === 'scss') {
-                formattedCode = css_beautify(rawCode, { indent_size: 2 });
-            } else if (language === 'javascript') {
-                formattedCode = js_beautify(rawCode, { indent_size: 2 });
-            }
-        } catch (error) {
-            console.warn('Error al formatear el código:', error);
-        }
-
-        try {
-            const highlightedCode = await codeToHtml(formattedCode, {
-                lang: language,
-                theme: 'min-dark',
-            });
-            this.shadowRoot.querySelector('.code-content').innerHTML = highlightedCode;
-        } catch (error) {
-            console.error('Error al resaltar el código:', error);
-            this.shadowRoot.querySelector('.code-content').textContent = formattedCode;
-        }
-
-        this.shadowRoot.querySelector('.copy-button').addEventListener('click', () => {
-            navigator.clipboard.writeText(rawCode).then(() => {
-                const button = this.shadowRoot.querySelector('.copy-button');
-                const originalText = button.textContent;
-                button.textContent = 'Copied!';
-                setTimeout(() => button.textContent = originalText, 2000);
-            });
-        });
+    try {
+      const highlightedCode = await codeToHtml(formattedCode, {
+        lang: language,
+        theme: "min-dark",
+      })
+      this.shadowRoot.querySelector(".code-content").innerHTML = highlightedCode
+    } catch (error) {
+      console.error("Error al resaltar el código:", error)
+      this.shadowRoot.querySelector(".code-content").textContent = formattedCode
     }
+
+    this.shadowRoot
+      .querySelector(".copy-button")
+      .addEventListener("click", () => this.copyCode(code))
+  }
+
+  copyCode(code) {
+    navigator.clipboard.writeText(code).then(() => {
+      const button = this.shadowRoot.querySelector(".copy-button")
+      const originalText = button.textContent
+      button.textContent = "Copied!"
+      setTimeout(() => (button.textContent = originalText), 2000) // Volvemos al texto original tras 2 segundos
+    })
+  }
 }
 
-customElements.define('code-net-driven', CodeNetDriven);
-</script>
+customElements.define("code-net-driven", CodeNetDriven)

@@ -1,0 +1,46 @@
+.homepage-options-4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  
+    a {
+      z-index: 1;
+      width: 100%;
+      padding: 1em;
+      margin: 0.5em;
+      flex: 1 1 auto;
+      font-size: 1em;
+      max-width: 260px;
+      background: none;
+      font-weight: 700;
+      font-style: italic;
+      text-align: center;
+      position: relative;
+      color: #000 !important;
+      border: 2px solid #000;
+      transition: all ease 0.8s;
+      -moz-transition: all ease 0.8s;
+      text-decoration: none !important;
+      -webkit-transition: all ease 0.8s;
+  
+      &::before {
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        content: '';
+        z-index: -1;
+        position: absolute;
+        background: $secondary-color;
+        transition: all .2s ease-in-out;
+      }
+  
+      &:hover {
+        background: none;
+  
+        &::before {
+          height: 100%;
+        }
+      }
+    }
+  }
