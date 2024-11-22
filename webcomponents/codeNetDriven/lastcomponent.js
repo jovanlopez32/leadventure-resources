@@ -54,7 +54,7 @@ class CodeNetDriven extends HTMLElement {
                     border-color: #888;
                 }
 
-                /* Estilos para la barra de scroll */
+                  /* Estilos para la barra de scroll */
                 .code-container::-webkit-scrollbar {
                     width: 8px;
                     height: 8px;
@@ -72,6 +72,7 @@ class CodeNetDriven extends HTMLElement {
                 .code-container::-webkit-scrollbar-thumb:hover {
                     background: #888;
                 }
+
             </style>
             <div class="wrapper">
                 <div class="button-wrapper">
@@ -86,7 +87,6 @@ class CodeNetDriven extends HTMLElement {
 
   async connectedCallback() {
     const rawCode = this.innerHTML.trim()
-    const code = this.innerHTML.trim()
     const language = this.getAttribute("codeFormat") || "html"
 
     let formattedCode = rawCode
@@ -115,7 +115,7 @@ class CodeNetDriven extends HTMLElement {
 
     this.shadowRoot
       .querySelector(".copy-button")
-      .addEventListener("click", () => this.copyCode(code))
+      .addEventListener("click", () => this.copyCode(formattedCode))
   }
 
   copyCode(code) {

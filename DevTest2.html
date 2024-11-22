@@ -1,136 +1,79 @@
-import { codeToHtml } from "https://esm.sh/shiki@1.0.0"
+<div style="box-sizing: border-box; padding: 60px 20px">
+    <h2>Ayuda a crear una documentación más clara y efectiva.</h2>
+    <p>
+        Hola! En esta seccion encontraras como tu puedes contribuir a la documentación de la plataforma y a la creacion de componentes reutilizables.
+    </p>
 
-class CodeNetDriven extends HTMLElement {
-  constructor() {
-    super()
-    this.attachShadow({ mode: "open" })
-    this.shadowRoot.innerHTML = `
-            <style>
-                .wrapper {
-                    position: relative;
-                    margin: 20px 0;
-                    overflow: hidden;
-                    border-radius: 8px;
-                }
+    <p>
+        Primero conoce a las dos etiquetas principales.
+    </p>
+
+    <code-net-driven codeFormat="html">
+        <!-- Esta etiqueta te ayudara mostrar un fragmento de codigo, ya sea en HTML, SCSS o JavaScript solo deberas indicar el tipo de lenguaje. -->
+        <code-net-driven codeFormat="html"></code-net-driven> 
+        <!-- Esta etiqueta te mostrara un tab de navegacion, en el cual podras mostrar tu codigo de html , scss y javascript  -->
+        <tabs-net-driven></tabs-net-driven>
+    </code-net-driven>
+
+    <p>
+        <em>code-net-driven:</em> utilizala cuando quieras mostrar sola una porcion de codigo.
+    </p>
+    <p>
+        <em>tabs-net-driven</em> utilizala cuando quieras mostrar tu HTML, SCSS y JavaScript en un tab de navegacion.
+    </p>
+
+    <h3>Como usar <em>code-net-driven:</em></h3>
+    <p>Primero crea un modulo html y pega el componente ya creado o pon una imagen, video o link del mismo.</p>
+    <p>Segundo envuelve el codigo en la etiqueta <em>code-net-driven</em> e indicar el lenguaje. Aqui te muestro un ejemplo: </p>
+    <code-net-driven codeFormat="html">
+        <code-net-driven codeFormat="javascript">
+            window.addEventListener("load", function() {
+                var menuItems = document.querySelectorAll("#menuItem13724");
                 
-                .code-container {
-                    padding: 20px;
-                    padding-top: 50px; 
-                    background-color: #1e1e1e;
-                    border: 1px solid #333;
-                    overflow: auto;
-                    max-height: 200px;
-                    
-                }
-                
-                .button-wrapper {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    height: 50px;
-                    width: 100%;
-                    background-color: #1e1e1e;
-                    border-top-left-radius: 8px;
-                    border-top-right-radius: 8px;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    padding-right: 10px;
-                    border-bottom: 1px solid #333;
-                }
+                menuItems.forEach(function(menuItem) {
+                    if (menuItem.tagName === 'A') {
+                        menuItem.target = "_blank"; 
+                    }
+                });
+            });
+        </code-net-driven>
+    </code-net-driven>
 
-                .copy-button {
-                    padding: 8px 12px;
-                    background: transparent;
-                    border: 1px solid #666;
-                    border-radius: 4px;
-                    color: #fff;
-                    cursor: pointer;
-                    font-size: 12px;
-                    transition: all 0.2s;
-                }
+    <p>
+        Tercero pega tu codigo en un HTML module con formato HTML.
+        <small>Si pegas tu codigo con formato RAW. El coigo HTML se puede mostrar en una sola linea.</small>
+    </p>
 
-                .copy-button:hover {
-                    background-color: rgba(255, 255, 255, 0.1);
-                    border-color: #888;
-                }
-
-                .code-content {
-                    font-family: monospace;
-                }
-
-                /* Estilos para la barra de scroll */
-                .code-container::-webkit-scrollbar {
-                    width: 8px;
-                    height: 8px;
-                }
-
-                .code-container::-webkit-scrollbar-track {
-                    background: #2e2e2e;
-                }
-
-                .code-container::-webkit-scrollbar-thumb {
-                    background: #666;
-                    border-radius: 4px;
-                }
-
-                .code-container::-webkit-scrollbar-thumb:hover {
-                    background: #888;
-                }
-            </style>
-            <div class="wrapper">
-                <div class="button-wrapper">
-                    <button class="copy-button">Copy code</button>
+    <h3>Como usar <em>tabs-net-driven</em></h3>
+    <p>Primero crea un modulo html y pega el componente ya creado o pon una imagen, video o link del mismo.</p>
+    <p>Segundo envuelve el codigo en la etiqueta <em>code-net-driven</em> e indicar el lenguaje. Aqui te muestro un ejemplo: </p>
+    <code-net-driven codeFormat="html">
+        <tabs-net-driven>
+            <!-- Código HTML -->
+            <code-net-driven slot="code-html" codeFormat="html">
+                <div class="homepage-options">
+                    <a href="#" title="Button1">Button1</a>
+                    <a href="#" title="Button2">Button2</a>
+                    <a href="#" title="Button3">Button3</a>
                 </div>
-                <div class="code-container">
-                    <div class="code-content"></div>
-                </div>
-            </div>
-        `
-  }
-
-  async connectedCallback() {
-    const rawCode = this.innerHTML.trim()
-    const code = this.innerHTML.trim()
-    const language = this.getAttribute("codeFormat") || "html"
-
-    let formattedCode = rawCode
-    try {
-      if (language === "html") {
-        formattedCode = html_beautify(rawCode, { indent_size: 2 })
-      } else if (language === "scss") {
-        formattedCode = css_beautify(rawCode, { indent_size: 2 })
-      } else if (language === "javascript") {
-        formattedCode = js_beautify(rawCode, { indent_size: 2 })
-      }
-    } catch (error) {
-      console.warn("Error al formatear el código:", error)
-    }
-
-    try {
-      const highlightedCode = await codeToHtml(formattedCode, {
-        lang: language,
-        theme: "min-dark",
-      })
-      this.shadowRoot.querySelector(".code-content").innerHTML = highlightedCode
-    } catch (error) {
-      console.error("Error al resaltar el código:", error)
-      this.shadowRoot.querySelector(".code-content").textContent = formattedCode
-    }
-
-    this.shadowRoot
-      .querySelector(".copy-button")
-      .addEventListener("click", () => this.copyCode(code))
-  }
-
-  copyCode(code) {
-    navigator.clipboard.writeText(code).then(() => {
-      const button = this.shadowRoot.querySelector(".copy-button")
-      const originalText = button.textContent
-      button.textContent = "Copied!"
-      setTimeout(() => (button.textContent = originalText), 2000) // Volvemos al texto original tras 2 segundos
-    })
-  }
-}
-
-customElements.define("code-net-driven", CodeNetDriven)
+            </code-net-driven>
+        
+            <!-- Código SCSS -->
+            <code-net-driven slot="code-scss" codeFormat="scss">
+                .homepage-options { display: flex; flex-wrap: wrap; flex-direction: row;
+                justify-content: center; a { padding: 1em; margin: 5px; flex: 1 1 auto;
+                max-width: 250px; text-align: center; background-color: #007bff; color:
+                white; text-decoration: none; font-weight: bold; transition:
+                background-color 0.4s; &:hover { background-color: #0056b3; } } }
+            </code-net-driven>
+        
+            <!-- Código JavaScript -->
+            <code-net-driven slot="code-javascript" codeFormat="javascript">
+                // No se requiere JavaScript para este componente
+            </code-net-driven>
+        </tabs-net-driven>
+    </code-net-driven>
+    <p>
+        Y listo! Tu componente ya esta listo para ser usado.
+    </p>
+</div>
