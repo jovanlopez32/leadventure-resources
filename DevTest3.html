@@ -1,21 +1,55 @@
-<div id="webfont" class="header__info">
-  <div class="addressphone">
-    <div class="phone">
-      <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-      <a href="tel:+1 [ND:ClientPhone]" title="Call Us!">[ND:ClientPhone]</a>
-    </div>
-    <div class="address">
-      <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-      <a href="/Contact/Find-Us" title="Contact [ND:ClientName]">
-        2101 Northlake Pkwy Suite B Tucker, GA 30084
-      </a>
-    </div>
-    <div class="hours">
-      <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
-      <p>
-        Monday - Friday: 9:00am - 6:00pm | Saturday: 10:00am - 3:00pm | Sunday:
-        Closed
-      </p>
+<div class="logos__slider">
+  <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/napagold.png" alt="[ND:ClientName]" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/ase.png" alt="[ND:ClientName]" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/master/img/ase-cert.png" alt="[ND:ClientName]" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="https://a2.nd-cdn.us/modules/custom-pages/jasper/logo-jasper-600x177.png" alt="[ND:ClientName]" />
+          </div>
+        </li>
+        
+
+        
+
+
+      </ul>
     </div>
   </div>
+  
 </div>
+
+<script>
+  const logos = new Splide("#slider_logos", {
+    type: "loop",
+    perPage: 5,
+    focus: 1,
+    gap: "1rem",
+    trimSpace: false,
+    arrows: false,
+    autoplay: true,
+    breakpoints: {
+      1024: { perPage: 3 },
+      767: { perPage: 2 },
+      640: { perPage: 1 },
+    },
+    pagination: false,
+  });
+  logos.mount();
+</script>
