@@ -1,23 +1,89 @@
-<div id="maintext" class="first-box__section">
-    <div class="first-box__section__img">
-        <img src="/portals/[Portal:PortalID]/skins/master/img/about-us.jpg" alt="[ND:ClientName]" />
+<div class="logos__slider">
+    <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+  
+          <li class="splide__slide">
+            <div class="slider-item">
+              <img src="//a.nd-cdn.us/modules/custom-pages/napa/napa-autocare-center-365x133.png" alt="NAPA Auto Care Center" />
+            </div>
+          </li>
+  
+          <li class="splide__slide">
+            <div class="slider-item">
+              <img src="//a.nd-cdn.us/logos/ase-cert.png" alt="ASE Certified" />
+            </div>
+          </li>
+
+        </ul>
+      </div>
     </div>
-    <div class="first-box__section__content">
-        <div>
-            <h2>TRUST CASE AUTOMOTIVE FOR THE BEST AUTO REPAIR SERVICE IN WOODBURN, OR</h2>
-            <hr />
-            <p>
-                Case Automotive has been providing top quality car care to Woodburn and the surrounding areas since 1952. We are a family-owned and operated business delivering honest and professional automotive repair and auto maintenance services.
-            </p>
-            <p>
-                We employ today’s latest automotive technology and are equipped to handle all of your General Automotive needs
-            </p>
-            <p>
-                Senior Discount, Veteran Discount- 5% parts and labor
-            </p>
-            <a href="/About" class="button">
-                <div class="button__text">Read More</div>
-            </a>
-        </div>
-    </div>
-</div>
+    
+  </div>
+  
+  <script>
+    const logos = new Splide("#slider_logos", {
+      type: "loop",
+      perPage: 2,
+      focus: 1,
+      gap: "1rem",
+      trimSpace: false,
+      arrows: false,
+      autoplay: true,
+      pagination: false,
+    });
+    logos.mount();
+  </script>
+  
+
+  
+  <!-- 
+  .logos__slider {
+              box-sizing: border-box;
+              padding: 60px 20px;
+              max-width: 1280px;
+              width: 100%;
+              margin: 0 auto;
+              
+              box-sizing: border-box;
+              li {
+                  display: grid;
+                  place-items: center;
+              }
+              .content {
+                  box-sizing: border-box;
+                  margin: 30px 0;
+                  
+                  .splide {
+                      box-sizing: border-box;
+                      height: 100%;
+                      display: grid;
+                      align-items: center;
+                      
+                      .slider-item {
+                          display: grid;
+                          place-items: center;
+                          text-align: center;
+                          box-sizing: border-box;
+                          border: 4px solid $primary-color;
+                          padding: 30px;
+                          .user__name {
+                              font-family: $webfont2 !important;
+                              color: $primary-color;
+                              font-weight: 700;
+                              font-size: 1.2rem;
+                              text-transform: uppercase;
+                          }
+                          .stars {
+                              margin-bottom: 1rem;
+                              color: #ffb342;
+                          }
+                      }
+                  }
+              }
+          }
+  
+  
+  -->
+  
+  
