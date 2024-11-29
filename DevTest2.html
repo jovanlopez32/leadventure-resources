@@ -1,4 +1,49 @@
-<div style="display: flex; justify-content: space-between; max-width: 500px; width: 100%; gap: 1rem; margin: 25px 0;">
-    <img style="width: 100%; max-width: 200px; object-fit: contain;" src="//c1.nd-cdn.us/PDFs/19689IMG_3903.jpeg" alt="[ND:ClientName]">
-    <img style="width: 100%; max-width: 200px; object-fit: contain;" src="//c1.nd-cdn.us/PDFs/75327IMG_3902.jpeg" alt="[ND:ClientName]">
+<div id="splide" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide banner__hero sl1">
+            <div class="banner__hero__container">
+                <div>
+                  <h2>SHOP BY VEHICLE</h2>
+                  <hr />
+                  <div class="homepage-options"><a href="/">SHOP ONLINE TODAY</a></div>
+                </div>
+            </div>
+        </li>
+        <li class="splide__slide banner__hero sl2">
+            <div class="banner__hero__container">
+                <div>
+                  <h2>SHOP BY VEHICLE</h2>
+                  <hr />
+                  <div class="homepage-options"><a href="/">SHOP ONLINE TODAY</a></div>
+                </div>
+            </div>
+        </li>
+        <li class="splide__slide banner__hero sl3">
+            <div class="banner__hero__container">
+                <div>
+                  <h2>SHOP BY VEHICLE</h2>
+                  <hr />
+                  <div class="homepage-options"><a href="/">SHOP ONLINE TODAY</a></div>
+                </div>
+            </div>
+        </li>
+      </ul>
+    </div>
 </div>
+
+<script>
+document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide('#splide', {
+    type: 'loop',
+    perPage: 1,
+    focus: 'center',
+    autoplay: true,
+    interval: 8000,
+    pagination: false,
+
+  }).mount();
+});
+
+</script>
+  
