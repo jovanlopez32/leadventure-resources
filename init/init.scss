@@ -1,0 +1,410 @@
+/*
+#######################################
+DEV VERSION 4.0 LAST UPDATED 2/21/2019
+#######################################
+*/
+
+
+$primary-color: #EC1C2D;  
+$secondary-color: #D11A14; 
+$white-color: #fff;
+$black-color: #000;
+ 
+$webfont: "Work Sans", sans-serif;
+$webfont2: "Kanit", sans-serif;
+
+#maintext, .ros-info {
+	h1,h2,h3,h4,h5,h6 { 
+		font-family: $webfont2 !important;
+		margin-bottom: 1.5rem;
+		font-weight: 400;
+        text-wrap: pretty;
+	}
+	h1 {font-size: 3rem; @media(min-width: 768px) { font-size: 4rem; } }
+	h2 {font-size: 2rem; @media(min-width: 768px) { font-size: 2.5rem; } }
+
+	p,ul,li,a {
+		font-family: $webfont !important;
+		font-size: 1rem;
+        text-wrap: pretty;
+	}
+	a { 
+		text-decoration: none;
+		color: $primary-color;
+		transition: all 0.3s;
+		&:hover { color: black;}
+	}
+	p,li { margin-bottom: 1rem; }
+}
+
+/* <!-- Google Padding --> */
+#rate-our-serv-pg { box-sizing: border-box; padding: 40px 30px !important; }
+.subpage-buttons {
+	margin-top: 35px;
+	display: block;
+	text-decoration: none !important;
+	width: fit-content;
+	padding: 15px 25px;
+	cursor: pointer;
+	transition: all 0.3s;
+	font-size: $webfont;
+	font-weight: 700;
+	background-color: $primary-color;
+	color: $white-color;
+	a { text-decoration: none !important; color: $white-color !important; }
+	&:hover {
+		background-color: $secondary-color;
+		a {
+			color: $white-color !important;
+		}
+	}
+}
+/* <!-- send backward telephone icon  --> */
+.fa-phone { z-index: 0 !important; }
+
+
+.webfont, .pc-header .Head, #BottomFooter h2{font-family:$webfont, sans-serif !important;} 
+.webfont2, .vlbCatalogBtn{font-family:$webfont2, sans-serif;} 
+ 
+.container {width:100%; max-width:980px; margin:0 auto; box-sizing: border-box; padding: 0; }
+  
+// Imports  
+@import 'components/media-queries';
+@import 'components/master';    
+@import 'components/animation-effects';        
+@import 'components/social-icons';  
+@import 'components/header';     
+@import 'components/topbar';
+@import 'components/navbar';
+@import 'components/hometext'; 
+@import 'components/footer';    
+@import 'components/mobile-buttons';   
+@import 'components/location-finder';     
+// @import 'components/ndsc-widget';     
+// @import 'components/photo-gallery';    
+// @import 'components/hp-review-widget';   
+// @import 'components/wheel-config'; 
+@import 'components/ndsc'; 
+@import 'components/atc';  
+@import 'components/location-widget';  
+@import 'components/instant-quote';
+@import 'components/coupons';
+@import 'components/ma-advisor';
+@import 'components/reviews';
+@import 'components/aqmodule'; 
+
+       
+      
+/*=============================================     
+=            Top Bar Styles            =  
+=============================================*/ 
+   
+$topbar-color: #fff;   
+$topbar-fontsize: 1.4em; 
+$actionbar-width: 980px;
+  
+#nd-actionbar .container{max-width:$actionbar-width;}
+#dnn_ActionBarPane .quote-btn{font-size:1.2em;}
+#dnn_ActionBarPane .quote-btn a{color:$topbar-color; text-decoration: none; margin-right:20px;}
+#dnn_ActionBarPane .quote-btn a:last-of-type{margin:0;}
+#dnn_ActionBarPane .quote-btn a:hover{text-decoration: underline;}
+#dnn_ActionBarPane #top-social{display:flex; justify-content: space-between;}
+#dnn_ActionBarPane #top-social a{color:$topbar-color; text-decoration: none; font-size:$topbar-fontsize; margin-right:20px; padding:1px 0;} 
+#dnn_ActionBarPane #top-social a:last-of-type{margin:0;}
+  
+ 
+/*============================================================================================================================*/
+         
+      
+   
+/*=============================================
+=            Navbar Styles                   =  
+=============================================*/    
+  
+$nav-width: 980px;
+$nav-dropdown-bg: #333;
+$nav-main-color: #fff;
+$nav-sub-color: #fff;
+$nav-hover-color: #C91919; 
+
+
+@include desktop{
+	#contentnav{height:50px; width:$nav-width;}
+}
+
+@include tablet-desktop{
+    #nd-menubar{background:#272727; z-index:15;}  
+    
+    #contentnav #dnnMenu a {text-transform:uppercase; color:#FFF; display: block; font-weight:700; font-size:1em; text-decoration:none; transition:background 200ms ease-in-out; -moz-transition:background 200ms ease-in-out; -webkit-transition:background 200ms ease-in-out; }
+    #contentnav #dnnMenu .topLevel li.selected > a {text-decoration: underline;} /* Current Tab */
+    #contentnav #dnnMenu .subLevel li a {margin: 0px; padding: 10px 20px; line-height: normal; color:$nav-sub-color;}
+	
+	// Sub Level Menu Background Color
+	#contentnav #dnnMenu .subLevel ul, #contentnav #dnnMenu .subLevel .subLevelRight ul{background-color:$nav-dropdown-bg;}
+	
+	// Default Hover Effects
+	#contentnav #dnnMenu .topLevel li:hover > a{background:#373737;}
+	#contentnav #dnnMenu .subLevel li a:hover{background:#474747;} 
+
+	// Sub Level Borders
+	#contentnav #dnnMenu .single-column li a{border-bottom: 1px solid #888;}
+	#contentnav #dnnMenu .subLevel.double-column li a{border-bottom: 1px solid #888; border-right: 1px solid #888;}
+}  
+ 
+ 
+    
+
+/*============================================================================================================================*/
+ 
+
+
+/*=============================================
+=            Header Styles                   =
+=============================================*/
+
+#contentheader {background:url(img/header.png) no-repeat top center #171717; padding:0; height:auto; margin: 0 auto;}
+#dnn_HeaderContactPane {float:right;}
+#dnn_dnnLogo_imgLogo{float:left;}
+
+#headercontact {text-transform:none; color:#fff; line-height:normal; text-align: right;}
+#headercontact .phone {} 
+#headercontact .address {} 
+#headercontact .slogan {} 
+        
+   
+@include desktop{    
+	#dnn_dnnLogo_imgLogo {margin:2% 0;}     
+	#dnn_HeaderContactPane {margin:2% 0 0;}      
+}   
+
+@include tablet{
+	#dnn_dnnLogo_imgLogo{margin:100px auto 0;}
+}
+       
+@include tablet-phone{     
+    #dnn_dnnLogo_imgLogo{padding:1% 0;}
+	#headercontact{text-align: center;}      
+	#headercontact .phone {float:none; margin:0;} 
+	#headercontact .address {float:none;}  
+}
+ 
+
+/*============================================================================================================================*/
+ 
+ 
+
+/*=============================================
+=            Mobile Menu Styles              =
+=============================================*/
+$mobile-nav-bg: 0;
+ 
+@include phone{
+	// Mobile Top Bar Background 
+	.mobileBG{background:$primary-color; opacity:$mobile-nav-bg;}
+
+	//Mobile Menu Background
+	.nd-mobile-window{background:$primary-color;}
+
+	//Mobile Sub Level Color
+	#contentnav #dnnMenu .subLevel{background:lighten($primary-color,15%) !important;}
+}
+
+
+/*============================================================================================================================*/
+#maintext .button {
+	display: block;
+	text-decoration: none !important;
+	background-color: $primary-color;
+	width: fit-content;
+	padding: 15px 25px;
+	transition: all 0.3s;
+	.button__text { font-family: $webfont2; color: $black-color; font-weight: 500; text-transform: uppercase; }
+	&:hover { background-color: $white-color; .button__text { color: $black-color; }}
+}
+
+/*=============================================
+=            Row Background Styles            =
+=============================================*/ 
+
+#nd-background {background:url(img/bg.jpg) no-repeat top center #171717; background-attachment:fixed;} 
+.homepage #nd-middlebar::after{float:left; clear:both; content:"";}  
+
+.banner {
+	#dnn_BannerPane {
+		#title-banner_subpage {
+			display: grid;
+			place-items: center;
+			text-transform: uppercase;
+			padding: 60px 20px;
+			h1 { font-size: 2.5rem !important; color: #fff !important; font-family: $webfont2 !important; }
+		}
+	}
+}
+.homepage #nd-middlebar.first-row{background:#070707;}
+.homepage #nd-middlebar.second-row{background:#171717;}  
+.homepage #nd-middlebar.third-row{background:#070707;}
+.homepage #nd-middlebar.fourth-row{background:#171717;} 
+.homepage #nd-middlebar.fifth-row{} 
+.homepage #nd-middlebar.sixth-row{}
+.homepage #nd-middlebar.seventh-row{}
+.homepage #nd-middlebar.eighth-row{} 
+ 
+#main-content{background:#FFF;}
+#sub-content{background:#FFF;}
+#bgbottom{background:#000000;} 
+
+@include phone{
+    #sub-content{display: none;}
+}
+
+/*=============================================================================================================================*/
+
+
+
+/*============================================= 
+=            Main Call to Action Styles      = 
+=============================================*/ 
+
+#ctabox{display: flex; justify-content: space-around; flex-flow: row wrap; align-items: center;}
+#ctabox a{flex:1 0 auto; text-align: center; text-decoration: none; background:$primary-color; color:#fff; margin:10px; box-sizing: border-box; padding:10px;}
+
+/*===============================================================================================================================*/
+
+ 
+
+/*=============================================
+=            Hometext Section            =
+=============================================*/
+  
+// Default Button Styles
+.homepage-options{display: flex; justify-content: center; flex-wrap: wrap; flex-direction: row;}
+.homepage-options a{flex:1 1 auto; @include button-bg($primary-color); min-width:15%; padding:1em; margin:.5em; text-decoration:none !important; color:#fff !important; text-transform:uppercase; text-align:center; -webkit-transition: all ease 0.8s; -moz-transition: all ease 0.8s; transition: all ease 0.8s; font-size:1em;}
+.homepage-options a:hover{color:#fff !important;}
+.homepage-options a:last-of-type{} 
+
+.first-row #hometext{}
+.second-row #hometext{}
+.third-row #hometext{}
+.fourth-row #hometext{}
+.fifth-row #hometext{}
+.sixth-row #hometext{}
+.seventh-row #hometext{}
+.eighth-row #hometext{}
+
+
+/*===============================================================================================================================*/
+
+
+
+/*=============================================
+=            NDSC Widget Styles            =
+=============================================*/
+
+#services_div {background:#fff; width:100%; height:auto; position:relative; border:0; margin:0% 0; padding:2% 0 0; overflow:hidden;}
+#services_div .ndcustomcolorclass, .ndcustomcolorcontainer img, .subtitle {background-color:$primary-color !important}
+#left_a, #right_a{display:block; position:absolute; top:65px; cursor:pointer; color: $primary-color; font-size: 2.5em;  text-decoration: none !important;}
+#left_a{left:21px; }
+#left_a:before {content:'\f104'; font-family:'Font Awesome 5 Free'; font-weight:900;}
+#right_a{right:5px;}
+#right_a:before {content:'\f105'; font-family:'Font Awesome 5 Free'; font-weight:900;} 
+
+/*===============================================================================================================================*/
+ 
+
+/*=============================================
+=                VLB Styles                  = 
+=============================================*/ 
+  
+// Horizontal VLB   
+#find-tire-bar{} 
+#TireSizeFinder{}
+#TireSizeFinder #sizefinder-inputs {padding:1% 0 2% 0; display:flex; justify-content: center;} 
+#TireSizeFinder #sizefinder-inputs select {width:100px !important; transition: all .15s ease-in-out;} 
+#TireSizeFinder #sizefinder-inputs div{width:130px;}
+#TireSizeFinder .vlbselect{border-radius: 0 !important; border: solid transparent 1px;}	
+
+#links {display:flex; justify-content: center; margin:0;}
+
+.vlbCatalogBtn{background:$primary-color; font-size:1em; font-weight:700; color:#fff !important; text-align:center; text-transform:uppercase; text-decoration:none !important; transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out; padding:.5em 3em; box-sizing:border-box; }
+.vlbCatalogBtn:hover{background:#000; color:#fff !important; } 
+/*
+#find-tire-bar .searchbuttons{margin-bottom:2%; overflow:hidden;}
+#find-tire-bar .searchbuttons a{display:block; color:#05178a; width:48%; border:2px solid #05178a; font-size:12px; font-weight:700; font-family:"nimbus-sans", sans-serif; text-align:center; text-transform:uppercase; padding:5px 2px; box-sizing:border-box; transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out; text-decoration:none;}
+#find-tire-bar .searchbuttons a:hover{color:#FFF; background:#05178a; border-color:#FFF;}
+*/ 
+#find-tire-bar .searchbuttons .by-size{float:left;}
+#find-tire-bar .searchbuttons .by-brand{float:right;}
+ 
+
+@include tablet{ 
+	#TireSizeFinder #sizefinder-inputs {margin:1% auto;}
+	#links {justify-content: center; margin:0;} 
+	#TireSizeFinder .vlbCatalogBtn{padding:2% 10%;}  
+}  
+ 
+
+@include phone{ 
+	#find-tire-bar{width:auto; height:auto; padding:2%; background-size:contain;}
+	#TireSizeFinder #sizefinder-inputs{float:none; padding:2% 0; align-items: center; flex-direction: column;}
+	#TireSizeFinder #sizefinder-inputs div{width: auto;}
+	#TireSizeFinder #sizefinder-inputs select{width:200px !important; height:40px; padding:3% !important; margin-bottom:10px; display:block; font-size:1em !important;}
+	#links{width:100%; margin:0;}
+	.vlbCatalogBtn{width:100%; display:block; color:#FFF; padding:2%; color:#fff !important; background-color:$primary-color !important;}
+}
+
+/*========================================================================================================================================*/
+
+
+
+/*=============================================
+=            Coupon Section Styles            =
+=============================================*/
+
+.coupon-section #dnn_HomeSidePane{float:left; width:30%;}
+.coupon-section #dnn_HomeContentPane{ float:right; width:60%;}
+
+@include tablet{
+	.check-coupons{width:100%; height:auto;}
+	#dnn_HomeSidePane{width:25%; margin-left:1%;}
+	#dnn_HomeContentPane{width:70%; margin-right:1%;}
+}
+
+@include phone{ 
+	.coupon-section #dnn_HomeSidePane{display:none;}
+	.coupon-section #dnn_HomeContentPane{width:100%; height:auto;}
+}
+
+/*=======================================================================================================================================*/
+
+
+
+/*=============================================
+=            Tire Brands Bar                 =
+=============================================*/
+
+#brands {text-align:center; background:#fff;}
+#brands img {width:18%;}
+
+@include phone{
+	#brands{display:none;}
+}
+
+/*=======================================================================================================================================*/
+ 
+
+
+
+
+/*=============================================
+=               DNN Pane Styles              =
+=============================================*/
+
+#dnn_LeftPane {float:left; width:30%;} 
+#dnn_RightPane {float:right; width:65%;}
+
+
+@include phone{
+	#dnn_ContentPane, #dnn_HomeSidePane, #dnn_LeftPane, #dnn_RightPane, #dnn_HomeContentPane, #contentnav{width:auto; float:none;}
+}
+
+/*=======================================================================================================================================*/
