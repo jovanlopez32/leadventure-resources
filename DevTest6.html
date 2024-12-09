@@ -1,0 +1,90 @@
+<div id="maintext" class="wheels__section">
+    <div class="wheels__section__title">
+        <h2>Custom Wheels</h2>
+        <hr>
+    </div>
+    <div class="wheels__section__main-img">
+        <img src="/portals/[Portal:PortalID]/skins/master_v1/img/customwheels.png" alt="[ND:ClientName]">
+    </div>
+    <div class="logos__slider">
+        <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+
+                    <li class="splide__slide">
+                        <div class="slider-item">
+                            <img src="/portals/[Portal:PortalID]/skins/master_v1/img/asanti.png" alt="Asanti" />
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="slider-item">
+                            <img src="/portals/[Portal:PortalID]/skins/master_v1/img/moto-metal-wheels.png"
+                                alt="Moto Metal Wheels" />
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="slider-item">
+                            <img src="/portals/[Portal:PortalID]/skins/master_v1/img/fittipalo.png" alt="Fittipalo" />
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="slider-item">
+                            <img src="/portals/[Portal:PortalID]/skins/master_v1/img/fuel.png" alt="Fuel" />
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="slider-item">
+                            <img src="/portals/[Portal:PortalID]/skins/master_v1/img/100.png" alt="100" />
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="slider-item">
+                            <img src="/portals/[Portal:PortalID]/skins/master_v1/img/wp-logo.png" alt="WP Logo" />
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="slider-item">
+                            <img src="/portals/[Portal:PortalID]/skins/master_v1/img/mayhem.png" alt="Mayhem" />
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="slider-item">
+                            <img src="/portals/[Portal:PortalID]/skins/master_v1/img/americanracing.png"
+                                alt="American Racing" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wheels__section__button">
+        <div class="homepage-options"> <a href="/Coupons">Learn More</a> </div>
+    </div>
+
+</div>
+
+<script>
+    const logos = new Splide("#slider_logos", {
+        type: "loop",
+        perPage: 5,
+        focus: 1,
+        gap: "1rem",
+        trimSpace: false,
+        arrows: false,
+        autoplay: true,
+        breakpoints: {
+            1024: { perPage: 3 },
+            767: { perPage: 2 },
+            640: { perPage: 1 },
+        },
+        pagination: false,
+    });
+    logos.mount();
+</script>
