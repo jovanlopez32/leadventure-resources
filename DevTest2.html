@@ -1,1 +1,103 @@
-Yes Alyssa, but it is only for those in La Paz :(, we were advised that we could leave early, but can we have a brief meeting for some questions Alyssa?
+<div class="logos__slider">
+  <div
+    id="slider_logos"
+    class="splide"
+    role="group"
+    aria-label="Splide Basic HTML Example"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_michelin.png"
+              alt="Michelin"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_bfgoodrich.png"
+              alt="BFGoodrich"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_uniroyal.png"
+              alt="Uniroyal"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_hankook.png"
+              alt="Hankook"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="/portals/[Portal:PortalID]/skins/master_v1/img/westlake-tires-logo.png"
+              alt="Westlake"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//assets.netdrivenwebs.com/tire_brands/logos/png/logo_sailun.png"
+              alt="Sailun"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="/portals/[Portal:PortalID]/skins/master_v1/img/Leao tire.png"
+              alt="Leao"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="/portals/[Portal:PortalID]/skins/master_v1/img/tourador.png"
+              alt="Tourador"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="/portals/164/skins/master_v1/img/oliverlogo.png"
+              alt="Advantage Commercial Tire & Service Inc. Tire Retreading"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+  const logos = new Splide("#slider_logos", {
+    type: "loop",
+    perPage: 8,
+    focus: 1,
+    gap: "1rem",
+    trimSpace: false,
+    arrows: false,
+    autoplay: true,
+    breakpoints: {
+      1024: { perPage: 6 },
+      767: { perPage: 4 },
+      640: { perPage: 2 },
+    },
+    pagination: false,
+  });
+  logos.mount();
+</script>
