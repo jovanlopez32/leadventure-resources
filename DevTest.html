@@ -1,4 +1,87 @@
-<div id="assoc-brands">
-
-  <img src="https://a.nd-cdn.us/tire_brands/logos/png/logo_ase.png" alt="ASE" />
+<div class="logos__slider">
+  <div
+    id="slider_logos"
+    class="splide"
+    role="group"
+    aria-label="Splide Basic HTML Example"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="/portals/[Portal:PortalID]/skins/master_v1/img/michelinauthorized.png"
+              alt="Michelin"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="/portals/[Portal:PortalID]/skins/master_v1/img/ling.png"
+              alt="Linglong"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//a.nd-cdn.us/tire_brands/logos/png/logo_bfgoodrich.png"
+              alt="BFGoodrich"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//a.nd-cdn.us/tire_brands/logos/png/logo_uniroyal.png"
+              alt="Uniroyal"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//a.nd-cdn.us/tire_brands/logos/png/logo_toyo.png"
+              alt="Toyo"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="//a.nd-cdn.us/tire_brands/logos/png/logo_falken.png"
+              alt="Falken"
+            />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img
+              src="/portals/[Portal:PortalID]/skins/master_v1/img/oliverlogo.png"
+              alt="Oliver"
+            />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
+<script>
+  const logos = new Splide("#slider_logos", {
+    type: "loop",
+    perPage: 7,
+    focus: 1,
+    gap: "1rem",
+    trimSpace: false,
+    arrows: false,
+    autoplay: true,
+    breakpoints: {
+      1024: { perPage: 6 },
+      767: { perPage: 4 },
+      640: { perPage: 2 },
+    },
+    pagination: false,
+  });
+  logos.mount();
+</script>
