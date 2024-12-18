@@ -1,87 +1,30 @@
-<div class="logos__slider">
-  <div
-    id="slider_logos"
-    class="splide"
-    role="group"
-    aria-label="Splide Basic HTML Example"
-  >
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img
-              src="/portals/[Portal:PortalID]/skins/master_v1/img/michelinauthorized.png"
-              alt="Michelin"
-            />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img
-              src="/portals/[Portal:PortalID]/skins/master_v1/img/ling.png"
-              alt="Linglong"
-            />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img
-              src="//a.nd-cdn.us/tire_brands/logos/png/logo_bfgoodrich.png"
-              alt="BFGoodrich"
-            />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img
-              src="//a.nd-cdn.us/tire_brands/logos/png/logo_uniroyal.png"
-              alt="Uniroyal"
-            />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img
-              src="//a.nd-cdn.us/tire_brands/logos/png/logo_toyo.png"
-              alt="Toyo"
-            />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img
-              src="//a.nd-cdn.us/tire_brands/logos/png/logo_falken.png"
-              alt="Falken"
-            />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img
-              src="/portals/[Portal:PortalID]/skins/master_v1/img/oliverlogo.png"
-              alt="Oliver"
-            />
-          </div>
-        </li>
-      </ul>
+<div class="webfont" id="headercontact">
+  <div class="addressphone">
+    <div class="phone">
+      <a href="tel:+1 [ND:ClientPhone]" title="Call Us!"> <i class="fas fa-phone"></i> [ND:ClientPhone]</a>
+    </div>
+   
+    <div class="hours">
+      <p>
+        <i class="far fa-clock"></i> 
+        <span>Monday - Friday: 8:00am - 5:00pm <br>
+          Saturday: 8:00am - 12:00pm |  Sunday: Closed</span>
+      </p>
+    </div>
+    <div class="address">
+      <a href="/Contact/Find-Us" title="Contact [ND:ClientName]"
+        ><i class="fas fa-map-marker-alt"></i> [ND:ClientAddress]</a
+      >
+    </div>
+    <div class="quote-btn">
+      <a href="/shop-for-tires/advanced-quoting.aspx"
+        ><em class="fas fa-shopping-cart"></em>Cart
+      </a>
     </div>
   </div>
+  <div id="top-social">
+    <a href="[ND:Facebook]" target="_blank" class="fa fa-facebook"></a>
+    <a href="[ND:GPlus]" target="_blank" class="fa fa-google"></a>
+    <!-- <a href="[ND:Instagram]" target="_blank" class="fa fa-instagram"></a> -->
+  </div>
 </div>
-<script>
-  const logos = new Splide("#slider_logos", {
-    type: "loop",
-    perPage: 7,
-    focus: 1,
-    gap: "1rem",
-    trimSpace: false,
-    arrows: false,
-    autoplay: true,
-    breakpoints: {
-      1024: { perPage: 6 },
-      767: { perPage: 4 },
-      640: { perPage: 2 },
-    },
-    pagination: false,
-  });
-  logos.mount();
-</script>
