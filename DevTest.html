@@ -1,30 +1,86 @@
-<div class="secondary-ctas">
-  <div>
-    <a href="/Financing" title="CTA1 Title">
-      <span class="cta-img">
-        <img src="/portals/[Portal:PortalID]/Skins/master/img/cta-1.png" alt="CTA1 Title" />
-      </span>
-      <span class="cta-text">Fast & Free <br />
-        Financing</span>
-      <span class="cta-btn">Apply Now</span>
-    </a>
+<div class="webfont" id="services-section">
+
+
+  <div id="services-content">
+    <div id="services-header"><h2 class="webfont2">Featured Service</h2></div>
+    <ul id="services-list">
+      <li id="sl-check">
+        <a
+          class="sl-active-yellow"
+          href="/Automotive-Services/cat/a-c-repair"
+          id="check"
+          >A/C Repair</a
+        >
+      </li>
+      <li id="sl-batteries">
+        <a href="/Automotive-Services/cat/wheel-alignments" id="batteries"
+          >Wheel Alignment</a
+        >
+      </li>
+      <li id="sl-brake">
+        <a
+          href="/Automotive-Services/cat/tune-up"
+          id="brake"
+          >Tune Up</a
+        >
+      </li>
+      <li id="sl-engine">
+        <a
+          href="/Automotive-Services/cat/brake-repair"
+          id="engine"
+          >Brake Repair</a
+        >
+      </li>
+      <li id="sl-oil">
+        <a href="/Automotive-Services/cat/oil-changes" id="oil">Oil Changes</a>
+      </li>
+    </ul>
+    <p>
+      When you’re in need of auto repair, we’ve got you covered. At [ND:ClientName], we offer a variety of services to keep your vehicle running smoothly. 
+    </p>
+    <div class="homepage-options"> <a href="/Automotive-Services">View All Services</a> </div>
   </div>
-  <!-- <div>
-    <a href="/Financing" title="CTA2 Title">
-      <span class="cta-img">
-        <img src="/portals/[Portal:PortalID]/Skins/master/img/cta-2.png" alt="CTA2 Title" />
-      </span>
-      <span class="cta-text">Snap <br />
-        Financing</span>
-      <span class="cta-btn">Apply Now</span>
-    </a>
-  </div> -->
-  <div>
-    <a href="/Tires" title="CTA3 Title"><span class="cta-img"><img
-          src="/portals/[Portal:PortalID]/Skins/master/img/cta-3.png" alt="CTA3 Title" /></span>
-      <span class="cta-text">4 Tires For <br />
-        Only $400!</span>
-      <span class="cta-btn">View Now</span>
-    </a>
+
+  <div id="services-images">
+    <img
+      class="service-img sl-active"
+      id="service-img-check"
+      src="/portals/[Portal:PortalID]/skins/master/img/serv-1.jpg"
+    />
+    <img
+      class="service-img"
+      id="service-img-batteries"
+      src="/portals/[Portal:PortalID]/skins/master/img/serv-2.jpg"
+    />
+    <img
+      class="service-img"
+      id="service-img-brake"
+      src="/portals/[Portal:PortalID]/skins/master/img/serv-3.jpg"
+    />
+    <img
+      class="service-img"
+      id="service-img-engine"
+      src="/portals/[Portal:PortalID]/skins/master/img/serv-4.jpg"
+    />
+    <img
+      class="service-img"
+      id="service-img-oil"
+      src="/portals/[Portal:PortalID]/skins/master/img/serv-5.jpg"
+    />
+    
   </div>
+  
 </div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#services-list li a").hover(function () {
+      $("#services-list li a").removeClass("sl-active-yellow");
+      $(".sl-yellow").removeClass("sl-active");
+      $("#services-images img").removeClass("sl-active");
+      var cur_service = $(this).attr("id");
+      $(this).closest("li").find(".sl-yellow").addClass("sl-active");
+      $("#" + cur_service).addClass("sl-active-yellow");
+      $("#service-img-" + cur_service).addClass("sl-active");
+    });
+  });
+</script>
