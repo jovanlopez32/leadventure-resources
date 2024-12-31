@@ -1,85 +1,30 @@
-<div class="webfont" id="services-section">
-  <div id="services-images">
-    <img
-      class="service-img sl-active"
-      id="service-img-check"
-      src="/portals/[Portal:PortalID]/skins/master/img/serv-1.jpg"
-    />
-    <img
-      class="service-img"
-      id="service-img-batteries"
-      src="/portals/[Portal:PortalID]/skins/master/img/serv-2.jpg"
-    />
-    <img
-      class="service-img"
-      id="service-img-brake"
-      src="/portals/[Portal:PortalID]/skins/master/img/serv-3.jpg"
-    />
-    <img
-      class="service-img"
-      id="service-img-engine"
-      src="/portals/[Portal:PortalID]/skins/master/img/serv-4.jpg"
-    />
-    <img
-      class="service-img"
-      id="service-img-oil"
-      src="/portals/[Portal:PortalID]/skins/master/img/serv-5.jpg"
-    />
-    <img
-      class="service-img"
-      id="service-img-all"
-      src="/portals/[Portal:PortalID]/skins/master/img/serv-6.jpg"
-    />
+<div class="secondary-ctas">
+  <div>
+    <a href="/Financing" title="CTA1 Title">
+      <span class="cta-img">
+        <img src="/portals/[Portal:PortalID]/Skins/master/img/cta-1.png" alt="CTA1 Title" />
+      </span>
+      <span class="cta-text">Fast & Free <br />
+        Financing</span>
+      <span class="cta-btn">Apply Now</span>
+    </a>
   </div>
-  <div id="services-content">
-    <div id="services-header"><h2 class="webfont2">Featured Service</h2></div>
-    <ul id="services-list">
-      <li id="sl-check">
-        <a
-          class="sl-active-yellow"
-          href="/Automotive-Services/cat/check-engine-light"
-          id="check"
-          >Check Engine Light</a
-        >
-      </li>
-      <li id="sl-batteries">
-        <a href="/Automotive-Services/cat/batteries" id="batteries"
-          >Batteries</a
-        >
-      </li>
-      <li id="sl-brake">
-        <a
-          href="/Automotive-Services/cat/steering-and-suspension-system"
-          id="brake"
-          >Brake Repair</a
-        >
-      </li>
-      <li id="sl-engine">
-        <a
-          href="/Automotive-Services/cat/engine-repair-and-diagnostics"
-          id="engine"
-          >Engine Repair</a
-        >
-      </li>
-      <li id="sl-oil">
-        <a href="/Automotive-Services/cat/oil-changes" id="oil">Oil Changes</a>
-      </li>
-      <li id="sl-all">
-        <a href="/Automotive-Services" id="all">All Services</a>
-      </li>
-    </ul>
+  <!-- <div>
+    <a href="/Financing" title="CTA2 Title">
+      <span class="cta-img">
+        <img src="/portals/[Portal:PortalID]/Skins/master/img/cta-2.png" alt="CTA2 Title" />
+      </span>
+      <span class="cta-text">Snap <br />
+        Financing</span>
+      <span class="cta-btn">Apply Now</span>
+    </a>
+  </div> -->
+  <div>
+    <a href="/Tires" title="CTA3 Title"><span class="cta-img"><img
+          src="/portals/[Portal:PortalID]/Skins/master/img/cta-3.png" alt="CTA3 Title" /></span>
+      <span class="cta-text">4 Tires For <br />
+        Only $400!</span>
+      <span class="cta-btn">View Now</span>
+    </a>
   </div>
 </div>
-<script type="text/javascript">
-  $(document).ready(function () {
-    $("#services-list li a").hover(function () {
-      $("#services-list li a").removeClass("sl-active-yellow");
-      $(".sl-yellow").removeClass("sl-active");
-      $("#services-images img").removeClass("sl-active");
-      var cur_service = $(this).attr("id");
-      $(this).closest("li").find(".sl-yellow").addClass("sl-active");
-      $("#" + cur_service).addClass("sl-active-yellow");
-      $("#service-img-" + cur_service).addClass("sl-active");
-    });
-  });
-</script>
