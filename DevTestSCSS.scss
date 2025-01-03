@@ -28,3 +28,13 @@ p {
 	box-sizing: border-box;
 	padding: 40px 30px !important;
 }
+
+//4. On mobile view on the Car-Care-Tips page kindly center the image.
+.imgcenter {
+    @media(max-width: 768px) {
+      width: 100%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+  }
