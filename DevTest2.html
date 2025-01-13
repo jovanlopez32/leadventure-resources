@@ -1,1 +1,57 @@
-<div class="tirepros-page page-banner fast-and-flexible-financing"> <div class="container"> <h1 style="font-size: 2.5rem;" class="page-title">Fast & Flexible Financing</h1> </div> </div> 
+<div id="splide" class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide banner__hero sl1">
+        <div class="banner__hero__container">
+          <div>
+            <h2>SHOP BY VEHICLE</h2>
+            <hr />
+            <div class="homepage-options">
+              <a href="/Shop-Now"
+                >SHOP ONLINE TODAY</a
+              >
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="splide__slide banner__hero sl2">
+        <div class="banner__hero__container">
+          <div>
+            <h2>SHOP BY VEHICLE</h2>
+            <hr />
+            <div class="homepage-options">
+              <a href="/Shop-Now"
+                >SHOP ONLINE TODAY</a
+              >
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="splide__slide banner__hero sl3">
+        <div class="banner__hero__container">
+          <div>
+            <h2>SHOP BY VEHICLE</h2>
+            <hr />
+            <div class="homepage-options">
+              <a href="/Shop-Now"
+                >SHOP ONLINE TODAY</a
+              >
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Splide("#splide", {
+      type: "loop",
+      perPage: 1,
+      focus: "center",
+      autoplay: true,
+      interval: 8000,
+      pagination: false,
+    }).mount();
+  });
+</script>
