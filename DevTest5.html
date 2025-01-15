@@ -1,0 +1,111 @@
+<div class="logos__slider">
+    <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+  
+          <li class="splide__slide">
+            <div class="slider-item">
+              <img src="https://a.nd-cdn.us/modules/custom-pages/napa/napa-autocare-center-365x133.png" alt="NAPA" />
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="slider-item">
+              <img src="https://a.nd-cdn.us/logos/ase-cert.png" alt="ASE" />
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_bfgoodrich.png" alt="BFGoodrich® Tires LOGO">
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_bridgestone_r.png" alt="Bridgestone Tires LOGO">
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_continental.png" alt="Continental Tires LOGO">
+            </div>
+          </li>
+
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_cooper.png" alt="Cooper Tires LOGO">
+            </div>
+          </li>
+
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_delinte.png" alt="Delinte Tires LOGO">
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_hankook.png" alt="Hankook Tires LOGO">
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_kumho.png" alt="Kumho Tires LOGO">
+            </div>
+          </li>
+
+
+         
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_mastercraft.png" alt="Mastercraft Tires LOGO">
+            </div>
+          </li>
+  
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_starfire.png" alt="Starfire Tires LOGO">
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_toyo.png" alt="Toyo Tires LOGO">
+            </div>
+          </li>
+
+          <li class="splide__slide">
+            <div class="slider-item">
+                <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_yokohama.png" alt="Yokohama Tires LOGO">
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script>
+    const logos = new Splide("#slider_logos", {
+      type: "loop",
+      perPage: 5,
+      focus: 1,
+      gap: "1rem",
+      trimSpace: false,
+      arrows: false,
+      autoplay: true,
+      breakpoints: {
+        1024: { perPage: 3 },
+        767: { perPage: 2 },
+        640: { perPage: 1 },
+      },
+      pagination: false,
+    });
+    logos.mount();
+  </script>

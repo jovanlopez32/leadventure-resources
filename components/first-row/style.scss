@@ -19,6 +19,10 @@
     .first-box__section__content {
         display: grid;
         place-items: center;
+        h3, h2 { font-family: $webfont !important; text-transform: uppercase; }
+        h3 { font-size: 1.5rem; }
+        h2 { font-size: 2.5rem; font-weight: 900; font-style: italic; }
+        p { margin: 20px 0; }
         hr { border: 2px solid $primary-color; width: 100px; margin: 15px 0; }
         a { text-decoration: none; color: blue; &:hover { color: $black-color; } }
     }

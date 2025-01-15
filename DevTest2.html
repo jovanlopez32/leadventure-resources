@@ -1,49 +1,23 @@
-<div class="logos__slider">
-    <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
-      <div class="splide__track">
-        <ul class="splide__list">
-         
+<div id="maintext" class="first-box__section">
+    
+    <div class="first-box__section__content">
+      <div>
+        <h3>Welcome to</h3>
+        <h2>Myers Automotive solutions</h2>
   
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/modules/custom-pages/napa/napa-autocare-center-365x133.png" alt="NAPA" />
-            </div>
-          </li>
-
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="https://a.nd-cdn.us/logos/ase-cert.png" alt="ASE" />
-            </div>
-          </li>
-
-          <li class="splide__slide">
-            <div class="slider-item">
-              <img src="/portals/[Portal:PortalID]/skins/master/img/provantage.png" alt="Provantage" />
-            </div>
-          </li>
+        <p>At [ND:ClientName], we are your one-stop destination for all auto repair services and tire needs in [ND:FocusArea1]. Our shop is dedicated to the satisfaction of our customers by making sure you get the best value for your money. We offer optimal service, quality parts, and products at affordable prices.</p> 
   
-          
-        </ul>
+        <p>Our highly-trained technicians will answer all your questions and offer you the best possible solution for your vehicle. We look forward to building a long-term relationship with you. If there is anything we can do for you, don’t hesitate to contact us.</p> 
+  
+        <img src="/portals/[Portal:PortalID]/skins/master/img/icons-amenities.png" alt="[ND:ClientName]">
+
+        <div class="homepage-options"> 
+            <a href="/About">Read More</a>  
+        </div>
+       
       </div>
     </div>
-    
+    <div class="first-box__section__img">
+        <img src="/portals/[Portal:PortalID]/skins/master/img/about-us.png" alt="[ND:ClientName]" />
+    </div>
   </div>
-  
-  <script>
-    const logos = new Splide("#slider_logos", {
-      type: "loop",
-      perPage: 5,
-      focus: 1,
-      gap: "1rem",
-      trimSpace: false,
-      arrows: false,
-      autoplay: true,
-      breakpoints: {
-        1024: { perPage: 3 },
-        767: { perPage: 2 },
-        640: { perPage: 1 },
-      },
-      pagination: false,
-    });
-    logos.mount();
-  </script>
