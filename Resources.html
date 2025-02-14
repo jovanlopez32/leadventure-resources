@@ -23,8 +23,19 @@ background:url("/portals/146/skins/master/img/bgmain.jpg") no-repeat top center 
 background: rgb(3,67,111);
 background: linear-gradient(180deg, rgba(3,67,111,1) 0%, rgba(1,55,92,1) 71%); 
 
+<!-- Republic Gradient Background -->
+background-image: linear-gradient(90deg, #00205a 30%, transparent 0%);
+
 <!-- Grid Template Columns -->
 grid-template-columns: repeat(2, minmax(0, 1fr));
+
+<!-- Bucle -->
+@for $i from 1 through 2 {
+    &.c#{$i} {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/portals/32/skins/master/img/home-service-#{$i}.jpg') no-repeat center center;
+      background-size: cover; 
+    }
+  }
 
 <!-- Button -->
 <a href="/Contact" class="button"><div class="button__text">Schedule Appointment</div></a>
