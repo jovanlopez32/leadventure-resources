@@ -10,6 +10,10 @@
     h1 { font-size: 2.5rem !important; color: #fff !important; font-family: $webfont2 !important; }
 }
 
+<!-- Grid Template Columns -->
+grid-template-columns: repeat(1, minmax(0, 1fr));
+@media(min-width: 1024px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
 <!-- Image Tag -->
 <img src="/portals/[Portal:PortalID]/skins/master/img/icon02.png" alt="[ND:ClientName]">
 
@@ -26,8 +30,7 @@ background: linear-gradient(180deg, rgba(3,67,111,1) 0%, rgba(1,55,92,1) 71%);
 <!-- Republic Gradient Background -->
 background-image: linear-gradient(90deg, #00205a 30%, transparent 0%);
 
-<!-- Grid Template Columns -->
-grid-template-columns: repeat(2, minmax(0, 1fr));
+
 
 <!-- Bucle -->
 @for $i from 1 through 2 {

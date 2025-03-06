@@ -1,11 +1,22 @@
-<div class="hero-section">
-
-
-  <div class="hero-section__content">
-    <h1>
-      Four Seasons Automotive
-      <span>Dependable CarCare Since 1979</span>
-    </h1>
+<div class="logo-container">
+  <img class="logo-container__logo" src="/portals/[Portal:PortalID]/logo.png" alt="[ND:ClientName]">
+  <div class="homepage-options">
+    <a class="logo-container__options-item" href="/Contact">Contact Us</a>
   </div>
-
 </div>
+
+<style lang="scss">
+.logo-container {
+  display: grid;
+  place-items: center;
+  &__logo {
+    max-width: 300px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  .homepage-options {
+    width: 100%;   
+  }
+}
+</style>

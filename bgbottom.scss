@@ -7,6 +7,14 @@
                     });
                 </script>
 */
+/* 
+<div class="logo-container">
+  <img class="logo-container__logo" src="/portals/[Portal:PortalID]/logo.png" alt="[ND:ClientName]">
+  <div class="homepage-options">
+    <a class="logo-container__options-item" href="/Contact">Contact Us</a>
+  </div>
+</div>
+*/
 div#bgbottom {
 	padding: 30px 0;
   background: #000;
@@ -164,5 +172,19 @@ div#bgbottom {
     display: block;
     max-width: 250px;
     margin-bottom: 20px;
+  }
+  .logo-container {
+    display: grid;
+    place-items: center;
+    &__logo {
+      max-width: 320px;
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .homepage-options {
+      width: 100%; 
+      margin-top: 15px;
+    }
   }
 }
