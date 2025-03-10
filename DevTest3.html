@@ -1,22 +1,100 @@
-<div class="webfont" id="headercontact">
-  <div class="addressphone">
-    <div class="phone">
-      <a href="tel:+1 [ND:ClientPhone]" title="Call Us!">[ND:ClientPhone]</a>
-    </div>
-    <div class="address">
-      <a href="/Contact/Find-Us" title="Contact [ND:ClientName]"
-        >[ND:ClientAddress]</a
+<div class="welcome__section">
+  <div class="welcome__section__item">
+    <h2>Welcome to <br /><span>[ND:ClientName]</span></h2>
+    <p>
+      <strong
+        >We provide fast turn arounds and fair prices with great customer
+        service</strong
       >
-    </div>
-    <div class="quote-btn">
-      <a href="/shop-for-tires/advanced-quoting.aspx"
-        ><em class="fas fa-shopping-cart"></em> Cart</a
-      >
-    </div>
+    </p>
+    <p>
+      Thanks for visiting [ND:ClientName] —your source for automotive repairs
+      and tires. We keep the miles coming with the automotive services and
+      products you need to reliably reach your destinations, whether that’s a
+      drive to the grocery store, school, office, or a family gathering. As a
+      tire dealer and service center, we have access to tires from trusted names
+      and employ a team committed to providing the best workmanship and customer
+      service. We believe every encounter with [ND:ClientName] should be a
+      positive one, and we’ll go the extra mile to ensure your complete
+      satisfaction. Count on us to meet all your automotive repair and tire
+      service needs.
+    </p>
+    <p>
+      <strong>What You’ll Love</strong>: The attention, efficiency, and
+      consistency we deliver at [ND:ClientName], serving [ND:FOCUSAREA1],
+      [ND:FOCUSAREA2], [ND:FOCUSAREA3], and surrounding communities.
+    </p>
+    <img
+      src="//a.nd-cdn.us/modules/custom-pages/napa/napa-autocare-center-744x192-opt2.png"
+      alt="NAPA Auto Care Center (Long+Bigger yellow and white)"
+    />
   </div>
-  <div id="top-social">
-    <!-- <a href="[ND:Facebook]" target="_blank" class="fa fa-facebook"></a> -->
-    <a href="[ND:GPlus]" target="_blank" class="fa fa-google"></a>
-    <!-- <a href="[ND:Instagram]" target="_blank" class="fa fa-instagram"></a> -->
+  <div class="welcome__section__slider">
+    <div class="gallery__slider">
+      <div
+        id="slider_gallery"
+        class="splide"
+        role="group"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/IMG_1231.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/sp1.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/sp2.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/sp3.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/sp4.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<script>
+  const ga = new Splide("#slider_gallery", {
+    type: "loop",
+    perPage: 1,
+    focus: 1,
+    gap: "1rem",
+    trimSpace: false,
+    arrows: true,
+    autoplay: true,
+    pagination: false,
+  });
+  ga.mount();
+</script>
