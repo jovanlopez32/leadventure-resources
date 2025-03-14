@@ -1,13 +1,18 @@
-Create the following customized pages and link them to the CTAs on the homepage:
-https://prnt.sc/NnWJfppOD8Fn
+Recomendio bajar el tamano de la fuente para que el subnivel no se salga de la pantalla: 
+https://prnt.sc/mGbtMlHWelo7
 
-Fix the links for the following CTAs:
-https://prnt.sc/NnWJfppOD8Fn
+Amablemente agregue en las subpaginas los elementos faltantes del footer:
+https://prnt.sc/lzKBuKNBLUsW https://prnt.sc/sQDU75zEwR2w
 
-Add information to the testimonials section:
-https://prnt.sc/6TRnxBSJ32v5
+Amablemente agregue el token de Google:
+https://prnt.sc/bfhqMuYqbreE
 
-On mobile view, the phone and map icons currently redirect to /Find-Us. Instead, they should directly call the phone number and open a pop-up.
-https://prnt.sc/NoCXJ__728_e
+Amablemente agregue el logo en el footer:
+https://prnt.sc/-i3F2FNel4Sa
+
+Amablemente deje solamente un titulo en la pagina de about:
+https://prnt.sc/UHEp9N46UZQI
 
 Great job! 🎉
+
+https://protecacne.igndevsite.com/

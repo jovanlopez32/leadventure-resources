@@ -1,39 +1,100 @@
-<img
-  alt="tire shop in [ND:FOCUSAREA1]"
-  src="//a.nd-cdn.us/modules/custom-pages/responsive/tires/new-tires/new-tires4.png"
-  style="float: right; margin: 15px"
-/>
-<p>
- <strong>Waller Tire Place</strong> was started in 1983 by Woodrow Waller Jr in an old one room school house (the former Kingsland Elementary School on Jefferson Davis Highway). With little to no financial backing and just hard work he was able to build a newer building next to the original location. It grew so rapidly in 1993 we moved to the <strong>Chester location</strong>  on 1300 W. Hundred rd. on route 10 under new owner Late Woodrow Waller Sr (Pops) the former Pastor of Straight Away church.
-</p>
-<p>
-  We were a small, but larger family With 10 brothers and 1 sister. All grew up in a small house on route 10 under Christian values that we still maintain. With such large family several brothers worked at Waller tire. Ray Sr, John and Jerome. Reginal a cousin and Ray Jr grandson of Mr. Waller Sr and Robert Daniel not related work for us since the beginning. With the success of the Chester location which is still in operation under the direction of General manager Ray Waller Sr and his son Ray Waller Jr. In 2005 we opened the Hopewell Location at 202 E city point Rd. This location is run by our brother John Waller both have over 30 plus years in the tire business. We maintain our strong Christian values and always go by one simple motto of treat others as you wish to be treated. We guarantee all of our services and believe going above and beyond is the best policy.
-</p>
-<p>
-  [ND:ClientName] is a tire shop and tire service center providing everything
-  you need to keep rolling in [ND:FocusArea1], [ND:FocusArea2], [ND:FocusArea3],
-  and wherever your travels take you.
-</p>
-<p>
-  Not sure your tire size? Feeling overwhelmed by options? Looking for a
-  specific type of tire or price range? We have you covered. Our website
-  includes a tire catalog, complete with a tire size finder. Enter your vehicle
-  information or search by brand to compare competitively priced tires.
-</p>
-<p>
-  If you have questions or would like a member of our tire sales team to take
-  the lead on your next set, just ask! We're happy to assist you.
-</p>
-<p>At [ND:ClientName], we know tires.</p>
-<div class="subpage-buttons" style="margin-bottom: 10px">
-  <a href="/shop-for-tires">
-    <span class="ndicon-tire4"></span> Browse Our Tire Catalog</a
-  >
-  <a href="/tire-services">
-    <span class="ndicon-tire2"></span> View Tire Service Catalog</a
-  >
+<div class="welcome__section">
+  <div class="welcome__section__item">
+    <h2>Welcome to <br><span>[ND:ClientName]</span></h2>
+    <p>
+      <strong
+        >We provide fast turn arounds and fair prices with great customer
+        service</strong
+      >
+    </p>
+    <p>
+      Thanks for visiting [ND:ClientName] —your source for automotive repairs
+      and tires. We keep the miles coming with the automotive services and
+      products you need to reliably reach your destinations, whether that’s a
+      drive to the grocery store, school, office, or a family gathering. As a
+      tire dealer and service center, we have access to tires from trusted names
+      and employ a team committed to providing the best workmanship and customer
+      service. We believe every encounter with [ND:ClientName] should be a
+      positive one, and we’ll go the extra mile to ensure your complete
+      satisfaction. Count on us to meet all your automotive repair and tire
+      service needs.
+    </p>
+    <p>
+      <strong>What You’ll Love</strong>: The attention, efficiency, and
+      consistency we deliver at [ND:ClientName], serving [ND:FOCUSAREA1],
+      [ND:FOCUSAREA2], [ND:FOCUSAREA3], and surrounding communities.
+    </p>
+    <img
+      src="//a.nd-cdn.us/modules/custom-pages/napa/napa-autocare-center-744x192-opt2.png"
+      alt="NAPA Auto Care Center (Long+Bigger yellow and white)"
+    />
+  </div>
+  <div class="welcome__section__slider">
+    <div class="gallery__slider">
+      <div
+        id="slider_gallery"
+        class="splide"
+        role="group"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/IMG_1231.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/sp1.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/sp2.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/sp3.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slider-item">
+                <img
+                  src="/portals/[Portal:PortalID]/skins/master/img/sp4.jpg"
+                  alt="Provantage"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<p>
-  We serve [ND:FOCUSAREA1], [ND:FOCUSAREA2], [ND:FOCUSAREA3], and surrounding
-  areas.
-</p>
+<script>
+  const ga = new Splide("#slider_gallery", {
+    type: "loop",
+    perPage: 1,
+    focus: 1,
+    gap: "1rem",
+    trimSpace: false,
+    arrows: true,
+    autoplay: true,
+    pagination: false,
+  });
+  ga.mount();
+</script>
