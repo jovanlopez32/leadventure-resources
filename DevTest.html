@@ -1,14 +1,61 @@
-<div class="webfont" id="headercontact">
-  <div class="addressphone">
-    <div class="phone">
-      <a href="tel:+1 [ND:ClientPhone]" title="Call Us!"> <i class="fa fa-phone"></i>[ND:ClientPhone]</a>
+<div class="logos__slider">
+  <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/redesign/img/tia.png" alt="TIA" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/redesign/img/big3.png" alt="Big 3" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="/portals/[Portal:PortalID]/skins/redesign/img/ross.png" alt="Ross" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_firestone_r.png" alt="Firestone Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_bridgestone_r.png" alt="Bridgestone Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_mastercraft.png" alt="Mastercraft Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_kenda.png" alt="Kenda Tires LOGO" />
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="address">
-      <a href="/Contact/Find-Us" title="Contact [ND:ClientName]"
-        ><i class="fa fa-map-marker"></i> 26 Overlook Terrace <br>
-        Adams, MA 01220</a
-      >
-    </div>
-    
   </div>
 </div>
+<script>
+  const logos = new Splide("#slider_logos", {
+    type: "loop",
+    perPage: 5,
+    focus: 1,
+    gap: "1rem",
+    trimSpace: false,
+    arrows: false,
+    autoplay: true,
+    breakpoints: {
+      1024: { perPage: 3 },
+      767: { perPage: 2 },
+      640: { perPage: 1 },
+    },
+    pagination: false,
+  });
+  logos.mount();
+</script>
