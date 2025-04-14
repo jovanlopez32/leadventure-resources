@@ -15,23 +15,31 @@
   </div>
 </div>
 */
+/* 
+<div id="socialfont">
+  <a class="fa fa-facebook" target="_blank" href="[ND:Facebook]"></a>
+  <!--<a class="fa fa-twitter" target="_blank" href="Twitter Not Configured"></a>-->
+  <a class="fa fa-google" target="_blank" href="[ND:GPlus]"></a>
+  <a class="fa fa-instagram" target="_blank" href="[ND:Instagram]"></a>
+</div>
+*/
 div#bgbottom {
-	padding: 30px 0;
+  padding: 30px 0;
   background: #000;
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     padding: 50px 0;
   }
   #netdriven {
     padding: 0 2%;
     #socialfont {
-			margin-top: 10px;
+      margin-top: 10px;
       .fa {
-				color: $primary-color;
-				
-				font-size: 1.5rem !important;
-				&:hover{
-					color: $white-color;
-				}
+        color: $primary-color;
+
+        font-size: 1.5rem !important;
+        &:hover {
+          color: $white-color;
+        }
       }
     }
     #dnn_FooterPane1 {
@@ -40,9 +48,9 @@ div#bgbottom {
       }
       select {
         color: #000;
-			}
+      }
     }
-    h2{
+    h2 {
       font-size: 1.5rem;
       color: $primary-color;
       text-transform: capitalize;
@@ -50,29 +58,31 @@ div#bgbottom {
     span,
     .mobile-c,
     strong {
-			color: #fff;
-			span{
+      color: #fff;
+      span {
         padding-right: 5px;
-			}
+      }
     }
-    #LocationWidget{
+    #LocationWidget {
       #locWidget1 {
         display: grid;
         gap: 0.5rem;
       }
-     
-      .locwidget-phone, .locwidget-addr, .locwidget-email {
+
+      .locwidget-phone,
+      .locwidget-addr,
+      .locwidget-email {
         display: block !important;
-        span{
+        span {
           z-index: 1;
           color: $primary-color;
           font-size: 1rem;
         }
-				strong{
-					display: none;
-				}
-			}
-		}
+        strong {
+          display: none;
+        }
+      }
+    }
     #FooterPane1Container,
     #FooterPane2Container,
     #FooterPane3Container,
@@ -81,7 +91,7 @@ div#bgbottom {
       min-height: auto;
     }
     #BottomFooter {
-      >div {
+      > div {
         padding: 0;
       }
     }
@@ -91,13 +101,13 @@ div#bgbottom {
       margin-top: 40px;
       padding-left: 10px;
       padding-right: 10px;
-      @media(min-width: 768px) {
+      @media (min-width: 768px) {
         width: auto;
         margin-top: 0;
       }
-    
+
       div.coupon-wrap {
-        @media(min-width: 1024px) {
+        @media (min-width: 1024px) {
           height: 245px;
           margin-top: 0;
           margin-bottom: 0;
@@ -112,16 +122,16 @@ div#bgbottom {
           position: absolute;
           align-items: center;
           justify-content: center;
-          @media(min-width: 1024px) {
+          @media (min-width: 1024px) {
             height: 245px;
           }
-          >div {
-            width: auto!important;
+          > div {
+            width: auto !important;
           }
         }
       }
     }
-    @media(max-width:408px) {
+    @media (max-width: 408px) {
       #FooterPane2Container,
       #FooterPane3Container {
         width: 47%;
@@ -129,13 +139,11 @@ div#bgbottom {
       }
     }
     #BottomFooter #FooterPane2Container {
-			
-			
       li a {
         color: #fff;
         position: relative;
         &:before {
-          transition: all .3s;
+          transition: all 0.3s;
           content: "";
           position: absolute;
           width: 0%;
@@ -146,7 +154,7 @@ div#bgbottom {
           background-color: #fff;
         }
         &:hover {
-          //color:$primary-color; 
+          //color:$primary-color;
           &:before {
             left: 0;
             right: auto;
@@ -154,18 +162,19 @@ div#bgbottom {
           }
         }
       }
-		}
-	
+    }
+
     #login {
       span {
         color: #fff;
       }
     }
   }
-  #poweredbynd, .poweredByBadge{
+  #poweredbynd,
+  .poweredByBadge {
     width: 165px;
   }
-  .footer-client-logo{
+  .footer-client-logo {
     margin: 0 auto;
     display: block;
     max-width: 250px;
@@ -181,7 +190,7 @@ div#bgbottom {
       margin-bottom: 15px;
     }
     .homepage-options {
-      width: 100%; 
+      width: 100%;
       margin-top: 15px;
     }
   }

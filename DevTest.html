@@ -1,61 +1,22 @@
-<div class="logos__slider">
-  <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img src="/portals/[Portal:PortalID]/skins/redesign/img/tia.png" alt="TIA" />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img src="/portals/[Portal:PortalID]/skins/redesign/img/big3.png" alt="Big 3" />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img src="/portals/[Portal:PortalID]/skins/redesign/img/ross.png" alt="Ross" />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_firestone_r.png" alt="Firestone Tires LOGO" />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_bridgestone_r.png" alt="Bridgestone Tires LOGO" />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_mastercraft.png" alt="Mastercraft Tires LOGO" />
-          </div>
-        </li>
-        <li class="splide__slide">
-          <div class="slider-item">
-            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_kenda.png" alt="Kenda Tires LOGO" />
-          </div>
-        </li>
-      </ul>
-    </div>
+<div id="headercontact" class="webfont">
+  <div class="phone webfont2">[ND:ClientPhone]</div>
+  <div class="address">
+    1130 Bowers Ave NW | New Philadelphia, OH 44663-4152
   </div>
+  <div id="top-social">
+    <a href="[ND:Facebook]" target="_blank" class="fab fa-facebook-f"></a>
+    <!--<a href="[ND:Twitter]" target="_blank" class="fab fa-twitter"></a>-->
+    <a href="[ND:GPlus]" target="_blank" class="fab fa-google"></a>
+  </div>
+  <div class="header-brands" style="display: none">
+    <img
+      src="//a2.nd-cdn.us/img/basic-sites/napa-basic-2/napa-autocare-horizontal.png"
+      alt="NAPA Auto Care Center"
+    />
+  </div>
+ <!--  <div class="quote-btn webfont">
+    <a href="/shop-for-tires/advanced-quoting.aspx"
+      ><em class="fas fa-shopping-cart"></em> Cart</a
+    >
+  </div> -->
 </div>
-<script>
-  const logos = new Splide("#slider_logos", {
-    type: "loop",
-    perPage: 5,
-    focus: 1,
-    gap: "1rem",
-    trimSpace: false,
-    arrows: false,
-    autoplay: true,
-    breakpoints: {
-      1024: { perPage: 3 },
-      767: { perPage: 2 },
-      640: { perPage: 1 },
-    },
-    pagination: false,
-  });
-  logos.mount();
-</script>
