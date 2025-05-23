@@ -1,47 +1,105 @@
-<section class="services-section">
+<div class="logos__slider">
+  <div id="slider_logos" class="splide" role="group" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        
 
-  <div class="services-section-title">
-    <h2>OUR FEATURED SERVICES</h2>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_bridgestone_r.png" alt="Bridgestone Tires LOGO" />
+          </div>
+        </li>
+
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_kenda.png" alt="Kenda Tires LOGO" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_yokohama.png" alt="Yokohama Tires LOGO" />
+          </div>
+        </li>
+
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_cooper.png" alt="Cooper Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_falken.png" alt="Falken Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_firestone_r.png" alt="Firestone Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_goodyear.png" alt="Goodyear Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_hankook.png" alt="Hankook Tires LOGO" />
+          </div>
+        </li>
+        
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_kumho.png" alt="Kumho Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_michelin.png" alt="Michelin® Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_mickey_thompson.png" alt="Mickey Thompson Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_nexen.png" alt="Nexen Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_nitto.png" alt="Nitto Tires LOGO" />
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="slider-item">
+            <img src="//a.nd-cdn.us/tire_brands/logos/png/logo_toyo.png" alt="Toyo Tires LOGO" />
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
-
-  <div class="services-section-container">
-
-    <a href="#" class="services-section-item s1">
-      <div class="services-section-item-image">
-        <img src="/portals/[Portal:PortalID]/skins/master/img/element-ss.png" alt="[ND:ClientName]">
-      </div>
-      <div class="services-section-item-content">
-        <h3>Auto Body, Collision<br>Repair and Paint</h3>  
-      </div>
-    </a>
-
-    <a href="#" class="services-section-item s2">
-      <div class="services-section-item-image">
-        <img src="/portals/[Portal:PortalID]/skins/master/img/element-ss.png" alt="[ND:ClientName]">
-      </div>
-      <div class="services-section-item-content">
-        <h3>Windshield and Glass<br>Replacement (Fiberglass)</h3>  
-      </div>
-    </a>
-
-    <a href="#" class="services-section-item s3">
-      <div class="services-section-item-image">
-        <img src="/portals/[Portal:PortalID]/skins/master/img/element-ss.png" alt="[ND:ClientName]">
-      </div>
-      <div class="services-section-item-content">
-        <h3>Cooling System / <br>Radiator</h3>  
-      </div>
-    </a>
-
-    <a href="#" class="services-section-item s4">
-      <div class="services-section-item-image">
-        <img src="/portals/[Portal:PortalID]/skins/master/img/element-ss.png" alt="[ND:ClientName]">
-      </div>
-      <div class="services-section-item-content">
-        <h3>Heating & A/C</h3>  
-      </div>
-    </a>
-
-  </div>
-
-</section>
+</div>
+<script>
+  const logos = new Splide("#slider_logos", {
+    type: "loop",
+    perPage: 10,
+    focus: 1,
+    gap: "1rem",
+    trimSpace: false,
+    arrows: false,
+    autoplay: true,
+    breakpoints: {
+      1024: { perPage: 3 },
+      767: { perPage: 2 },
+      640: { perPage: 1 },
+    },
+    pagination: false,
+  });
+  logos.mount();
+</script>
