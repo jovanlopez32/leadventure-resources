@@ -1,0 +1,81 @@
+<style>
+/* /snippets/sections/featured-rvs/featured-rvs */
+/* =============================================
+   Featured RVs - Standard 
+================================================ */
+ { position: relative; background-color:  #f1f1f1 ; background-image: url(); background-attachment: fixed; background-size: cover; padding: 60px 0; margin: 0; }
+ .headline:after { background-color: #a7a7a7;  }
+ span.red {color: #9f181d;}
+ .headline { text-align: center; color:  #000 ; font-weight: 700; margin: 0 45px 40px; font-size: 36px;}
+ .sub-headline { text-align: center; color:  #000 ; }
+ .container{ position: relative; z-index: 1; }
+ #slideshowWrap, #slideshowWrap li.unit { background: 0 0;border: none; height: 550px; box-shadow: none; }
+ #slideshowWrap .detailsContainer { height: 525px; background: #fff; padding: 20px 15px; font-weight: 700; border: 1px solid #e9e9e9; box-sizing: border-box; box-shadow: 0 4px 4px rgba(0,0,0,.35); border-radius: 0px; max-width: 390px; margin: auto; }
+ #slideshowWrap .photoContainer { padding: 0 !important; margin-bottom: 0; }
+ #slideshowWrap .pricingContainer { height: 120px; padding-top: 15px; }
+ #slideshowWrap li.unit img { width: 100%;max-height: none; border-radius: 0px;}
+ .unitContainer .unit-title { padding: 5px 10px; line-height: 16px; margin: 0; vertical-align: middle;height: 55px; }
+ .unitContainer .unit-title a { font-size: 18px; color: #000; font-weight: 600; white-space: normal; line-height: 24px; vertical-align: middle; display: inline-block; }
+ #slideshowWrap li.unit:hover { background: 0 0; }
+ #slideshowWrap li.unit.has-sale-price .regPriceText { text-decoration: line-through; }
+ #slideshowWrap ul.unitPricing { margin: 15px 0; height: 55px; margin: 0; padding: 0; list-style: none;}
+ .youSave{ display: block; margin-top: 5px;}
+ .youSaveLabel {display: block; font-size: 24px;}
+ .youSaveText {font-size: 32px; color: #9f181d; display: block;}
+ .regPrice{ color: #444;font-weight: 500;font-size: 14px;text-transform: uppercase;}
+ .salePrice{ position: relative;display: none;text-transform: uppercase;font-size: 24px;margin-top: 25px;font-weight: 700;width: 100%;}
+ .salePriceText{ display: inline-block;color: #e8121b;font-size: 24px;font-weight: 700;line-height: 1em;margin-top: 5px;}
+ .salePriceLabel{ position: relative;}
+ .q-icon{ max-width: 44px!important;position: absolute;left: 40px;top: 40px;}
+ .featured-next, .featured-prev{display: inline-block!important;position: absolute;z-index: 999;left: 15px;padding: 0 0 8px 10px;top: 10px;height: 30px;width: 30px;font-size: 21px;color:  #000 ;}
+ .featured-next{ right: 15px;left: auto;padding-left: 12px;}
+ .featured-next:hover, .featured-prev:hover{ text-decoration: none;cursor: pointer;}
+ .cycle-next, .cycle-prev{ display: none!important;}
+ .cycle-slideshow > div.cycle-pager{ left: 0;right: 0;bottom: -12px;margin: auto;width: auto;text-align: center;}
+ .cycle-slideshow > div.cycle-pager span{ display: inline-block;float: none;background: #888;box-shadow: none;width: 6px;height: 6px;}
+ .cycle-slideshow > div.cycle-pager span.cycle-pager-active{ background: #fff;}
+ .payments-around-container{ top: -124px;max-width: 190px;background: #ffcc29;border-radius: 0 10px 0 0;text-align: left; font-size: 15px;padding: 14px 15px 13px 40px;left: -15px;font-family: Anton,sans-serif;}
+ .payments-around-container:before { color: #000; font-size: 22px; top: 13px; left: 12px;}
+ .payments-around-container .payment-text { font-size: 24px;color: #000;font-weight: 500;}
+ .payments-around-container .payment-label { font-size: 16px;vertical-align: text-bottom;}
+ #slideshowWrap ul.unitPricing:after { content: "See Details"; position: relative; top: 25px; left: 0; right: 0; max-width: 145px; margin: auto; background-color: var(--primary-bg-color); color: var(--primary-text-color); border-radius: 5px; border: 4px solid var(--primary-bg-color); padding: 6px 15px 8px; font-weight: 400; font-size: 16px; }
+
+@media (min-width:480px){
+     .salePrice,  .salePriceText {  font-size: 19px; }
+}
+@media (min-width:768px){
+     .payments-around-container .payment-label {  vertical-align: text-top; }
+     .payments-around-container .payment-text {  font-size: 16px; }
+     .salePrice,  .salePriceText { font-size: 19px; }
+     #slideshowWrap,  #slideshowWrap li.unit { height: 500px; }
+     #slideshowWrap li.unit {  max-width: 356px; width: 100% !important; }
+     .featured-next,  .featured-prev { font-size: 35px; }
+     .headline {display: flex; gap: 1rem; align-items: center; justify-content: center;}
+     #slideshowWrap {height: 568px;}
+}
+@media (min-width:992px){
+     .payments-around-container .payment-label {  vertical-align: text-bottom; }
+     .payments-around-container .payment-text {  font-size: 24px; }
+     .salePrice,  .salePriceText {  font-size: 23px; }
+     #slideshowWrap li.unit {  max-width: 312px; }
+     #slideshowWrap li.unit ul.unitPricing:after {  transform: scale(1); transition: all .2s ease; }
+     #slideshowWrap li.unit:hover ul.unitPricing:after {  transform: scale(1.1); }
+     .headline { font-size: 60px; }
+}
+@media (min-width:1200px){
+  	 { padding: 48px 32px 64px 32px; }
+     .payments-around-container .payment-label { font-size: 12px;vertical-align: text-top; }
+     .payments-around-container .payment-text { font-size: 15px; }
+     .salePrice,  .salePriceText { font-size: 19px; }
+     #slideshowWrap li.unit { max-width: 283px; }
+  	 .featured-next,  .featured-prev { font-size: 45px; }
+}
+@media (min-width:1600px){
+     .payments-around-container .payment-label {  font-size: 16px; vertical-align: text-bottom; }
+     .payments-around-container .payment-text,  .salePrice,  .salePriceText {  font-size: 24px; }
+     .container {  padding: 0 30px; max-width: 1400px; }
+     #slideshowWrap li.unit {  max-width: 323px; margin: 10px 8px; }
+     .featured-next,  .featured-prev {  top: 50%; left: -30px; right: auto; font-size: 60px;}
+     .featured-next {  left: auto; right: -30px; }
+}
+</style>
