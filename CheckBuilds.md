@@ -1,8 +1,31 @@
-Excellent work! 👏 Porfavor corrige las siguientes observaciones:
+Well done! 👏
 
-1.- Agrega un espacio en el header para que no quede pegado al borde superior. https://prnt.sc/izsHDhqWS6y-
-2.- En vista movil, el contenido del video de youtube sobresale de la pantalla, por favor corrigelo. Puedes probar poniendo un width de 100% y usar box-sizing: border-box; https://prnt.sc/SGBctkSW0fKP https://prnt.sc/1v15eDrQLaCr
-3.- En vista movil, porfavor remueve el espacio en blanco que se muestra arriba del header. https://prnt.sc/zSce6AgiM54l
-4.- En vista movil, no se muestra el carusel de imagenes https://prnt.sc/Kck-DT3Yyxyq https://prnt.sc/r__qQPAkFxQh
-5.- Elimine el espacio en blanco que se muestra arriba del header en todas las subpaginas https://prnt.sc/M9vbqA8yNGzy https://prnt.sc/P7nsPAaQa_eK
-6.- Agrega la opcion de "Home" al navbar y enlaza el logo al inicio de la pagina  https://prnt.sc/QNQJ_RPCfoy8
+1.- añade mas espacio arriba de view more cta: https://prnt.sc/uRiyqGsL2J-T
+2.- arrgle la funcionalidad del slider en la seccion "Featured Inventory" https://prnt.sc/sK7z5dfkQMaj
+
+
+
+
+
+
+
+
+Well done!
+
+Nice work!
+
+Great job!
+
+Awesome!
+
+You nailed it!
+
+Way to go!
+
+That's the way to do it!
+
+You're killing it!
+
+You crushed it!
+
+High five!
