@@ -1,0 +1,6 @@
+.main{
+  background-image: url(https://assets-cdn.interactcp.com/brownscamping/images/brownscamping-bg-top.jpg), url(https://assets-cdn.interactcp.com/brownscamping/images/brownscamping-bg-bottom.jpg);
+
+
+background: linear-gradient(rgba(209, 209, 209, 0.4), rgba(209, 209, 209, 0.4)), url('https://assets-cdn.interactcp.com/brownscamping/images/brownscamping-bg-top.jpg') no-repeat center center;
+}

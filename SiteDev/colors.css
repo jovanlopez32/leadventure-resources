@@ -1,0 +1,16 @@
+:root {
+    --primary-bg-color: #2e3092;
+    --primary-text-color: #fff;
+    --primary-hover-color: #242674;
+    --secondary-bg-color: #81B747;
+    --secondary-text-color: #fff;
+    --secondary-hover-color: #81B747;
+    --tertiary-bg-color: #a4a6e3;
+    --tertiary-text-color: #000000;
+    --tertiary-hover-color: #8384b5;
+    --accent-bg-color: #78a84b;
+    --accent-text-color: #000000;
+    --accent-hover-color: #60863c;
+    --body-font-family: "Poppins", sans-serif;
+    --headline-font-family: "Poppins", sans-serif;
+  }
