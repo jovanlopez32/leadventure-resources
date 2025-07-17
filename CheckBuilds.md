@@ -1,18 +1,10 @@
 Well done! 👏
 
-1.- Haz un poco mas grande el texto de estos ctas como en el live site: https://prnt.sc/o5BgTCUQvGhj https://prnt.sc/zoW8ptQyw9F8
+1.- Haz un poco mas grande el tamano de la fuente de los siguientes ctas: 
+https://prnt.sc/9nUrkrxO6Q1z
+Tip:Puedes usar la propiedad clamp() de css para no utilizar tantos media queries, EJEMPLO: font-size: clamp(32px, 2vw, 60px); aqui te dejo un articulo que te explica como usarla. https://medium.com/@projectluis/the-magic-of-clamp-in-css-80c6b75d864a
 
-2.- En pantalla desktop no se visualiza los botnes de siguiente y de anterior https://prnt.sc/qujq4W6s_pgj
-
-3.- Haz mas grande el tamano de la fuente y ponlo en letras mayusculas. https://prnt.sc/9TEveiNoSv_a
-
-4.- El hover del boton no es igual al de el live site https://prnt.sc/9TEveiNoSv_a
-
-5.- En la seccion de reviews, alinea el texto a la izquierda esto siempre ayuda a una mejor lectura y accesibilidad https://prnt.sc/n_OrpdLHAP3w
-
-
-
-
+2.- El titulo view all no existe, por favor agregalo. https://prnt.sc/gjztqIrnSlvH
 
 
 
