@@ -1,4 +1,11 @@
-.well{
+.well {
+  box-sizing: border-box;
+  max-width: 1536px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pageContent .container {
   box-sizing: border-box;
   max-width: 1536px;
   width: 100%;
