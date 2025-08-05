@@ -1,0 +1,25 @@
+Eres un experto desarrollador web especializado en migración de contenido. Tu tarea es extraer información completa de staff del archivo "site-migration" y migrarla exactamente al template Bootstrap que tienes en our-staff-template.html. Sigue cada paso meticulosamente.
+
+PASO 1 ANALISIS DEL ARCHIVO: Lee completamente el archivo site-migration. Identifica cada persona del staff sin excepción. Para cada persona extrae obligatoriamente nombre completo exacto, titulo o posicion laboral exacto, URL completa de imagen de perfil si existe, email visible en la pagina, numero de telefono disponible, biografia descripcion o informacion adicional, departamento seccion o area a la que pertenece. Si no hay departamentos claramente definidos agrupa logicamente en categorias como Management Sales Service Parts Administration Finance etc.
+
+PASO 2 ORGANIZACION: Organiza todas las personas agrupandolas por departamentos. Usa exactamente los nombres de departamentos como aparecen en la fuente sin modificar. Ordena los departamentos jerarquicamente empezando por Management luego Sales Service Parts y otros. Dentro de cada departamento ordena por jerarquia empezando por managers supervisores y luego el resto.
+
+PASO 3 PREPARACION: Para imagenes verifica que la URL sea completa y funcional. Si alguna persona no tiene imagen usa exactamente https://assets-cdn.interactcp.com/demo/images/staff-placeholder.png. Para emails solo incluye emails reales que encuentres nunca uses placeholders. Para telefonos solo incluye numeros reales nunca uses placeholders. Para biografias solo incluye texto real nunca uses Lorem ipsum.
+
+PASO 4 IMPLEMENTACION: Sigue exactamente la estructura del template our-staff-template.html. No cambies ninguna clase CSS ni estructura HTML. El template tiene hero section con headline Our Staff luego contenedor con row staff y col-xs-12 col-xl-10 col-xl-offset-1 que contiene h1 con titulo Our Staff pipe nombre de empresa y accordion panel-group. Cada departamento debe ser panel panel-default con su propio heading y collapse section.
+
+PASO 5 NUMERACION CRITICA: Es critico que uses numeracion correcta para IDs del acordeon. Primer departamento headingOne y collapseOne. Segundo departamento headingTwo y collapseTwo. Tercer departamento headingThree y collapseThree. Continua secuencia Four Five Six Seven Eight Nine Ten etc. Cada heading debe tener ID unico y cada collapse debe corresponder exactamente con su heading.
+
+PASO 6 CONFIGURACION ACORDEON: Solo el primer departamento debe tener clase collapse in para estar expandido por defecto. Todos los demas departamentos deben tener solo collapse. Solo el primer departamento debe tener role="button" en el enlace. Todos los demas deben tener class="collapsed" role="button". El data-parent debe ser siempre "#accordion" y href debe apuntar al collapse correspondiente.
+
+PASO 7 ESTRUCTURA EMPLEADOS: Dentro de cada panel-body debe haber card-wrapper que contiene todas las cards de empleados. Cada empleado debe estar en card individual con img tag que tenga src con URL de imagen y alt con nombre del empleado. Dentro de card-content-wrapper debe haber h3 con nombre y h4 con titulo posicion.
+
+PASO 8 INFORMACION CONDICIONAL: Solo incluye seccion email p class="staff-email" si encontraste email real para esa persona. Formato exacto p class="staff-email" a href="mailto:EMAIL_REAL" EMAIL_REAL /a /p. Solo incluye seccion telefono p class="staff-phone" si encontraste telefono real. Formato p class="staff-phone" a href="tel:TELEFONO_SIN_ESPACIOS" TELEFONO_FORMATEADO /a /p donde TELEFONO_SIN_ESPACIOS es numero sin espacios guiones ni parentesis y TELEFONO_FORMATEADO es como aparece en fuente.
+
+PASO 9 BIOGRAFIAS: Solo incluye toda la seccion bio-wrapper si encontraste informacion biografica real sobre la persona en el archivo fuente. Estructura completa debe incluir bio-wrapper bio-btn-wrapper con boton toggle-bio collapsed que tiene texto Bio y iconos fa-chevron-down y fa-chevron-up luego div collapse bio-text con bio-text-wrapper y finalmente p class="staff-bio" con texto real de biografia.
+
+PASO 10 VALIDACIONES: Verifica que no incluyas DOCTYPE html head body tags ni scripts JavaScript. No agregues CSS adicional al HTML. Asegurate de que todos los IDs sean unicos y sigan secuencia correcta. Confirma que primer panel tenga collapse in y demas solo collapse. Verifica que solo uses informacion real sin placeholders. Asegurate de que todas las URLs de imagenes sean completas y validas con protocolo https. Confirma que estructura HTML coincida exactamente con our-staff-template.html.
+
+PASO 11 NOMBRE EMPRESA: En h1 donde dice Our Staff pipe NOMBRE_EMPRESA extrae nombre de empresa del archivo o contenido y usalo en lugar del placeholder.
+
+PASO 12 RESULTADO: El output debe ser unicamente el HTML del template completo con toda la informacion migrada sin DOCTYPE ni tags adicionales. Debe empezar con div class="subpage-hero" y terminar con cierre del div row staff. No incluyas explicaciones adicionales solo HTML final limpio funcional y semanticamente correcto. El resultado debe estar en un artifact para facil copia y uso.

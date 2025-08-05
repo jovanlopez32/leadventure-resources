@@ -1,0 +1,76 @@
+<style>
+/* /staff */
+/* ======================================= 
+    Staff
+========================================= */
+
+
+.staff .card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.staff .card-wrapper .card {
+    flex-basis: 100%;
+    border: 1px solid grey;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.staff .card-wrapper .card h3 {
+    font-size: 20px;
+    margin: 15px auto;
+}
+
+.staff .card-wrapper .card h4 {
+    margin: 15px auto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.staff .bio-btn-wrapper a {
+    display: block;
+    margin: 5px 10px;
+    border-radius: 4px;
+    position: relative;
+    background: #f5f5f5;
+    padding: 5px 0;
+    color: black;
+    cursor: pointer;
+}
+
+.staff .staff-bio {
+    text-align: left;
+    padding: 10px 15px;
+    background: #ffffff;
+}
+
+.staff .btn-bio.toggle-bio:hover {
+    background: #eaeaea;
+    transition: 0.2s ease;
+}
+
+.staff .toggle-bio i.fa-chevron-down{display: none;}
+
+.staff .toggle-bio.collapsed i.fa-chevron-down {display: inline-block;}
+
+.staff .toggle-bio.collapsed i.fa-chevron-up{display: none;}
+
+.staff .panel-heading > h2 > a {display: block;}
+
+.staff .panel-title {text-align: center; font-size: 20px;}
+
+.staff .staff-email, .staff-phone {display: none;}
+
+@media (min-width: 768px) {
+    .staff .card-wrapper .card {flex-basis: 48%;}
+}
+
+@media (min-width: 992px) {
+    .staff .card-wrapper .card {flex-basis: 23%;}
+}
+
+</style>
