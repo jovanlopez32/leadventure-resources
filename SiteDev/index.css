@@ -9789,3 +9789,36 @@ ul.nav .dropdown-menu li {
     margin-bottom: 1rem;
   }
 }
+
+
+
+@media (min-width: 768px) {
+  .navbar-nav .open .dropdown-menu {
+    display: none !important;
+  }
+  
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block !important;
+  }
+  
+  ul.nav li.dropdown:not(:hover) > ul.dropdown-menu {
+    display: none !important;
+  }
+  
+  ul.nav li.dropdown.open:not(:hover) {
+    background: initial;
+  }
+  
+  ul.nav li.dropdown.open:not(:hover) > a {
+    background: initial;
+    color: initial;
+  }
+}
+ 
+
+.brandIcons img {
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}
