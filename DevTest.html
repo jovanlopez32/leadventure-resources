@@ -1,34 +1,73 @@
-<section class="services-section">
-    <div class="services-container">
-        <div class="services-item"><a href="/product/fifth-wheel" class="services-item-link">
-            <div class="services-item-title">
-                <h2>Fifth Wheels</h2>
-            </div>
-            <div class="services-item-image"><img src="https://assets-cdn.interactcp.com/www.acadietrailers/images/acadietrailers-cat-1.jpg" alt="Fifth Wheels" /></div>
-            </a></div>
-        <div class="services-item"><a href="/product/travel-trailer" class="services-item-link">
-            <div class="services-item-title">
-                <h2>Travel Trailer</h2>
-            </div>
-            <div class="services-item-image"><img src="https://assets-cdn.interactcp.com/www.acadietrailers/images/acadietrailers-cat-2.jpg" alt="Travel Trailer" /></div>
-            </a></div>
-        <div class="services-item"><a href="/product/motor-home-class-a" class="services-item-link">
-            <div class="services-item-title">
-                <h2>Motorhomes</h2>
-            </div>
-            <div class="services-item-image"><img src="https://assets-cdn.interactcp.com/www.acadietrailers/images/acadietrailers-cat-3.jpg" alt="Motorhomes" /></div>
-            </a></div>
-        <div class="services-item"><a href="/product/travel-trailer" class="services-item-link">
-            <div class="services-item-title">
-                <h2>Tent Trailers</h2>
-            </div>
-            <div class="services-item-image"><img src="https://assets-cdn.interactcp.com/www.acadietrailers/images/acadietrailers-cat-4.jpg" alt="Tent Trailers" /></div>
-            </a></div>
-        <div class="services-item"><a href="/product/car-trailers" class="services-item-link">
-            <div class="services-item-title">
-                <h2>Box Trailers</h2>
-            </div>
-            <div class="services-item-image"><img src="https://assets-cdn.interactcp.com/www.acadietrailers/images/acadietrailers-cat-5.jpg" alt="Box Trailers" /></div>
-            </a></div>
+<section class="subpage-template">
+
+    <img src="https://assets-cdn.interactcp.com/terrysrv/images/ddd.jpg" alt="RV Sale">
+
+    <h1>Storage $145 a month</h1>
+
+
+    <div class="grid-2">
+        <div>
+            <img src="https://assets-cdn.interactcp.com/terrysrv/images/storage1.jpg" alt="RV Sale">
+        </div>
+        <div>
+            <img src="https://assets-cdn.interactcp.com/terrysrv/images/storage2.jpg" alt="RV Sale">
+        </div>
     </div>
+    
+
+    <a href="/contact-us" class="button-subpage">Contact Us</a>
+
 </section>
+
+<style>
+    .subpage-template {
+        box-sizing: border-box;
+        padding: 60px 20px;
+        max-width: 1536px;
+        margin: 0 auto;
+        width: 100%;
+
+        img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        iframe {
+            box-sizing: border-box;
+            display: block;
+            max-width: 1536px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            @media(min-width: 1024px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            gap: 2rem;
+        }
+
+        .button-subpage {
+           
+           display: flex;
+           max-width: 250px;
+           width: 100%;
+           margin: 0 auto;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           text-decoration: none;
+           color: #fff;
+           background-color: #251A06;
+           padding: 10px 20px;
+           transition: all 0.3s ease;
+           margin-top: 60px;
+           &:hover {
+            background-color: #674811;
+           }
+        }
+
+    }
+   
+</style>
