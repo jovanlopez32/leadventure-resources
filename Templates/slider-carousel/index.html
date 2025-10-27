@@ -1,0 +1,26 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const brandIcons = document.querySelector(".brandIcons");
+  
+ 
+  if (!brandIcons.parentElement.classList.contains('brandIcons-wrapper')) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'brandIcons-wrapper';
+    brandIcons.parentNode.insertBefore(wrapper, brandIcons);
+    wrapper.appendChild(brandIcons);
+  }
+  
+  
+  const links = Array.from(brandIcons.querySelectorAll("a"));
+  
+  links.forEach(link => {
+    const clone = link.cloneNode(true);
+    const img = clone.querySelector("img");
+    if (img && img.dataset.src) {
+      img.src = img.dataset.src;
+    }
+    brandIcons.appendChild(clone);
+  });
+});
+</script>
+ 

@@ -1,0 +1,41 @@
+.brandIcons-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.brandIcons {
+  display: flex;
+  gap: 3rem;
+  animation: scrollLogos 30s linear infinite;
+  width: max-content;
+}
+
+.brandIcons a {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brandIcons a img {
+  width: 140px;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.brandIcons a img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+ 
