@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    .navbar-nav .open .dropdown-menu {
+      display: none !important;
+    }
+    
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+      display: block !important;
+    }
+    
+    ul.nav li.dropdown:not(:hover) > ul.dropdown-menu {
+      display: none !important;
+    }
+    
+    ul.nav li.dropdown.open:not(:hover) {
+      background: initial;
+    }
+    
+    ul.nav li.dropdown.open:not(:hover) > a {
+      background: initial;
+      color: initial;
+    }
+  }
+
+  .payments-around-container {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  }

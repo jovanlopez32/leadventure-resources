@@ -1,0 +1,185 @@
+<section class="subpage-template">
+
+    <h1>RV SALE THIS THUR-FRI -SATURDAY!!!</h1>
+
+    <img src="https://assets-cdn.interactcp.com/terrysrv/images/north view2.jpg" alt="RV Sale">
+
+    <a href="/rv-search" class="button-subpage">Check our Inventory</a>
+    
+    <p><small>TAC RV is conveniently located in the Moyock area of Currituck County on the VA/NC border near the areas of Chesapeake, Virginia Beach, Camden and the Outer Banks.</small></p>
+        <h1>TAC RV Links</h1>
+        <h4>Clubs</h4>
+        <ul class="ctn-links">
+            <li><a href="https://www.thousandtrails.com/" target="_blank">Thousand Trails Camping</a></li>
+            <li><a href="https://koa.com/contact-us/faqs/1/101/" target="_blank">KOA Value Kard Rewards</a></li>
+            <li><a href="https://www.boondockerswelcome.com/" target="_blank">Boondockers Welcome</a></li>
+            <li><a href="https://passportamerica.com/" target="_blank">Passport America</a></li>
+            <li><a href="https://harvesthosts.com/" target="_blank">Harvest Hosts</a></li>
+            <li><a href="https://www.fmca.com/" target="_blank">Family Motorcoach Association</a></li>
+            <li><a href="https://store.usgs.gov/recreational-passes" target="_blank">National Parks &amp; Federal Recreational Lands Passes</a></li>
+            <li></li>
+        </ul>
+
+        <ul class="list-cols">
+            <li>Appliances</li>
+            <li>Brakes</li>
+            <li>Chassis Frame</li>
+            <li>Electrical System</li>
+            <li>Electronics</li>
+            <li>Engine</li>
+            <li>Generators</li>
+            <li>HVAC system</li>
+            <li>Seals &amp; Gaskets</li>
+            <li>Suspension</li>
+            <li>Towing Expenses</li>
+            <li>Transmission</li>
+            <li>Water Heater</li>
+            <li>And More!</li>
+          </ul>
+       
+        <a href="/contact-us" class="button-subpage">Contact Us</a>
+    
+    </section>
+    
+    <style>
+        .subpage-template {
+          box-sizing: border-box;
+          padding: 60px 20px;
+          max-width: 1536px;
+          margin: 0 auto;
+          width: 100%;
+      
+          img {
+            display: block;
+            max-width: 100%;
+            width: 100%;
+          }
+      
+          iframe {
+            box-sizing: border-box;
+            display: block;
+            max-width: 1536px;
+            width: 100%;
+            margin: 0 auto;
+          }
+      
+          .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            @media (min-width: 1024px) {
+              grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            gap: 2rem;
+          }
+      
+          .button-subpage {
+            display: flex;
+            max-width: 250px;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #251a06;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+            margin-top: 60px;
+            &:hover {
+              background-color: #674811;
+            }
+          }
+        }
+      
+        ul {
+          display: grid;
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+          @media (min-width: 640px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+          @media (min-width: 1024px) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+          gap: 1rem;
+          li {
+            list-style: none !important;
+          }
+        }
+      
+        ul.list-cols > li:before {
+          font-family: FontAwesome;
+          content: "\f14a";
+          vertical-align: middle;
+          font-size: 18px;
+          line-height: 14px;
+          color: #0074ca;
+          margin-right: 5px;
+        }
+      
+        .ctn-links {
+          box-sizing: border-box;
+          display: grid;
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+          @media (min-width: 640px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+          @media (min-width: 1024px) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+          gap: 1rem;
+          li {
+            list-style: none !important;
+            a {
+              -webkit-transition: 0.3s ease;
+              -o-transition: 0.3s ease;
+              transition: 0.3s ease;
+              text-decoration: none;
+              display: block;
+              position: relative;
+              padding: 10px;
+              font-weight: bold;
+              color: #4b4a4a;
+              border: 2px solid #4b4a4a;
+              padding-left: 15px;
+              &::before {
+                content: "";
+                position: absolute;
+                left: 5px;
+                width: 5px;
+                height: 50%;
+                background: #4b4a4a;
+                transition: 0.3s ease;
+                bottom: 0;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                left: 5px;
+                width: 5px;
+                height: 50%;
+                background: #4b4a4a;
+                transition: 0.3s ease;
+                top: 0;
+              }
+              &:hover {
+                padding-left: 30px;
+                color: #ffffff;
+                background: #b20f2a;
+                border: 2px solid #b20f2a;
+                &::before {
+                  left: 15px;
+                  transform: skewX(-30deg);
+                  background: #ffffff;
+                }
+                &::after {
+                  left: 15px;
+                  transform: skewX(30deg);
+                  background: #ffffff;
+                }
+              }
+            }
+          }
+        }
+      </style>
+      
