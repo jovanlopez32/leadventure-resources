@@ -1,0 +1,28 @@
+<div class="operating-hours">
+  <div class="operating-hours-row">
+    <p>Mon – Fri:</p>
+    <p>9:00 AM – 6:00 PM</p>
+  </div>
+  <div class="operating-hours-row">
+    <p>Saturday:</p>
+    <p>9:00 AM – 5:00 PM</p>
+  </div>
+  <div class="operating-hours-row">
+    <p>Sunday:</p>
+    <p>Closed</p>
+  </div>
+</div>
+<style>
+    .operating-hours {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .operating-hours-row {
+        display: grid;
+        gap: 2.5rem;
+        text-align: left;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+</style>
